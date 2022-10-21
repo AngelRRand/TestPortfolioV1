@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/pf-tempesta-seven');
 :root{
   --black: rgba(0, 0, 0, 0.959);
   --white: rgb(255, 255, 255);
@@ -7,7 +8,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'PF Tempesta Seven Condensed';
   line-height: 24px;
   font-weight: 400;
   overflow: hidden;
