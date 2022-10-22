@@ -19,7 +19,7 @@
 }
 body {
   cursor: url(./assets/cursor/cursor.png), default;
-  background-color: #0b0a1a
+  background-color: #0b0a1a;
 }
 p, h1, h2, h3, h4, h5, h6{
   cursor: url(./assets/cursor/cursorText.png), default
@@ -52,4 +52,7 @@ button, a{
   background-color: #212121;
   border-radius: 10px;
   border: 2px solid #ffffff;
+}
+.landingPage{
+  overflow: hidden;
 }

@@ -1,6 +1,6 @@
 .bg_starts {
     image-rendering: pixelated;
-    overflow-x: hidden;
+    overflow: hidden;
     position: absolute;
     width: 97vw;
     height: 250vh;
