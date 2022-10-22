@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.home_landingPage{
+.container_landingPage{
     height: 100vh;
+    overflow: hidden;
 }
 .container_home {
     height: 85vh;
-    background-color: cadetblue;
 }

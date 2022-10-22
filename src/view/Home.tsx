@@ -2,11 +2,11 @@ import Container from '../component/Container'
 import './Home.css'
 const Home = () => {
   return (
-    <main className=''>
-      <Container styles='container_home'>
+    <Container styles='container_home'>
+      <main className='home'>
         <h1>asd</h1>
-      </Container>
-    </main>
+      </main>
+    </Container>
   )
 }
 

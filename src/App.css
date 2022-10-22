@@ -10,7 +10,6 @@
   box-sizing: border-box;
   font-family: 'PF Tempesta Seven Condensed';
   font-weight: 400;
-  overflow: hidden;
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,4 +30,26 @@ button, a{
 }
 .pointer{
   cursor: url(./assets/cursor/cursorPointer.png), default
+}
+
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #212121 #0d1f30;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #111111;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #212121;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
 }

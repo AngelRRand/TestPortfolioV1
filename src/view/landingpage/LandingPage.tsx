@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Container from '../../component/Container';
+import Stars from '../../component/Stars';
 const LandingPage = () => {
   return (
-    <Container styles='home_landingPage'>
-      <Link to={'/home'}>LandingPage</Link>
+    <Container styles='container_landingPage'>
+      <Stars/>
+      <Link to={'/home'}>Home</Link>
     </Container>
   )
 }
