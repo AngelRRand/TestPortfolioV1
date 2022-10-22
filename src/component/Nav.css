@@ -1,0 +1,14 @@
+.nav {
+    width: 100vw;
+    border-top: 2px solid #141414;
+    height: 25vh;
+    background-color: #272626;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ebeceb;
+    font-weight: 200;
+    image-rendering: pixelated;
+    position: fixed;
+    z-index: 100;
+}
