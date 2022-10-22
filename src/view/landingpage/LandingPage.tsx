@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Container from '../../component/Container';
 const LandingPage = () => {
   return (
-    <Container style='home_landingPage'>
+    <Container styles='home_landingPage'>
       <Link to={'/home'}>LandingPage</Link>
     </Container>
   )

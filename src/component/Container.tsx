@@ -2,11 +2,11 @@ import React from 'react'
 import './Container.css'
 type Props = {  
     children?: React.ReactNode
-    style: string
+    styles: string
 }
-const Container: React.FC<Props> = ({children,  style}) => {
+const Container: React.FC<Props> = ({children,  styles}) => {
   return (
-    <div className={`container ${style}`}>
+    <div className={`container ${styles}`}>
         {children}
     </div>
   )
