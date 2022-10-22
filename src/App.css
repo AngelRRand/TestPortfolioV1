@@ -26,10 +26,7 @@ button, a{
 .app_overflow{
   overflow: hidden;
 }
-.ola{
-  background: #000;
-  height: 30vh;
-}
+
 
 /* Firefox */
 * {

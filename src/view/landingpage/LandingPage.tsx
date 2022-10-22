@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <Container styles='container_landingPage'>
       <section className="landingPage">
-      <Link to={'/home'}>Home</Link>
+        <Link to={'/home'}>Home</Link>
       </section>
     </Container>
   )
