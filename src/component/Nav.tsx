@@ -4,7 +4,7 @@ const Nav = () => {
     const location = useLocation();
 
 
-    if(location.pathname.toString() != '/'){
+    if(location.pathname.toString() !== '/'){
         return (
             <div>Nav</div>
         )  
