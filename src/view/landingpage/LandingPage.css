@@ -1,11 +1,12 @@
 .landingPage {
-    z-index: 10;
-    height: 85vh;
-    width: 85vw;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
+    overflow: hidden;
+    height: 85vh;
+    width: 85vw;
+    z-index: 10;
 }
 
 .landingPage a {

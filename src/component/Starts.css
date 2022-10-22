@@ -1,7 +1,8 @@
 .bg_starts {
+    display: flex;
+    position: absolute;
     image-rendering: pixelated;
     overflow: hidden;
-    position: absolute;
     width: 95vw;
     height: auto;
     left: 2vw;
