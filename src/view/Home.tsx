@@ -1,10 +1,12 @@
 import React from 'react'
 import Container from '../component/Container'
-import styles from './Home.module.css'
+import './Home.css'
 const Home = () => {
   return (
-    <main className={styles.hola}>
-      <Container>
+    <main className=''>
+      <Container
+        style='container_home'
+      >
         <h1>asd</h1>
       </Container>
     </main>
