@@ -1,10 +1,8 @@
 import Container from '../component/Container'
-import Stars from '../component/Stars'
 import './Home.css'
 const Home = () => {
   return (
     <Container styles='container_home'>
-      <Stars/>
       <main className='home'>
         <h1>asd</h1>
       </main>
