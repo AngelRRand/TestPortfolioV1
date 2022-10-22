@@ -4,9 +4,9 @@ import Stars from '../../component/Stars';
 const LandingPage = () => {
   return (
     <Container styles='container_landingPage'>
+      <Stars/>
       <section className="landingPage">
 
-      <Stars/>
       <Link to={'/home'}>Home</Link>
       </section>
     </Container>

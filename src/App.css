@@ -10,12 +10,6 @@
   box-sizing: border-box;
   font-family: 'PF Tempesta Seven Condensed';
   font-weight: 400;
-  color-scheme: light dark;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 body {
   cursor: url(./assets/cursor/cursor.png), default;
@@ -54,5 +48,5 @@ button, a{
   border: 2px solid #ffffff;
 }
 .landingPage{
-  overflow: hidden;
+  z-index: 10;
 }

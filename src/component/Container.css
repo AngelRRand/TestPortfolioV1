@@ -6,7 +6,8 @@
 }
 .container_landingPage{
     height: 100vh;
+    overflow-y: hidden;
 }
 .container_home {
-    height: 85vh;
+    height: 100vh;
 }
