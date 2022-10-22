@@ -14,6 +14,7 @@
 body {
   cursor: url(./assets/cursor/cursor.png), default;
   background-color: #0b0a1a;
+  
 }
 p, h1, h2, h3, h4, h5, h6{
   cursor: url(./assets/cursor/cursorText.png), default
@@ -22,8 +23,8 @@ button, a{
   cursor: url(./assets/cursor/cursorPointer.png), default;
   text-decoration: none;
 }
-.pointer{
-  cursor: url(./assets/cursor/cursorPointer.png), default
+.app_overflow{
+  overflow: hidden;
 }
 
 

@@ -3,10 +3,9 @@
     overflow: hidden;
     position: absolute;
     width: 97vw;
-    height: 250vh;
+    height: auto;
     left: 2vw;
     z-index: 0;
-    overflow-x: hidden;
 }
 
 /* .bg_starts_home {

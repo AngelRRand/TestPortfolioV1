@@ -12,7 +12,7 @@ import './App.css'
 function App() {
   const location = useLocation();
   return (
-    <>
+    <div className={location.pathname.toString() === '/home' ? '' : 'app_overflow'}>
       <AnimatePresence>
         <Stars/>
         <Routes location={location} key={location.pathname}>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </AnimatePresence>
       <Nav/>
-    </>
+    </div>
   );
 }
 
