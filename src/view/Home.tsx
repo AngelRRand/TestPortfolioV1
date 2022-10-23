@@ -23,8 +23,8 @@ const Home = () => {
       >
         <div className='container_galaxy'>
           <img className='img_galaxy' src={Galaxy} alt="" />
-          {/* <img src={GalaxyT} alt="" />
-          <img src={} alt="" /> */}
+          <img className='img_galaxy img_galaxy_animationT' src={GalaxyT} alt="" />
+          <img className='img_galaxy img_galaxy_animationB' src={GalaxyB} alt="" />
         </div>
         {/* <Link to={'/about'}>Home</Link> */}
       </motion.main>
