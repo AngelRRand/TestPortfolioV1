@@ -1,5 +1,5 @@
 import Start from "../assets/Starts.gif"
-import "./Starts.css"
+import "./Stars.css"
 import { useLocation } from "react-router-dom";
 const Stars = () => {
 
