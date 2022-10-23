@@ -3,9 +3,9 @@
     position: absolute;
     image-rendering: pixelated;
     overflow-y: hidden;
-    width: 90vw;
+    width: 94vw;
     height: auto;
-    left: 5vw;
+    left: 3vw;
     z-index: 1;
     object-fit: cover;
 }

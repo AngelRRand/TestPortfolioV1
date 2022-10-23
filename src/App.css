@@ -1,8 +1,8 @@
 @import url('http://fonts.cdnfonts.com/css/pf-tempesta-seven');
 :root{
-  --black: rgba(0, 0, 0, 0.959);
-  --white: rgb(255, 255, 255);
-  --red: rgb(36, 36, 36);
+  --black: rgb(8, 8, 8);
+  --white: rgb(221, 221, 221);
+  --gray: rgb(24, 24, 24);
 }
 *{
   margin: 0px;
@@ -32,7 +32,7 @@ button, a{
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #212121 #0d1f30;
+  scrollbar-color: var(--gray) #0d1f30;
 }
 
 /* Chrome, Edge, and Safari */
@@ -41,11 +41,10 @@ button, a{
 }
 
 *::-webkit-scrollbar-track {
-  background-color: #111111;
+  background-color: var(--gray);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #212121;
-  border-radius: 10px;
-  border: 2px solid #ffffff;
+  background-color: var(--black);
+  border: 2px solid var(--white);
 }
