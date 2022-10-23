@@ -1,8 +1,14 @@
-import React from 'react'
+import Container from '../../component/Container'
+import Stars from '../../component/Stars'
 
 const About = () => {
   return (
-    <div>About</div>
+    <Container styles='container_planet'>
+      <Stars />
+      <main>
+        <h1>About</h1>
+      </main>
+    </Container>
   )
 }
 

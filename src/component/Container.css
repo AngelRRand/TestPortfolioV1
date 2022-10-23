@@ -11,3 +11,7 @@
 .container_home {
     height: 85vh;
 }
+.container_planet{
+    height: 85vh;
+    position: relative;
+}
