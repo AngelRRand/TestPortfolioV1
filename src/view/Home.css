@@ -31,11 +31,11 @@
     animation: motionB 3s linear infinite;
 }
 
-.grid_galaxy{
+.grid_galaxy {
     display: grid;
     position: absolute;
     width: 60vw;
-    height:  150vh;
+    height: 150vh;
     margin: 5vh;
     grid-template-columns: repeat(10, 6vw);
     grid-template-rows: repeat(30, 5vh);
@@ -43,7 +43,18 @@
     grid-row-gap: 0px;
 }
 
-
+.container_pointer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: transparent;
+    color: #000000;
+    
+    z-index: 99;
+}
 
 @keyframes motionT {
     0% {

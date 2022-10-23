@@ -29,6 +29,27 @@ const Home = () => {
         {/* <Link to={'/about'}>Home</Link> */}
         <div className='grid_galaxy'>
 
+          <Link to={'/about'} className='container_pointer'>
+            <img src="" alt="planet" />
+            <h4>About</h4>
+            <img src="" alt="pointer" className='pointer'/>
+          </Link>
+          <Link to={'/project'} className='container_pointer'>
+            <img src="" alt="planet" />
+            <h4>Project</h4>
+            <img src="" alt="pointer" className='pointer'/>
+          </Link>
+          <Link to={'/education'} className='container_pointer'>
+            <img src="" alt="planet" />
+            <h4>Education</h4>
+            <img src="" alt="pointer" className='pointer'/>
+          </Link>
+          <Link to={'/networks'} className='container_pointer'>
+            <img src="" alt="planet" />
+            <h4>Networks</h4>
+            <img src="" alt="pointer" className='pointer'/>
+          </Link>
+          
         </div>
       </motion.main>
     </Container>
