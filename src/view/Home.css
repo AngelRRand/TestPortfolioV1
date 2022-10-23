@@ -1,14 +1,16 @@
 .home {
+    display: flex;
+    justify-content: center;
     height: 85vh;
     z-index: 10;
 }
 
 .container_galaxy {
     position: relative;
-    top: 10vh;
-    width: 80vw;
-    height: 150vh;
     object-fit: cover;
+    top: 5vh;
+    width: 60vw;
+    height: 150vh;
 }
 
 .img_galaxy {
@@ -34,7 +36,7 @@
     position: absolute;
     width: 60vw;
     height:  150vh;
-    grid-template-columns: repeat(10, 4vw);
+    grid-template-columns: repeat(10, 6vw);
     grid-template-rows: repeat(30, 6vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
