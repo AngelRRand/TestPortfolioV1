@@ -15,10 +15,10 @@ const Home = () => {
       <Stars />
       <motion.main
         className='home'
-        initial={{ opacity: 0, }}
+        initial={{ opacity: 0}}
         animate={{
           opacity: 1,
-          transition: { duration: 10.5, type: "spring" },
+          transition: { duration: 1.5, type: "spring" },
         }}
       >
         <div className='container_galaxy'>
@@ -27,6 +27,9 @@ const Home = () => {
           <img className='img_galaxy img_galaxy_animationB' src={GalaxyB} alt="" />
         </div>
         {/* <Link to={'/about'}>Home</Link> */}
+        <div className='grid_galaxy'>
+
+        </div>
       </motion.main>
     </Container>
   )

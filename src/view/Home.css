@@ -29,6 +29,17 @@
     animation: motionB 3s linear infinite;
 }
 
+.grid_galaxy{
+    display: grid;
+    position: absolute;
+    width: 60vw;
+    height:  150vh;
+    grid-template-columns: repeat(10, 4vw);
+    grid-template-rows: repeat(30, 6vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: rgb(179, 33, 33);
+}
 
 
 
