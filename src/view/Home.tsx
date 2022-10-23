@@ -21,8 +21,8 @@ const Home = () => {
           transition: { duration: 10.5, type: "spring" },
         }}
       >
-        <div>
-          <img src={Galaxy} alt="" />
+        <div className='container_galaxy'>
+          <img className='img_galaxy' src={Galaxy} alt="" />
           {/* <img src={GalaxyT} alt="" />
           <img src={} alt="" /> */}
         </div>

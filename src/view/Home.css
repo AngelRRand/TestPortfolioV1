@@ -1,4 +1,22 @@
-.home{
+.home {
     height: 85vh;
+    z-index: 10;
+}
+
+.container_galaxy {
+    position: relative;
+    top: 10vh;
+    width: 80vw;
+    height: 150vh;
+    object-fit: cover;
+}
+
+.img_galaxy {
+    position: absolute;
+    image-rendering: pixelated;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
     z-index: 10;
 }
