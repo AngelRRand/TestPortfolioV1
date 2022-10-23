@@ -2,11 +2,12 @@
     display: flex;
     position: absolute;
     image-rendering: pixelated;
-    overflow: hidden;
-    width: 95vw;
+    overflow-y: hidden;
+    width: 90vw;
     height: auto;
-    left: 2vw;
-    z-index: 0;
+    left: 5vw;
+    z-index: 1;
+    object-fit: cover;
 }
 
 /* .bg_starts_home {
