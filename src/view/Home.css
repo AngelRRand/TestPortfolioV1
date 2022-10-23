@@ -52,10 +52,11 @@
     transition: all 0.5s ease;
     background: transparent;
     color: #000000;
-    
     z-index: 99;
 }
-
+.pointer_about{
+    grid-area: 16 / 8 / 18 / 8;
+}
 @keyframes motionT {
     0% {
         transform: translateX(0px);

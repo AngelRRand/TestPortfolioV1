@@ -32,9 +32,9 @@ const Home = () => {
           <Link to={'/about'} className='container_pointer'>
             <img src="" alt="planet" />
             <h4>About</h4>
-            <img src="" alt="pointer" className='pointer'/>
+            <img src="" alt="pointer" className='pointer pointer_about'/>
           </Link>
-          <Link to={'/project'} className='container_pointer'>
+          {/* <Link to={'/project'} className='container_pointer'>
             <img src="" alt="planet" />
             <h4>Project</h4>
             <img src="" alt="pointer" className='pointer'/>
@@ -48,8 +48,8 @@ const Home = () => {
             <img src="" alt="planet" />
             <h4>Networks</h4>
             <img src="" alt="pointer" className='pointer'/>
-          </Link>
-          
+          </Link> */}
+
         </div>
       </motion.main>
     </Container>
