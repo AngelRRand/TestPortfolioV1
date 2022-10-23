@@ -1,5 +1,11 @@
 import Container from '../component/Container'
 import Stars from '../component/Stars';
+import Galaxy from '../assets/galaxy.png';
+import GalaxyT from '../assets/galaxyT.png';
+import GalaxyB from '../assets/galaxyB.png';
+
+
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import './Home.css'
@@ -16,12 +22,11 @@ const Home = () => {
         }}
       >
         <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src={Galaxy} alt="" />
+          {/* <img src={GalaxyT} alt="" />
+          <img src={} alt="" /> */}
         </div>
-        <h1>asd</h1>
-        <Link to={'/about'}>Home</Link>
+        {/* <Link to={'/about'}>Home</Link> */}
       </motion.main>
     </Container>
   )
