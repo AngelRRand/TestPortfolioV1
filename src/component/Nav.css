@@ -19,9 +19,13 @@
     image-rendering: pixelated;
     text-align: center;
     padding: 5px;
+}
+.left_perfil{
     left: 0px;
 }
-
+.rigth_perfil{
+    right: 0px;
+}
 .img_perfil {
     width: 13vw;
     image-rendering: pixelated;
