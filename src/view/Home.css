@@ -15,7 +15,6 @@
 
 .img_galaxy {
     position: absolute;
-    image-rendering: pixelated;
     height: 100%;
     width: 100%;
     left: 0;
@@ -54,8 +53,8 @@
     color: #000000;
     z-index: 99;
 }
-.pointer_about{
-    grid-area: 16 / 8 / 18 / 8;
+.grid_about{
+    grid-area: 16 / 5 / 10 / 6;
 }
 @keyframes motionT {
     0% {

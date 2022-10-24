@@ -3,7 +3,8 @@ import Stars from '../component/Stars';
 import Galaxy from '../assets/galaxy.png';
 import GalaxyT from '../assets/galaxyT.png';
 import GalaxyB from '../assets/galaxyB.png';
-
+import Tierra from '../assets/NavImg/tierra.png'
+import Señal from '../assets/NavImg/Señal.gif'
 
 
 import { Link } from "react-router-dom";
@@ -29,10 +30,10 @@ const Home = () => {
         {/* <Link to={'/about'}>Home</Link> */}
         <div className='grid_galaxy'>
 
-          <Link to={'/about'} className='container_pointer'>
-            <img src="" alt="planet" />
+          <Link to={'/about'} className='container_pointer grid_about'>
+            <img src={Tierra} alt="planet" />
             <h4>About</h4>
-            <img src="" alt="pointer" className='pointer pointer_about'/>
+            <img src={Señal} alt="pointer" className='pointer '/>
           </Link>
           {/* <Link to={'/project'} className='container_pointer'>
             <img src="" alt="planet" />
