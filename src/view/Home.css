@@ -75,7 +75,7 @@
     grid-area: 16 / 6 / 12 / 6;
 }
 .grid_project{
-    grid-area: 16 / 6 / 8 / 8;
+    grid-area: 7 / 6 / 8 / 7;
 }
 .text_señal {
     font-size: calc(13px + 0.4vw);
