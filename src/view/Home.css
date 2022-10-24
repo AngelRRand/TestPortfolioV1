@@ -74,15 +74,19 @@
 .grid_about {
     grid-area: 16 / 6 / 12 / 6;
 }
-.grid_project{
+
+.grid_project {
     grid-area: 7 / 6 / 8 / 7;
 }
-.grid_education{
+
+.grid_education {
     grid-area: 21 / 3 / 22 / 4;
 }
-.grid_networks{
+
+.grid_networks {
     grid-area: 18 / 4 / 19 / 5;
 }
+
 .text_señal {
     font-size: calc(13px + 0.4vw);
     transition: all 0.3s ease;
@@ -91,10 +95,12 @@
     text-align: center;
     z-index: 80;
 }
-.señal{
+
+.señal {
     position: absolute;
     width: calc(13px + 5vw);
 }
+
 @keyframes motionT {
     0% {
         transform: translateX(0px);
