@@ -36,7 +36,7 @@ const Home = () => {
             <span className='text_señal'>About</span>
             <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
-          <Link to={'/project'} className='container_señal grid_project'>
+          <Link to={'/projects'} className='container_señal grid_project'>
             <img src={PlanetLava} alt="planet" className='pointer'/>
             <span className='text_señal'>Project</span>
             <img src={Señal} alt="señal" className='señal pointer'/>

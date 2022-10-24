@@ -1,13 +1,16 @@
 import Home from "./view/Home";
+import About from "./view/about/About";
+import Projects from "./view/projects/Projects";
+import Education from "./view/education/Education";
+import Networks from "./view/networks/Networks";
 import LandingPage from "./view/landingpage/LandingPage";
-import Nav from "./component/Nav";
 
+import Nav from "./component/Nav";
 
 import { useLocation, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
 
 import './App.css'
-import About from "./view/about/About";
 
 function App() {
   const location = useLocation();
@@ -18,6 +21,9 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/networks" element={<Networks />} />
         </Routes>
       </AnimatePresence>
       <Nav/>
