@@ -32,8 +32,8 @@ const Home = () => {
 
           <Link to={'/about'} className='container_señal grid_about'>
             <img src={Tierra} alt="planet" className='pointer'/>
-            <h4>About</h4>
-            <img src={Señal} alt="señal" className='pointer'/>
+            <span className='text_señal'>About</span>
+            <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
           {/* <Link to={'/project'} className='container_señal'>
             <img src="" alt="planet" className='pointer'/>
