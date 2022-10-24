@@ -3,7 +3,8 @@ import Stars from '../component/Stars';
 import Galaxy from '../assets/galaxy.png';
 import GalaxyT from '../assets/galaxyT.png';
 import GalaxyB from '../assets/galaxyB.png';
-import Tierra from '../assets/NavImg/tierra.png'
+import PlanetTierra from '../assets/NavImg/tierra.png'
+import PlanetLava from '../assets/NavImg/planetLava.png'
 import Señal from '../assets/NavImg/Señal.gif'
 
 
@@ -31,15 +32,16 @@ const Home = () => {
         <div className='grid_galaxy'>
 
           <Link to={'/about'} className='container_señal grid_about'>
-            <img src={Tierra} alt="planet" className='pointer'/>
+            <img src={PlanetTierra} alt="planet" className='pointer'/>
             <span className='text_señal'>About</span>
             <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
-          {/* <Link to={'/project'} className='container_señal'>
-            <img src="" alt="planet" className='pointer'/>
-            <h4>Project</h4>
-            <img src="" alt="pointer" className='pointer'/>
+          <Link to={'/project'} className='container_señal grid_project'>
+            <img src={PlanetLava} alt="planet" className='pointer'/>
+            <span className='text_señal'>Project</span>
+            <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
+          {/* 
           <Link to={'/education'} className='container_señal'>
             <img src="" alt="planet" className='pointer'/>
             <h4>Education</h4>
