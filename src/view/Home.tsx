@@ -3,8 +3,10 @@ import Stars from '../component/Stars';
 import Galaxy from '../assets/galaxy.png';
 import GalaxyT from '../assets/galaxyT.png';
 import GalaxyB from '../assets/galaxyB.png';
-import PlanetTierra from '../assets/NavImg/tierra.png'
+import PlanetTierra from '../assets/NavImg/planetTierra.png'
 import PlanetLava from '../assets/NavImg/planetLava.png'
+import Planetice from '../assets/NavImg/planetIce.png'
+import PlanetNet from '../assets/NavImg/planetNet.png'
 import Señal from '../assets/NavImg/Señal.gif'
 
 
@@ -41,28 +43,16 @@ const Home = () => {
             <span className='text_señal'>Project</span>
             <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
-          <Link to={'/project'} className='container_señal grid_project'>
-            <img src={PlanetLava} alt="planet" className='pointer'/>
-            <span className='text_señal'>Project</span>
+          <Link to={'/education'} className='container_señal grid_education'>
+            <img src={Planetice} alt="planet" className='pointer'/>
+            <span className='text_señal'>Education</span>
             <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
-          <Link to={'/project'} className='container_señal grid_project'>
-            <img src={PlanetLava} alt="planet" className='pointer'/>
-            <span className='text_señal'>Project</span>
+          <Link to={'/networks'} className='container_señal grid_networks'>
+            <img src={PlanetNet} alt="planet" className='pointer'/>
+            <span className='text_señal'>Networks</span>
             <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
-          {/* 
-          <Link to={'/education'} className='container_señal'>
-            <img src="" alt="planet" className='pointer'/>
-            <h4>Education</h4>
-            <img src="" alt="pointer" className='pointer'/>
-          </Link>
-          <Link to={'/networks'} className='container_señal'>
-            <img src="" alt="planet" className='pointer'/>
-            <h4>Networks</h4>
-            <img src="" alt="pointer" className='pointer'/>
-          </Link> */}
-
         </div>
       </motion.main>
     </Container>
