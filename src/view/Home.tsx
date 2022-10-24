@@ -30,9 +30,7 @@ const Home = () => {
           <img className='img_galaxy img_galaxy_animationT' src={GalaxyT} alt="" />
           <img className='img_galaxy img_galaxy_animationB' src={GalaxyB} alt="" />
         </div>
-        {/* <Link to={'/about'}>Home</Link> */}
         <div className='grid_galaxy'>
-
           <Link to={'/about'} className='container_señal grid_about'>
             <img src={PlanetTierra} alt="planet" className='pointer'/>
             <span className='text_señal'>About</span>
