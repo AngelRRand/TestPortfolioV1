@@ -27,6 +27,9 @@ button, a{
 img{
   image-rendering: pixelated;
 }
+.pointer{
+  cursor: url(./assets/cursor/cursorPointer.png), default;
+}
 .app_overflow{
   overflow: hidden;
 }

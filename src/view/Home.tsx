@@ -30,23 +30,23 @@ const Home = () => {
         {/* <Link to={'/about'}>Home</Link> */}
         <div className='grid_galaxy'>
 
-          <Link to={'/about'} className='container_pointer grid_about'>
-            <img src={Tierra} alt="planet" />
+          <Link to={'/about'} className='container_señal grid_about'>
+            <img src={Tierra} alt="planet" className='pointer'/>
             <h4>About</h4>
-            <img src={Señal} alt="pointer" className='pointer '/>
+            <img src={Señal} alt="señal" className='pointer'/>
           </Link>
-          {/* <Link to={'/project'} className='container_pointer'>
-            <img src="" alt="planet" />
+          {/* <Link to={'/project'} className='container_señal'>
+            <img src="" alt="planet" className='pointer'/>
             <h4>Project</h4>
             <img src="" alt="pointer" className='pointer'/>
           </Link>
-          <Link to={'/education'} className='container_pointer'>
-            <img src="" alt="planet" />
+          <Link to={'/education'} className='container_señal'>
+            <img src="" alt="planet" className='pointer'/>
             <h4>Education</h4>
             <img src="" alt="pointer" className='pointer'/>
           </Link>
-          <Link to={'/networks'} className='container_pointer'>
-            <img src="" alt="planet" />
+          <Link to={'/networks'} className='container_señal'>
+            <img src="" alt="planet" className='pointer'/>
             <h4>Networks</h4>
             <img src="" alt="pointer" className='pointer'/>
           </Link> */}
