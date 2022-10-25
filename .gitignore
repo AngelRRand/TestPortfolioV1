@@ -25,3 +25,4 @@ yarn-error.log*
 
 src/assets
 src/component/PlanetTemplet.tsx
+src/component/PlanerTemplet.css
