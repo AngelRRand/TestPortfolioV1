@@ -1,6 +1,6 @@
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
-
+import { motion } from "framer-motion";
 var transitions = {
   me: {
     scale: 7,

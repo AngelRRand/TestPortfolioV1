@@ -5,7 +5,7 @@ import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif'
 
 import Typewriter from 'typewriter-effect';
 import { useLocation, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+
 import './Nav.css'
 const Nav = () => {
     const location = useLocation();
