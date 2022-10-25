@@ -55,7 +55,6 @@ img {
   justify-content: center;
   align-items: center;
   object-fit: contain;
-  color: var(--white);
   height: 85vh;
   width: 85vw;
   z-index: 10;

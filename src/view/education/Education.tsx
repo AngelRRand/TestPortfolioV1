@@ -51,7 +51,7 @@ const Education = () => {
     <Container styles='container_planet'>
       <Stars />
       <motion.main
-        className='view_planet'
+        className='color_project view_planet'
         initial={{ scale: 0, x: -3000 }}
         animate={{
           scale: 1,
@@ -73,21 +73,21 @@ const Education = () => {
                 <div
                   className='about_link pointer about_house'
                   onClick={() => animationOn(transitions.house, 'house')}>
-                  <span>Henry</span>
+                  <span>React</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
                   className='about_link pointer about_dream'
                   onClick={() => animationOn(transitions.dream, 'dream')}>
-                  <span>Dream</span>
+                  <span>React Native</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
                   className='about_link pointer about_art'
                   onClick={() => animationOn(transitions.art, 'art')}>
-                  <span>Art</span>
+                  <span>Kotlin</span>
                   <img src={Señal} alt="señal" />
                 </div>
 

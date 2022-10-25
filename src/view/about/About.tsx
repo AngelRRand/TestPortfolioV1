@@ -49,7 +49,7 @@ const About = () => {
     <Container styles='container_planet'>
       <Stars />
       <motion.main
-        className='view_planet'
+        className='color_about view_planet'
         initial={{ scale: 0, x: -3000 }}
         animate={{
           scale: 1,

@@ -1,3 +1,7 @@
+.color_about{
+    color: var(--white);
+}
+
 .about_grid {
     display: grid;
     grid-template-columns: repeat(20, 1.75vw);
