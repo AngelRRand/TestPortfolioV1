@@ -2,9 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
+    color: var(--white);
     height: 85vh;
     width: 85vw;
-    object-fit: contain;
     z-index: 10;
 }
 

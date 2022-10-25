@@ -29,10 +29,11 @@ var transitions = {
 
 const About = () => {
 
-  const [rotate, setRotate] = useState(false);
+  const [animation, setAnimation] = useState(false);
+
   const a = () => {
     console.log('has')
-    setRotate(!rotate)
+    setAnimation(!animation)
     setTimeout(function(){
       console.log("Hola Mundo");
   }, 2000);
@@ -52,7 +53,7 @@ const About = () => {
         <motion.div
           className='about_img'
           animate={{ 
-            scale: rotate ? 3 : 1,
+            scale: animation ? 3 : 1,
             transition: { duration: 2, type: "spring", }
           }}
           onClick={() => a()}
@@ -61,7 +62,15 @@ const About = () => {
           <img src={Planet} alt="planet" />
         </motion.div>
 
-
+          {
+            !animation ? (
+              <h1>
+                a
+              </h1>
+            ) : (
+              <></>
+            )
+          }
 
       </motion.main>
     </Container>
