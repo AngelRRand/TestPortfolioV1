@@ -1,3 +1,15 @@
 .project_color{
     color: var(--white);
 }
+
+.project_react{
+    grid-area: 21 / 10 / 22 / 11;
+}
+
+.project_reactNative{
+    grid-area: 17 / 7 / 18 / 8;
+}
+
+.project_kotlin{
+    grid-area: 17 / 14 / 18 / 15;
+}
