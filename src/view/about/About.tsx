@@ -50,10 +50,11 @@ const About = () => {
       <Stars />
       <motion.main
         className='about'
-        initial={{ scale: 0 }}
+        initial={{ scale: 0, x: -3000 }}
         animate={{
           scale: 1,
-          transition: { duration: 0.5, type: "spring", },
+          x: 0,
+          transition: { duration: 1.5, type: "spring", },
         }}
       >
 
