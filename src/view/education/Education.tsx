@@ -1,6 +1,6 @@
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
-import Planet from '../../assets/Planet/PlanetZOOM.png'
+import Planet from '../../assets/Planet/IcePlanetZOOM.png'
 import Señal from '../../assets/NavImg/Señal.gif'
 import PlanetTemplet from '../../component/PlanetTemplet';
 
@@ -37,6 +37,16 @@ const Education = () => {
   const [show, setShow] = useState(false)
   const [animation, setAnimation] = useState({});
 
+  const animationOn = (animations: object, rute: string) => {
+    setShow(!show)
+    setAnimation(animations)
+    setTimeout(function () {
+      setAnimation({});
+      navigate(`/${rute}`)
+      setShow(false)
+    }, 6500);
+  }
+
   return (
     <Container styles='container_planet'>
       <Stars />
@@ -52,7 +62,7 @@ const Education = () => {
         <PlanetTemplet
           show={show}
           animation={animation}
-          name={'About'}
+          name={'Education'}
           planet={Planet}
           transitionStyle={'home_transition'}
         >
