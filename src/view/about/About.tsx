@@ -47,6 +47,7 @@ const About = () => {
         >
 
         <motion.div
+          className='about_img'
           animate={{ 
             scale: rotate ? 3 : 1,
             transition: { duration: 2, type: "spring", }
@@ -55,8 +56,7 @@ const About = () => {
         >
 
           <h1>About</h1>
-        
-          <h1>Lento</h1>
+      
         </motion.div>
 
 
