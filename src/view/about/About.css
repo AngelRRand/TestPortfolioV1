@@ -8,7 +8,13 @@
     width: 85vw;
     z-index: 10;
 }
-
+.about_transition{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    z-index: 90;
+}
 .about_img {
     position: absolute;
     image-rendering: pixelated;

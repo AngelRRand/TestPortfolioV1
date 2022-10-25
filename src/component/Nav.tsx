@@ -3,7 +3,7 @@ import nutria from '../assets/NavBotton/nutria.gif'
 import logoSinCasco from '../assets/NavBotton/PJpruebaSinCasco.gif'
 import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif'
 
-import Typewriter from 'typewriter-effect';
+/* import Typewriter from 'typewriter-effect'; */
 import { useLocation, useNavigate } from "react-router-dom";
 
 import './Nav.css'
@@ -21,14 +21,14 @@ const Nav = () => {
                     <h2>Orasio</h2>
                 </div>
 
-                <Typewriter
+                {/* <Typewriter
                     onInit={(typewriter) => {
                         typewriter.typeString('You are at home, you can visit the other views of the page following the map or cheating if you are a developer ;)')
                             .pauseFor(1500)
                             .deleteAll()
                             .start();
                     }}
-                />
+                /> */}
 
                 <div className='container_perfil rigth_perfil'>
                     <img

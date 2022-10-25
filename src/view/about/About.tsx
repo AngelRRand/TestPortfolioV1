@@ -3,9 +3,8 @@ import Stars from '../../component/Stars'
 import Planet from '../../assets/Planet/PlanetZOOM.png'
 import Señal from '../../assets/NavImg/Señal.gif'
 
-
-import { useState } from 'react';
 import { motion } from "framer-motion";
+import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import './About.css'
 
@@ -57,7 +56,10 @@ const About = () => {
           x: 0,
           transition: { duration: 1.5, type: "spring", },
         }}
+
       >
+
+
 
         <motion.div
           className='about_img'
@@ -66,6 +68,7 @@ const About = () => {
           <h1>About</h1>
           <img src={Planet} alt="planet" />
         </motion.div>
+        
 
         {
           !show ? (
@@ -97,6 +100,15 @@ const About = () => {
             <></>
           )
         }
+        
+        <motion.div
+          className='about_transition'
+          initial={{ opacity: 0 }}
+          animate={show === false ? {} : { opacity: 1,  transition: { duration: 5.8, type: "spring" }}}
+
+        ></motion.div>
+
+
 
       </motion.main>
     </Container>
