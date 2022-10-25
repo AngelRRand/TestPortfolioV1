@@ -32,13 +32,25 @@ var transitions = {
 const About = () => {
 
   const [animation, setAnimation] = useState(false);
+  const [houseA, setHouseA] = useState({
+    scale: 7,
+    x: 350,
+    y: -1150,
+    transition: { duration: 6.5, type: "spring", bounce: 0 }
+  })
 
-  const a = () => {
-    console.log('has')
+  const animationOn = () => {
+
+
     setAnimation(!animation)
+
+
     setTimeout(function(){
       console.log("Hola Mundo");
+      setAnimation(!animation);
   }, 2000);
+
+
   }
   return (
     <Container styles='container_planet'>
@@ -54,11 +66,7 @@ const About = () => {
 
         <motion.div
           className='about_img'
-          animate={{ 
-            scale: animation ? 3 : 1,
-            transition: { duration: 2, type: "spring", }
-          }}
-          onClick={() => a()}
+          animate={animation === false ? {} : houseA}
         >
           <h1>About</h1>
           <img src={Planet} alt="planet" />
@@ -68,7 +76,7 @@ const About = () => {
             !animation ? (
               <div className='about_grid'>
                 
-                <div className='about_link pointer about_house' onClick={() => a()}>
+                <div className='about_link pointer about_house' onClick={() => animationOn()}>
                   <span>House</span>
                   <img src={Señal} alt="señal" />
                 </div>
