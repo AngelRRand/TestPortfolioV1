@@ -68,7 +68,7 @@ const About = () => {
             !animation ? (
               <div className='about_grid'>
                 
-                <div className='about_link pointer about_house'>
+                <div className='about_link pointer about_house' onClick={() => a()}>
                   <span>House</span>
                   <img src={Señal} alt="señal" />
                 </div>
