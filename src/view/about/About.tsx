@@ -84,6 +84,13 @@ const About = () => {
                 <img src={Señal} alt="señal" />
               </div>
 
+              <div
+                className='about_link pointer about_art'
+                onClick={() => animationOn(transitions.dream, 'art')}>
+                <span>Art</span>
+                <img src={Señal} alt="señal" />
+              </div>
+
             </div>
           ) : (
             <></>

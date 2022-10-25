@@ -56,9 +56,14 @@
     z-index: 90;
 }
 
-.about_house{
+.about_house {
     grid-area: 25 / 7 / 26 / 8;
 }
-.about_dream{
+
+.about_dream {
     grid-area: 4 / 18 / 5 / 19;
+}
+
+.about_art {
+    grid-area: 19 / 6 / 20 / 7;
 }
