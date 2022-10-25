@@ -31,23 +31,19 @@ var transitions = {
 
 const About = () => {
 
-  const [animation, setAnimation] = useState(false);
-  const [houseA, setHouseA] = useState({
-    scale: 7,
-    x: 350,
-    y: -1150,
-    transition: { duration: 6.5, type: "spring", bounce: 0 }
-  })
+  const [animation, setAnimation] = useState({});
+  
 
-  const animationOn = () => {
+  const animationOn = (animations : object) => {
 
 
-    setAnimation(!animation)
+    setAnimation(animations)
 
 
     setTimeout(function(){
-      console.log("Hola Mundo");
-      setAnimation(!animation);
+      console.log(animation, 'COMIENZO');
+      setAnimation({});
+      console.log(animation, 'FINAL');
   }, 2000);
 
 
@@ -66,7 +62,7 @@ const About = () => {
 
         <motion.div
           className='about_img'
-          animate={animation === false ? {} : houseA}
+          /* animate={animation === false ? {} : houseA} */
         >
           <h1>About</h1>
           <img src={Planet} alt="planet" />
@@ -76,7 +72,7 @@ const About = () => {
             !animation ? (
               <div className='about_grid'>
                 
-                <div className='about_link pointer about_house' onClick={() => animationOn()}>
+                <div className='about_link pointer about_house' onClick={() => animationOn(transitions.me)}>
                   <span>House</span>
                   <img src={Señal} alt="señal" />
                 </div>
