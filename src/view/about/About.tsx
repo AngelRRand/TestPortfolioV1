@@ -30,6 +30,9 @@ const About = () => {
   const a = () => {
     console.log('has')
     setRotate(!rotate)
+    setTimeout(function(){
+      console.log("Hola Mundo");
+  }, 2000);
   }
   return (
     <Container styles='container_planet'>
@@ -41,24 +44,18 @@ const About = () => {
           scale: 1,
           transition: { duration: 0.5, type: "spring", },
         }}
-      >
+        >
 
         <motion.div
           animate={{ 
             scale: rotate ? 3 : 1,
-            transition: { duration: 0.5, type: "spring", }
-           }}
+            transition: { duration: 2, type: "spring", }
+          }}
           onClick={() => a()}
         >
+
           <h1>About</h1>
-        </motion.div>
-        <motion.div
-          animate={{ 
-            scale: rotate ? 4 : 1,
-            transition: { duration: 2.5, type: "spring", }
-           }}
-          onClick={() => a()}
-        >
+        
           <h1>Lento</h1>
         </motion.div>
 
