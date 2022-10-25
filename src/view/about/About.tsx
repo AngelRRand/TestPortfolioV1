@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 import './About.css'
 var transitions = {
-  me: {
+  house: {
     scale: 7,
     x: 350,
     y: -1150,
@@ -70,8 +70,13 @@ const About = () => {
             !show  ? (
               <div className='about_grid'>
                 
-                <div className='about_link pointer about_house' onClick={() => animationOn(transitions.me)}>
+                <div className='about_link pointer about_house' onClick={() => animationOn(transitions.house)}>
                   <span>House</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
+                <div className='about_link pointer about_dream' onClick={() => animationOn(transitions.dream)}>
+                  <span>Dream</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
