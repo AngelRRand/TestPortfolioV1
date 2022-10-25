@@ -1,10 +1,12 @@
-import { useState } from 'react';
-import { motion } from "framer-motion";
-
-
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
 import Planet from '../../assets/Planet/PlanetZOOM.png'
+import Señal from '../../assets/NavImg/Señal.gif'
+
+
+import { useState } from 'react';
+import { motion } from "framer-motion";
+
 import './About.css'
 var transitions = {
   me: {
@@ -64,9 +66,14 @@ const About = () => {
 
           {
             !animation ? (
-              <h1>
-                a
-              </h1>
+              <div className='about_grid'>
+                
+                <div className='about_link pointer about_house'>
+                  <span>House</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
+              </div>
             ) : (
               <></>
             )
