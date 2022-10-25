@@ -34,7 +34,8 @@ const About = () => {
   return (
     <Container styles='container_planet'>
       <Stars />
-      <motion.div
+      <motion.main
+        className='about'
         initial={{ scale: 0 }}
         animate={{
           scale: 1,
@@ -43,17 +44,27 @@ const About = () => {
       >
 
         <motion.div
-          animate={{rotate: rotate ? 360 : 0}}
-          onClick={()=> a()}
+          animate={{ 
+            scale: rotate ? 3 : 1,
+            transition: { duration: 0.5, type: "spring", }
+           }}
+          onClick={() => a()}
         >
-          <main className='about'>
-            <h1>About</h1>
-          </main>
+          <h1>About</h1>
+        </motion.div>
+        <motion.div
+          animate={{ 
+            scale: rotate ? 4 : 1,
+            transition: { duration: 2.5, type: "spring", }
+           }}
+          onClick={() => a()}
+        >
+          <h1>Lento</h1>
         </motion.div>
 
 
 
-      </motion.div>
+      </motion.main>
     </Container>
   )
 }
