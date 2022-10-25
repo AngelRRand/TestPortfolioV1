@@ -9,8 +9,15 @@ import { motion } from "framer-motion";
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 const Education = () => {
+
+  const navigate = useNavigate()
+  const [show, setShow] = useState(false)
+  const [animation, setAnimation] = useState({});
+
   return (
-    <div>Education</div>
+    <Container styles='container_planet'>
+<Stars />
+    </Container>
   )
 }
 
