@@ -37,19 +37,15 @@ const About = () => {
 
   const animationOn = (animations : object) => {
 
-
-    setAnimation(animations)
     setShow(!show)
-
+    setAnimation(animations)
     setTimeout(function(){
-      console.log(animation, 'COMIENZO');
       setAnimation({});
       console.log(animation, 'FINAL');
-      setShow(!show)
+      setShow(false)
   }, 2000);
-
-
   }
+  console.log(show)
   return (
     <Container styles='container_planet'>
       <Stars />
@@ -64,7 +60,7 @@ const About = () => {
 
         <motion.div
           className='about_img'
-          /* animate={animation === false ? {} : houseA} */
+          animate={show === false ? {} : animation}
         >
           <h1>About</h1>
           <img src={Planet} alt="planet" />
