@@ -50,7 +50,6 @@
     position: absolute;
     font-size: calc(13px + 0.4vw);
     color: var(--white);
-    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
     transition: all 0.3s ease;
     background: transparent;
     text-align: center;
@@ -59,4 +58,7 @@
 
 .about_house{
     grid-area: 25 / 7 / 26 / 8;
+}
+.about_dream{
+    grid-area: 4 / 18 / 5 / 19;
 }

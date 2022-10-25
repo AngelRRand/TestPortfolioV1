@@ -6,7 +6,7 @@ import Señal from '../../assets/NavImg/Señal.gif'
 
 import { useState } from 'react';
 import { motion } from "framer-motion";
-
+import { useNavigate } from "react-router-dom";
 import './About.css'
 var transitions = {
   house: {
@@ -17,8 +17,8 @@ var transitions = {
   },
   dream: {
     scale: 7,
-    x: -500,
-    y: 1100,
+    x: -1300,
+    y: 650,
     transition: { duration: 6.5, type: "spring", bounce: 0 },
   },
   art: {
@@ -31,19 +31,19 @@ var transitions = {
 
 const About = () => {
 
+  const navigate = useNavigate()
   const [show, setShow] = useState(false)
   const [animation, setAnimation] = useState({});
-  
 
-  const animationOn = (animations : object) => {
+  const animationOn = (animations: object, rute: string) => {
 
     setShow(!show)
     setAnimation(animations)
-    setTimeout(function(){
+    setTimeout(function () {
       setAnimation({});
-      console.log(animation, 'FINAL');
+      /* navigate(`/${rute}`) */
       setShow(false)
-  }, 2000);
+    }, 6500);
   }
   console.log(show)
   return (
@@ -56,7 +56,7 @@ const About = () => {
           scale: 1,
           transition: { duration: 0.5, type: "spring", },
         }}
-        >
+      >
 
         <motion.div
           className='about_img'
@@ -66,25 +66,29 @@ const About = () => {
           <img src={Planet} alt="planet" />
         </motion.div>
 
-          {
-            !show  ? (
-              <div className='about_grid'>
-                
-                <div className='about_link pointer about_house' onClick={() => animationOn(transitions.house)}>
-                  <span>House</span>
-                  <img src={Señal} alt="señal" />
-                </div>
+        {
+          !show ? (
+            <div className='about_grid'>
 
-                <div className='about_link pointer about_dream' onClick={() => animationOn(transitions.dream)}>
-                  <span>Dream</span>
-                  <img src={Señal} alt="señal" />
-                </div>
-
+              <div
+                className='about_link pointer about_house'
+                onClick={() => animationOn(transitions.house, 'house')}>
+                <span>House</span>
+                <img src={Señal} alt="señal" />
               </div>
-            ) : (
-              <></>
-            )
-          }
+
+              <div
+                className='about_link pointer about_dream'
+                onClick={() => animationOn(transitions.dream, 'dream')}>
+                <span>Dream</span>
+                <img src={Señal} alt="señal" />
+              </div>
+
+            </div>
+          ) : (
+            <></>
+          )
+        }
 
       </motion.main>
     </Container>
