@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import './About.css'
+import PlanetTemplet from '../../component/PlanetTemplet';
 
 var transitions = {
   house: {
@@ -61,13 +62,15 @@ const About = () => {
 
 
 
-        <motion.div
-          className='about_img'
-          animate={show === false ? {} : animation}
+        <PlanetTemplet
+          show={show}
+          animation={animation}
+          name={'About'}
+          planet={Planet}
+          transitionStyle={'home_transition'}
         >
-          <h1>About</h1>
-          <img src={Planet} alt="planet" />
-        </motion.div>
+
+       
         
 
         {
@@ -101,13 +104,8 @@ const About = () => {
           )
         }
         
-        <motion.div
-          className='about_transition'
-          initial={{ opacity: 0 }}
-          animate={show === false ? {} : { opacity: 1,  transition: { duration: 5.8, type: "spring" }}}
-
-        ></motion.div>
-
+        
+        </PlanetTemplet>
 
 
       </motion.main>
