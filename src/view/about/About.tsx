@@ -66,36 +66,36 @@ const About = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
         >
-{
-          !show ? (
-            <div className='about_grid'>
+          {
+            !show ? (
+              <div className='about_grid'>
 
-              <div
-                className='about_link pointer about_house'
-                onClick={() => animationOn(transitions.house, 'house')}>
-                <span>House</span>
-                <img src={Señal} alt="señal" />
+                <div
+                  className='about_link pointer about_house'
+                  onClick={() => animationOn(transitions.house, 'house')}>
+                  <span>House</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
+                <div
+                  className='about_link pointer about_dream'
+                  onClick={() => animationOn(transitions.dream, 'dream')}>
+                  <span>Dream</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
+                <div
+                  className='about_link pointer about_art'
+                  onClick={() => animationOn(transitions.art, 'art')}>
+                  <span>Art</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
               </div>
-
-              <div
-                className='about_link pointer about_dream'
-                onClick={() => animationOn(transitions.dream, 'dream')}>
-                <span>Dream</span>
-                <img src={Señal} alt="señal" />
-              </div>
-
-              <div
-                className='about_link pointer about_art'
-                onClick={() => animationOn(transitions.art, 'art')}>
-                <span>Art</span>
-                <img src={Señal} alt="señal" />
-              </div>
-
-            </div>
-          ) : (
-            <></>
-          )
-        }
+            ) : (
+              <></>
+            )
+          }
         </PlanetTemplet>
 
       </motion.main>
