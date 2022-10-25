@@ -31,6 +31,7 @@ var transitions = {
 
 const About = () => {
 
+  const [show, setShow] = useState(false)
   const [animation, setAnimation] = useState({});
   
 
@@ -38,12 +39,13 @@ const About = () => {
 
 
     setAnimation(animations)
-
+    setShow(!show)
 
     setTimeout(function(){
       console.log(animation, 'COMIENZO');
       setAnimation({});
       console.log(animation, 'FINAL');
+      setShow(!show)
   }, 2000);
 
 
@@ -69,7 +71,7 @@ const About = () => {
         </motion.div>
 
           {
-            !animation ? (
+            !show  ? (
               <div className='about_grid'>
                 
                 <div className='about_link pointer about_house' onClick={() => animationOn(transitions.me)}>
