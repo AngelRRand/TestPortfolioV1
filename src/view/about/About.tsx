@@ -24,7 +24,7 @@ var transitions = {
   art: {
     scale: 7,
     x: 750,
-    y: -450,
+    y: -850,
     transition: { duration: 6.5, type: "spring", bounce: 0 },
   }
 }
@@ -41,11 +41,10 @@ const About = () => {
     setAnimation(animations)
     setTimeout(function () {
       setAnimation({});
-      /* navigate(`/${rute}`) */
+      navigate(`/${rute}`)
       setShow(false)
     }, 6500);
   }
-  console.log(show)
   return (
     <Container styles='container_planet'>
       <Stars />
@@ -86,7 +85,7 @@ const About = () => {
 
               <div
                 className='about_link pointer about_art'
-                onClick={() => animationOn(transitions.dream, 'art')}>
+                onClick={() => animationOn(transitions.art, 'art')}>
                 <span>Art</span>
                 <img src={Señal} alt="señal" />
               </div>
