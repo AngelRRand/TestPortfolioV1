@@ -10,8 +10,25 @@ import { useNavigate } from "react-router-dom";
 
 import './Projects.css'
 const Projects = () => {
+
+  const navigate = useNavigate()
+  const [show, setShow] = useState(false)
+  const [animation, setAnimation] = useState({});
+
+  const animationOn = (animations: object, rute: string) => {
+    setShow(!show)
+    setAnimation(animations)
+    setTimeout(function () {
+      setAnimation({});
+      navigate(`/${rute}`)
+      setShow(false)
+    }, 6500);
+  }
+  
   return (
-    <div>Projects</div>
+    <Container styles='container_planet'>
+      <Stars/>
+    </Container>
   )
 }
 
