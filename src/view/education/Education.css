@@ -1,7 +1,3 @@
-.project_color{
-    color: var(--white);
-}
-
 .project_react{
     grid-area: 21 / 10 / 22 / 11;
 }
