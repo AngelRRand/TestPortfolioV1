@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { motion } from "framer-motion";
+
+
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
-import { motion } from "framer-motion";
+import Planet from '../../assets/Planet/PlanetZOOM.png'
 import './About.css'
 var transitions = {
   me: {
@@ -54,9 +57,8 @@ const About = () => {
           }}
           onClick={() => a()}
         >
-
           <h1>About</h1>
-      
+          <img src={Planet} alt="planet" />
         </motion.div>
 
 
