@@ -37,7 +37,6 @@ const About = () => {
   const [animation, setAnimation] = useState({});
 
   const animationOn = (animations: object, rute: string) => {
-
     setShow(!show)
     setAnimation(animations)
     setTimeout(function () {
@@ -60,8 +59,6 @@ const About = () => {
 
       >
 
-
-
         <PlanetTemplet
           show={show}
           animation={animation}
@@ -69,11 +66,7 @@ const About = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
         >
-
-       
-        
-
-        {
+{
           !show ? (
             <div className='about_grid'>
 
@@ -103,10 +96,7 @@ const About = () => {
             <></>
           )
         }
-        
-        
         </PlanetTemplet>
-
 
       </motion.main>
     </Container>
