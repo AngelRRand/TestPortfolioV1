@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
 import { motion } from "framer-motion";
@@ -24,11 +25,23 @@ var transitions = {
 
 const About = () => {
 
-
+  const [transition, setTransition] = useState();
 
   return (
     <Container styles='container_planet'>
       <Stars />
+      <motion.div
+        initial={{ scale: 0.5 }}
+        animate={{
+          scale: 1,
+          transition: { duration: 0.5, type: "spring", },
+        }}
+        exit={
+          transition
+        }
+      >
+
+      </motion.div>
       <main>
         <h1>About</h1>
       </main>
