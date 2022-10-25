@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
 import { motion } from "framer-motion";
+import './About.css'
 var transitions = {
   me: {
     scale: 7,
@@ -25,26 +26,34 @@ var transitions = {
 
 const About = () => {
 
-  const [transition, setTransition] = useState();
-
+  const [rotate, setRotate] = useState(false);
+  const a = () => {
+    console.log('has')
+    setRotate(!rotate)
+  }
   return (
     <Container styles='container_planet'>
       <Stars />
       <motion.div
-        initial={{ scale: 0.5 }}
+        initial={{ scale: 0 }}
         animate={{
           scale: 1,
           transition: { duration: 0.5, type: "spring", },
         }}
-        exit={
-          transition
-        }
       >
 
+        <motion.div
+          animate={{rotate: rotate ? 360 : 0}}
+          onClick={()=> a()}
+        >
+          <main className='about'>
+            <h1>About</h1>
+          </main>
+        </motion.div>
+
+
+
       </motion.div>
-      <main>
-        <h1>About</h1>
-      </main>
     </Container>
   )
 }
