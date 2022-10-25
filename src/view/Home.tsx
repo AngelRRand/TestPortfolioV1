@@ -13,6 +13,7 @@ import Señal from '../assets/NavImg/Señal.gif'
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import './Home.css'
+import './View.css'
 const Home = () => {
   return (
     <Container styles='container_home'>

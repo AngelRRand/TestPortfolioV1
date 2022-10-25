@@ -1,38 +1,5 @@
-.color_about{
+.about_color{
     color: var(--white);
-}
-
-.about_grid {
-    display: grid;
-    grid-template-columns: repeat(20, 1.75vw);
-    grid-template-rows: repeat(30, 2vh);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 15vh;
-    width: 35vw;
-    height: 60vh;
-}
-
-.about_link {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-    background: transparent;
-    transition: all 0.5s ease;
-    z-index: 99;
-}
-
-
-.about_link span {
-    position: absolute;
-    font-size: calc(13px + 0.4vw);
-    color: var(--white);
-    transition: all 0.3s ease;
-    background: transparent;
-    text-align: center;
-    z-index: 90;
 }
 
 .about_house {

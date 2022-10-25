@@ -50,16 +50,6 @@ img {
   overflow: hidden;
 }
 
-.view_planet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: contain;
-  height: 85vh;
-  width: 85vw;
-  z-index: 10;
-}
-
 
 /* Firefox */
 * {
