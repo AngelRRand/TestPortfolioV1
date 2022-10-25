@@ -38,12 +38,12 @@ const Home = () => {
           </Link>
           <Link to={'/projects'} className='container_señal grid_project'>
             <img src={PlanetLava} alt="planet" className='pointer'/>
-            <span className='text_señal'>Project</span>
+            <span className='text_señal'>Education</span>
             <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
           <Link to={'/education'} className='container_señal grid_education'>
             <img src={Planetice} alt="planet" className='pointer'/>
-            <span className='text_señal'>Education</span>
+            <span className='text_señal'>Project</span>
             <img src={Señal} alt="señal" className='señal pointer'/>
           </Link>
           <Link to={'/networks'} className='container_señal grid_networks'>

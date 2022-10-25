@@ -62,7 +62,7 @@ const Education = () => {
         <PlanetTemplet
           show={show}
           animation={animation}
-          name={'Education'}
+          name={'Project'}
           planet={Planet}
           transitionStyle={'home_transition'}
         >
@@ -73,7 +73,7 @@ const Education = () => {
                 <div
                   className='about_link pointer about_house'
                   onClick={() => animationOn(transitions.house, 'house')}>
-                  <span>House</span>
+                  <span>Henry</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
