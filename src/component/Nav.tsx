@@ -21,14 +21,9 @@ const Nav = () => {
                     <h2>Orasio</h2>
                 </div>
 
-                {/* <Typewriter
-                    onInit={(typewriter) => {
-                        typewriter.typeString('You are at home, you can visit the other views of the page following the map or cheating if you are a developer ;)')
-                            .pauseFor(1500)
-                            .deleteAll()
-                            .start();
-                    }}
-                /> */}
+                <div className='nav_text'>
+                    <span className='tiping'>¡Hola mundo!</span>
+                </div>
 
                 <div className='container_perfil rigth_perfil'>
                     <img

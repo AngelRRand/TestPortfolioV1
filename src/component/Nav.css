@@ -3,13 +3,13 @@
     position: fixed;
     align-items: center;
     justify-content: center;
-    background-color: var(--gray);
     image-rendering: pixelated;
+    background-color: var(--gray);
     border-top: 2px solid var(--black);
+    color: var(--white);
     font-weight: 200;
     width: 100vw;
     height: 25vh;
-    color: var(--white);
     z-index: 100;
 }
 
@@ -20,15 +20,44 @@
     text-align: center;
     padding: 5px;
 }
-.left_perfil{
+
+.left_perfil {
     left: 0px;
 }
-.rigth_perfil{
+
+.rigth_perfil {
     right: 0px;
 }
+
 .img_perfil {
     width: 13vw;
     image-rendering: pixelated;
     border: 3px solid var(--black);
     background-color: var(--white);
+}
+
+.nav_text{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tiping {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    width: 11ch;
+    animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
