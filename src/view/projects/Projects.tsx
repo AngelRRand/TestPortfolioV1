@@ -9,6 +9,28 @@ import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import './Projects.css'
+
+var transitions = {
+  house: {
+    scale: 7,
+    x: 350,
+    y: -1150,
+    transition: { duration: 6.5, type: "spring", bounce: 0 },
+  },
+  dream: {
+    scale: 7,
+    x: -1300,
+    y: 650,
+    transition: { duration: 6.5, type: "spring", bounce: 0 },
+  },
+  art: {
+    scale: 7,
+    x: 750,
+    y: -850,
+    transition: { duration: 6.5, type: "spring", bounce: 0 },
+  }
+}
+
 const Projects = () => {
 
   const navigate = useNavigate()
@@ -45,6 +67,36 @@ const Projects = () => {
           transitionStyle={'home_transition'}
         >
 
+          {
+            !show ? (
+              <div className='view_grid'>
+
+                <div
+                  className='view_link pointer project_react'
+                  onClick={() => animationOn(transitions.house, 'house')}>
+                  <span>React</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
+                <div
+                  className='view_link pointer project_reactNative'
+                  onClick={() => animationOn(transitions.dream, 'dream')}>
+                  <span>React Native</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
+                <div
+                  className='view_link pointer project_kotlin'
+                  onClick={() => animationOn(transitions.art, 'art')}>
+                  <span>Kotlin</span>
+                  <img src={Señal} alt="señal" />
+                </div>
+
+              </div>
+            ) : (
+              <></>
+            )
+          }
 
         </PlanetTemplet>
       </motion.main>
