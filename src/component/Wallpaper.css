@@ -1,0 +1,13 @@
+.wallpaper_container {
+    overflow: hidden;
+    width: 100vw;
+    height: 85vh;
+}
+
+.wallpaper_bg {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    image-rendering: pixelated;
+    overflow: hidden;
+}
