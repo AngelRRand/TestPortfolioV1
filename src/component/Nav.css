@@ -38,6 +38,13 @@
 
 .nav_text{
     display: flex;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    margin-bottom: 10vh;
+    border-radius: 5px;
+    padding: 10px;
+    height: 10vh;
+    width: 55vw;
 }
 
