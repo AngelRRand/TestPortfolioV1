@@ -4,6 +4,10 @@ import Projects from "./view/projects/Projects";
 import Education from "./view/education/Education";
 import Networks from "./view/networks/Networks";
 import LandingPage from "./view/landingpage/LandingPage";
+/* About */
+import House from "./view/about/House";
+import Art from "./view/about/Art";
+import Dream from "./view/about/Dream";
 
 import Nav from "./component/Nav";
 
@@ -24,6 +28,9 @@ function App() {
           <Route path="/education" element={<Projects />} />
           <Route path="/projects" element={<Education />} />
           <Route path="/networks" element={<Networks />} />
+          <Route path="/house" element={<House />} />
+          <Route path="/art" element={<Art />} />
+          <Route path="/dream" element={<Dream />} />
         </Routes>
       </AnimatePresence>
       <Nav/>
