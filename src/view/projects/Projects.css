@@ -1,0 +1,10 @@
+.project_youtube{
+    grid-area: 9 / 14 / 10 / 15;
+}
+.project_henry{
+    grid-area: 6 / 5 / 7 / 6;
+}
+
+.project_udemy{
+    grid-area: 20 / 11 / 21 / 12;
+}

@@ -72,23 +72,23 @@ const Projects = () => {
               <div className='view_grid'>
 
                 <div
-                  className='view_link pointer project_react'
+                  className='view_link pointer project_youtube'
                   onClick={() => animationOn(transitions.house, 'house')}>
-                  <span>React</span>
+                  <span>Youtube</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer project_reactNative'
+                  className='view_link pointer project_henry'
                   onClick={() => animationOn(transitions.dream, 'dream')}>
-                  <span>React Native</span>
+                  <span>Henry</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer project_kotlin'
+                  className='view_link pointer project_udemy'
                   onClick={() => animationOn(transitions.art, 'art')}>
-                  <span>Kotlin</span>
+                  <span>Udemy</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
