@@ -10,3 +10,8 @@
     object-fit: cover;
 }
 
+@media all and (max-width: 768px) {
+    .bg_starts{
+        height: 100vh;
+    }
+}
