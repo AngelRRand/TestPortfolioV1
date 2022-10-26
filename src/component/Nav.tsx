@@ -23,7 +23,7 @@ const Nav = () => {
                 </div>
 
                 <div className='nav_text'>
-                    <Typing text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime animi iure quod dicta inventore maiores facilis accusantium omnis hic? Dolorem perferendis obcaecati impedit nemo consequatur labore totam illum ipsum nihil.'/>
+                    <Typing text='Lorem'/>
                     
                 </div>
 
