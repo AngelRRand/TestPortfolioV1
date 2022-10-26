@@ -10,8 +10,8 @@ import './Nav.css'
 import Typing from './Typing';
 const Nav = () => {
     const location = useLocation();
-
-    if (location.pathname.toString() !== '/') {
+    const currentUrl = location.pathname.toString()
+    if (currentUrl !== '/') {
         return (
             <nav className="nav">
                 <div className='container_perfil left_perfil'>
@@ -23,7 +23,17 @@ const Nav = () => {
                 </div>
 
                 <div className='nav_text'>
-                    <Typing text='Lorem'/>
+                    <Typing
+                        text={
+                            currentUrl === '/home' ? 
+                            'WELCOME!!'
+                            :
+                            currentUrl === '/about' ? 
+                            'YOU ARE IN THE PLANET TERRA'
+                            :
+                            'NATINBNNGGN'
+                        }
+                    />
                     
                 </div>
 
