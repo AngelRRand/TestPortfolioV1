@@ -7,6 +7,7 @@ import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif'
 import { useLocation, useNavigate } from "react-router-dom";
 
 import './Nav.css'
+import Typing from './Typing';
 const Nav = () => {
     const location = useLocation();
 
@@ -22,7 +23,7 @@ const Nav = () => {
                 </div>
 
                 <div className='nav_text'>
-                    <span className='tiping'>¡Hola mundo!</span>
+                    <Typing text='hola'/>
                 </div>
 
                 <div className='container_perfil rigth_perfil'>
