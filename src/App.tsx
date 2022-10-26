@@ -21,8 +21,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/education" element={<Education />} />
+          <Route path="/education" element={<Projects />} />
+          <Route path="/projects" element={<Education />} />
           <Route path="/networks" element={<Networks />} />
         </Routes>
       </AnimatePresence>

@@ -31,7 +31,13 @@ const Nav = () => {
                             currentUrl === '/about' ? 
                             'YOU ARE IN THE PLANET TERRA'
                             :
-                            'NATINBNNGGN'
+                            currentUrl === '/projects' ? 
+                            'P0RJECTS'
+                            :
+                            currentUrl === '/education' ?
+                            'EDUCATION'
+                            :
+                            'IN PROCSSS'
                         }
                     />
                     
