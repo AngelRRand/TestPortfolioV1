@@ -1,17 +1,17 @@
 .bg_starts {
     display: flex;
     position: absolute;
-    image-rendering: pixelated;
     overflow-y: hidden;
-    width: 94vw;
+    object-fit: cover;
+    image-rendering: pixelated;
     height: auto;
+    width: 94vw;
     left: 3vw;
     z-index: 1;
-    object-fit: cover;
 }
 
 @media all and (max-width: 768px) {
     .bg_starts{
-        height: 100vh;
+        height: 250vh;
     }
 }
