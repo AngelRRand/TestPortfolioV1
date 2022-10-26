@@ -14,19 +14,19 @@ var transitions = {
     scale: 7,
     x: 350,
     y: -1150,
-    transition: { duration: 6.5, type: "spring", bounce: 0 },
+    transition: { duration: 4.5, type: "spring", bounce: 0 },
   },
   dream: {
     scale: 7,
     x: -1300,
     y: 650,
-    transition: { duration: 6.5, type: "spring", bounce: 0 },
+    transition: { duration: 4.5, type: "spring", bounce: 0 },
   },
   art: {
     scale: 7,
     x: 750,
     y: -850,
-    transition: { duration: 6.5, type: "spring", bounce: 0 },
+    transition: { duration: 4.5, type: "spring", bounce: 0 },
   }
 }
 
@@ -43,7 +43,7 @@ const About = () => {
       setAnimation({});
       navigate(`/${rute}`)
       setShow(false)
-    }, 6500);
+    }, 4500);
   }
   return (
     <Container styles='container_planet'>
