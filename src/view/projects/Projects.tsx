@@ -1,6 +1,6 @@
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
-import Planet from '../../assets/Planet/IcePlanetZOOM.png'
+import Planet from '../../assets/Planet/PlanetLavaZOOM.png'
 import Señal from '../../assets/NavImg/Señal.gif'
 import PlanetTemplet from '../../component/PlanetTemplet';
 
@@ -24,10 +24,30 @@ const Projects = () => {
       setShow(false)
     }, 6500);
   }
-  
+
   return (
     <Container styles='container_planet'>
-      <Stars/>
+      <Stars />
+      <motion.main
+        className='view_planet'
+        initial={{ scale: 0, x: -3000 }}
+        animate={{
+          scale: 1,
+          x: 0,
+          transition: { duration: 1.5, type: "spring", },
+        }}
+      >
+        <PlanetTemplet
+          show={show}
+          animation={animation}
+          name={'Education'}
+          planet={Planet}
+          transitionStyle={'home_transition'}
+        >
+
+
+        </PlanetTemplet>
+      </motion.main>
     </Container>
   )
 }

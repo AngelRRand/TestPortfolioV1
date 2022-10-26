@@ -1,6 +1,6 @@
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
-import Planet from '../../assets/Planet/IcePlanetZOOM.png'
+import Planet from '../../assets/Planet/PlanetIceZOOM.png'
 import Señal from '../../assets/NavImg/Señal.gif'
 import PlanetTemplet from '../../component/PlanetTemplet';
 
