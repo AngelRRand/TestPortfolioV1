@@ -34,7 +34,7 @@ const ContainerView: React.FC<Props> = ({ children, image, imageGif, nubebot, nu
       {/* Nubes */}
 
       <motion.div
-      className={`nube_base ${nube_bg}`}
+        className={`nube_base ${nube_bg}`}
         initial={{ opacity: 1 }}
         animate={{
           opacity: 0,
@@ -43,7 +43,7 @@ const ContainerView: React.FC<Props> = ({ children, image, imageGif, nubebot, nu
       ></motion.div>
 
       <motion.img
-      className="nube_base nube_animation"
+        className="nube_base nube_animation"
         src={nubetop}
         initial={{ x: 0, y: 0 }}
         animate={{
@@ -53,7 +53,7 @@ const ContainerView: React.FC<Props> = ({ children, image, imageGif, nubebot, nu
       ></motion.img>
 
       <motion.img
-      className="nube_base nube_animation"
+        className="nube_base nube_animation"
         src={nubebot}
         initial={{ x: 0, y: 0 }}
         animate={{

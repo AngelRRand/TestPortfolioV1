@@ -15,9 +15,9 @@
 
 .container_perfil {
     position: absolute;
-    bottom: 10vh;
     image-rendering: pixelated;
     text-align: center;
+    bottom: 10vh;
     padding: 5px;
 }
 
@@ -34,6 +34,7 @@
     image-rendering: pixelated;
     border: 3px solid var(--black);
     background-color: var(--white);
+    z-index: 10;
 }
 
 .nav_text{

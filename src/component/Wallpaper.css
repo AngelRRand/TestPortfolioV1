@@ -28,7 +28,9 @@
 .nube_base {
     width: 100vw;
     height: 85vh;
-    z-index: 50;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
 }
 
 .nube_animation{
