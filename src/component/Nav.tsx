@@ -23,9 +23,9 @@ const Nav = () => {
                     <h2>Orasio</h2>
                 </div>
                 <div className='nav_btn_medium'>
-                        <h1>HOLA</h1>
-                        <h1>HOLA</h1>
-                        <h1>HOLA</h1>
+                    <button>IR</button>
+                    <button>VOLVER</button>
+                    <button>SALIR</button>
                     </div>
                 <div className='nav_text'>
 

@@ -42,18 +42,24 @@
     justify-content: center;
     align-items: center;
     background-color: var(--black);
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     border-radius: 5px;
     padding: 10px;
-    height: 8vh;
+    height: 7vh;
     width: 55vw;
 }
 
 .nav_btn_medium{
     display: flex;
     position: absolute;
-    background: var(--black);
     width: auto;
-    top: -6vh;
+    top: 8vh;
     padding: 1vw;
+}
+
+.nav_btn_medium button{
+    width: 5vw;
+    margin: 0px 2px;
+    background-color: var(--gray);
+    border-radius: 5px;
 }
