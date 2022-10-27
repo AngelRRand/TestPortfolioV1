@@ -2,6 +2,8 @@ import logo from '../assets/NavBotton/PJprueba.gif'
 import nutria from '../assets/NavBotton/nutria.gif'
 import logoSinCasco from '../assets/NavBotton/PJpruebaSinCasco.gif'
 import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif'
+import ligthgreen from '../assets/NavBotton/greenligth.gif'
+import ligthred from '../assets/NavBotton/redligth.gif'
 
 /* import Typewriter from 'typewriter-effect'; */
 import { useLocation, useNavigate } from "react-router-dom";
@@ -23,8 +25,8 @@ const Nav = () => {
                     <h2>Orasio</h2>
                 </div>
                 <div className='nav_btn_medium'>
-                    <button type="button" disabled>Go To Galaxy <img src={nutria} alt="" /></button>
-                    <button>Go To Planet</button>
+                    <button type="button" disabled>Go To Galaxy <img src={ligthred} alt="" /></button>
+                    <button>Go To Planet <img src={ligthgreen} alt="" /></button>
                     <button>SALIR</button>
 
                 </div>
