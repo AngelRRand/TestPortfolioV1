@@ -1,7 +1,8 @@
 import Wallpaper from '../../component/Wallpaper'
 import HouseImg from '../../assets/Planet/Terra/House/House.gif'
 import HouseImgGif from '../../assets/Planet/Terra/House/HouseFlora.gif'
-
+import NubeBot from '../../assets/nubes.png'
+import NubesTop from '../../assets/nubesTop.png'
 
 const House = () => {
 
@@ -11,6 +12,8 @@ const House = () => {
         <Wallpaper
             image={HouseImg}
             imageGif={HouseImgGif}
+            nubebot={NubeBot}
+            nubetop={NubesTop}
         >
 
         </Wallpaper>
