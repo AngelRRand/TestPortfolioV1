@@ -58,16 +58,23 @@
 }
 
 .nav_btn_medium button{
+    display: flex;
+    position: relative;
     width: 10vw;
     margin: 0px 2px;
     background-color: var(--gray);
     border-radius: 5px;
 }
-
+.nav_btn_medium button img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 @media all and (max-width: 768px) {
     
     .nav_btn_medium button{
         width: calc(10vw + 3vh + 2vmin);
+        font-size: calc(0.5vw + 0.5vh + 1.5vmin);;
     }
 }

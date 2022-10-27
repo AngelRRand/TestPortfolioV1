@@ -23,8 +23,8 @@ const Nav = () => {
                     <h2>Orasio</h2>
                 </div>
                 <div className='nav_btn_medium'>
-                    <button>IR</button>
-                    <button>VOLVER</button>
+                    <button>Go To Galaxy <img src={nutria} alt="" /></button>
+                    <button>Go To Planet</button>
                     <button>SALIR</button>
                     </div>
                 <div className='nav_text'>
