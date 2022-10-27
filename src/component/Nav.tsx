@@ -27,7 +27,7 @@ const Nav = () => {
                 <div className='nav_btn_medium'>
                     <button type="button" disabled>Go To Galaxy <img src={ligthred} alt="" /></button>
                     <button>Go To Planet <img src={ligthgreen} alt="" /></button>
-                    <button>SALIR</button>
+                    <button>Open Map</button>
 
                 </div>
                 <div className='nav_text'>
