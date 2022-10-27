@@ -45,7 +45,15 @@
     margin-bottom: 10vh;
     border-radius: 5px;
     padding: 10px;
-    height: 10vh;
+    height: 8vh;
     width: 55vw;
 }
 
+.nav_btn_medium{
+    display: flex;
+    position: absolute;
+    background: var(--black);
+    width: auto;
+    top: -6vh;
+    padding: 1vw;
+}

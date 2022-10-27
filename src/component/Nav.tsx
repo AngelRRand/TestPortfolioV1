@@ -22,8 +22,13 @@ const Nav = () => {
                         className='img_perfil ' />
                     <h2>Orasio</h2>
                 </div>
-
+                <div className='nav_btn_medium'>
+                        <h1>HOLA</h1>
+                        <h1>HOLA</h1>
+                        <h1>HOLA</h1>
+                    </div>
                 <div className='nav_text'>
+
                     <Typing
                         text={
                             currentUrl === '/home' ? 
@@ -41,9 +46,13 @@ const Nav = () => {
                             currentUrl === '/house' ?
                             'HOUSEEE'
                             :
+                            currentUrl === '/art' ?
+                            'ARTTTT'
+                            :
                             'PRODUCTIONS'
                         }
                     />
+                    
                     
                 </div>
 
