@@ -26,34 +26,35 @@ const Nav = () => {
                     <button>Go To Galaxy <img src={nutria} alt="" /></button>
                     <button>Go To Planet</button>
                     <button>SALIR</button>
-                    </div>
+
+                </div>
                 <div className='nav_text'>
 
                     <Typing
                         text={
-                            currentUrl === '/home' ? 
-                            'WELCOME!!'
-                            :
-                            currentUrl === '/about' ? 
-                            'YOU ARE IN THE PLANET TERRA'
-                            :
-                            currentUrl === '/projects' ? 
-                            'P0RJECTS'
-                            :
-                            currentUrl === '/education' ?
-                            'EDUCATION'
-                            :
-                            currentUrl === '/house' ?
-                            'HOUSEEE'
-                            :
-                            currentUrl === '/art' ?
-                            'ARTTTT'
-                            :
-                            'PRODUCTIONS'
+                            currentUrl === '/home' ?
+                                'WELCOME!!'
+                                :
+                                currentUrl === '/about' ?
+                                    'YOU ARE IN THE PLANET TERRA'
+                                    :
+                                    currentUrl === '/projects' ?
+                                        'P0RJECTS'
+                                        :
+                                        currentUrl === '/education' ?
+                                            'EDUCATION'
+                                            :
+                                            currentUrl === '/house' ?
+                                                'HOUSEEE'
+                                                :
+                                                currentUrl === '/art' ?
+                                                    'ARTTTT'
+                                                    :
+                                                    'PRODUCTIONS'
                         }
                     />
-                    
-                    
+
+
                 </div>
 
                 <div className='container_perfil rigth_perfil'>

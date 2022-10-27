@@ -53,16 +53,17 @@
     display: flex;
     position: absolute;
     width: auto;
-    top: 0vh;
+    top: -2vh;
     padding: 1vw;
 }
 
 .nav_btn_medium button{
     display: flex;
     position: relative;
-    width: 10vw;
-    margin: 0px 2px;
     background-color: var(--gray);
+    width: 10vw;
+    padding: 5px;
+    margin: 0px 2px;
     border-radius: 5px;
 }
 .nav_btn_medium button img{
@@ -74,7 +75,7 @@
 @media all and (max-width: 768px) {
     
     .nav_btn_medium button{
-        width: calc(10vw + 3vh + 2vmin);
+        width: calc(3vw + 5vh + 5vmin);
         font-size: calc(0.5vw + 0.5vh + 1.5vmin);;
     }
 }
