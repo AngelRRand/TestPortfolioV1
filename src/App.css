@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  cursor: url(./assets/cursor/cursorText.png), default
+  cursor: url(./assets/cursor/cursorText.png), default;
+  font-size: calc(1vw + 1.5vh + 2vmin);
 }
 
 button,
