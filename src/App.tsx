@@ -4,7 +4,7 @@ import Projects from "./view/projects/Projects";
 import Education from "./view/education/Education";
 import Networks from "./view/networks/Networks";
 import LandingPage from "./view/landingpage/LandingPage";
-/* About *********/
+/* About */
 import House from "./view/about/House";
 import Art from "./view/about/Art";
 import Dream from "./view/about/Dream";
