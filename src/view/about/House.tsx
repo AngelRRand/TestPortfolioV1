@@ -14,7 +14,7 @@ const House = () => {
             imageGif={HouseImgGif}
             nubebot={NubeBot}
             nubetop={NubesTop}
-            nube_bg={'nube_house_bg'}
+            nube_bg={'nube_terra_bg'}
         >
 
         </Wallpaper>
