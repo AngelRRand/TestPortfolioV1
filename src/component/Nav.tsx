@@ -5,7 +5,6 @@ import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif'
 import ligthgreen from '../assets/NavBotton/greenligth.gif'
 import ligthred from '../assets/NavBotton/redligth.gif'
 
-/* import Typewriter from 'typewriter-effect'; */
 import { useLocation, useNavigate } from "react-router-dom";
 
 import './Nav.css'
