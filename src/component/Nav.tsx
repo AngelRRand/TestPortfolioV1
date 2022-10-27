@@ -10,6 +10,7 @@ import './Nav.css'
 import Typing from './Typing';
 const Nav = () => {
     const location = useLocation();
+    const navigate = useNavigate()
     const currentUrl = location.pathname.toString()
     if (currentUrl !== '/') {
         return (
@@ -37,7 +38,10 @@ const Nav = () => {
                             currentUrl === '/education' ?
                             'EDUCATION'
                             :
-                            'IN PROCSSS'
+                            currentUrl === '/house' ?
+                            'HOUSEEE'
+                            :
+                            'PRODUCTIONS'
                         }
                     />
                     
