@@ -22,10 +22,10 @@ const ContainerView: React.FC<Props> = ({image, imageGif}) => {
             transition: { duration: 4.5, type: "tween" },
           }}
         >
-          <img src="" alt="" className="wallpaper_img bg" />
+          <img src={image} alt="" className="wallpaper_img bg" />
         </motion.div>
 
-        <img src="" alt="" className="wallpaper_img bg_gif"/>
+        <img src={imageGif} alt="" className="wallpaper_img bg_gif"/>
       </div>
 
     </main>
