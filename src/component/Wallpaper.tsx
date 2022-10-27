@@ -8,7 +8,7 @@ type Props = {
   imageGif: string
 }
 
-const ContainerView: React.FC<Props> = ({image, imageGif}) => {
+const ContainerView: React.FC<Props> = ({children, image, imageGif}) => {
 
 
   return (
@@ -22,10 +22,10 @@ const ContainerView: React.FC<Props> = ({image, imageGif}) => {
             transition: { duration: 4.5, type: "tween" },
           }}
         >
-          <img src={image} alt="" className="wallpaper_img bg" />
+          <img src={imageGif} alt="" className="wallpaper_img bg_gif" />
         </motion.div>
-
-        <img src={imageGif} alt="" className="wallpaper_img bg_gif"/>
+          {children}
+        <img src={image} alt="" className="wallpaper_img bg"/>
       </div>
 
     </main>

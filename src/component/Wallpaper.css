@@ -11,3 +11,18 @@
     image-rendering: pixelated;
     overflow: hidden;
 }
+
+.wallpaper_img {
+    width: 100vw;
+    height: 85vh;
+    image-rendering: pixelated;
+}
+
+.bg{
+    z-index: 11;
+}
+
+.bg_gif{
+    position: absolute;
+    z-index: 8;
+}
