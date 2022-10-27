@@ -8,21 +8,32 @@
     position: absolute;
     align-items: center;
     justify-content: center;
-    image-rendering: pixelated;
     overflow: hidden;
 }
 
 .wallpaper_img {
     width: 100vw;
     height: 85vh;
-    image-rendering: pixelated;
 }
 
-.bg{
+.bg {
     z-index: 11;
 }
 
-.bg_gif{
+.bg_gif {
     position: absolute;
     z-index: 8;
+}
+
+.nube_base {
+    width: 100vw;
+    height: 85vh;
+    z-index: 50;
+}
+
+.nube_animation{
+    position: absolute;
+}
+.nube_house_bg{
+    background-color: white;
 }
