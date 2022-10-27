@@ -77,7 +77,7 @@
 .nav_btn_medium button:disabled,
 .nav_btn_medium button[disabled] {
     background-color: var(--black);
-    color: crimson;
+    color: rgb(107, 107, 107);
 }
 
 @media all and (max-width: 768px) {
