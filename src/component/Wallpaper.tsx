@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
 import './Wallpaper.css'
-const ContainerView = () => {
+
+
+type Props = {  
+  children?: React.ReactNode
+  image: string
+  imageGif: string
+}
+
+const ContainerView: React.FC<Props> = ({image, imageGif}) => {
+
+
   return (
     <main className='wallpaper_container'>
 
