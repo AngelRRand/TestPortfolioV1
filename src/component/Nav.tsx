@@ -3,8 +3,8 @@ import logo from '../assets/NavBotton/PJprueba.gif'
 import nutria from '../assets/NavBotton/nutria.gif'
 import logoSinCasco from '../assets/NavBotton/PJpruebaSinCasco.gif'
 import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif'
-import ligthgreen from '../assets/NavBotton/greenligth.gif'
-import ligthred from '../assets/NavBotton/redligth.gif'
+import ligthgreen from '../assets/NavBotton/ligthgreen.gif'
+import ligthred from '../assets/NavBotton/ligthred.gif'
 
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -26,7 +26,7 @@ const Nav = () => {
                 <div className='nav_btn_medium'>
 
                     {
-                        currentUrl === '/' ? 
+                        currentUrl === '/home' ? 
                         (
                             <button type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
                         ) : (
@@ -34,7 +34,7 @@ const Nav = () => {
                         )
                     }
                     {
-                        currentUrl === '/house' || currentUrl === '/art' || currentUrl === '/dream' ? 
+                        currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ? 
                         (
                             <button type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
                         ) : (
