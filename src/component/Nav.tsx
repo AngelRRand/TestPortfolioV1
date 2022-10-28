@@ -1,3 +1,4 @@
+import Typing from './Typing';
 import logo from '../assets/NavBotton/PJprueba.gif'
 import nutria from '../assets/NavBotton/nutria.gif'
 import logoSinCasco from '../assets/NavBotton/PJpruebaSinCasco.gif'
@@ -8,7 +9,6 @@ import ligthred from '../assets/NavBotton/redligth.gif'
 import { useLocation, useNavigate } from "react-router-dom";
 
 import './Nav.css'
-import Typing from './Typing';
 const Nav = () => {
     const location = useLocation();
     const navigate = useNavigate()
@@ -24,8 +24,23 @@ const Nav = () => {
                     <h2>Orasio</h2>
                 </div>
                 <div className='nav_btn_medium'>
-                    <button type="button" disabled>Go To Galaxy <img src={ligthred} alt="" /></button>
-                    <button>Go To Planet <img src={ligthgreen} alt="" /></button>
+
+                    {
+                        currentUrl === '/' ? 
+                        (
+                            <button type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
+                        ) : (
+                            <button type="button" >Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
+                        )
+                    }
+                    {
+                        currentUrl === '/house' || currentUrl === '/art' || currentUrl === '/dream' ? 
+                        (
+                            <button type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
+                        ) : (
+                            <button type="button" >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
+                        )
+                    }
                     <button>Open Map</button>
 
                 </div>
