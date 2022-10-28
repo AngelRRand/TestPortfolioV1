@@ -4,6 +4,11 @@ import HouseImgGif from '../../assets/Planet/Terra/House/HouseFlora.gif'
 import NubeBot from '../../assets/nubes.png'
 import NubesTop from '../../assets/nubesTop.png'
 import lightEffect from '../../assets/Planet/Terra/House/LuzEffectHover.gif'
+import catBody from '../../assets/Planet/Terra/House/27.gif'
+import cathead from '../../assets/Planet/Terra/House/27NotModif.gif'
+import catheadHover from '../../assets/Planet/Terra/House/27Modif.gif'
+
+import './House.css'
 const House = () => {
 
 

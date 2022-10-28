@@ -1,0 +1,21 @@
+
+.view_me {
+    grid-area: 19 / 14 / 20 / 15;
+    width: 5em;
+    height: 5em;
+}
+
+.view_cat{
+    grid-area: 26 / 22 / 27 / 23; 
+    width: 5em;
+    height: 5em;
+    background-color: rebeccapurple;
+}
+
+.view_me:hover img:nth-child(1) {
+    opacity: 0;
+}
+
+.view_item:hover .view_card{
+    opacity: 1;
+}
