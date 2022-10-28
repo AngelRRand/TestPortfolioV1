@@ -3,7 +3,9 @@ import HouseImg from '../../assets/Planet/Terra/House/House.gif'
 import HouseImgGif from '../../assets/Planet/Terra/House/HouseFlora.gif'
 import NubeBot from '../../assets/nubes.png'
 import NubesTop from '../../assets/nubesTop.png'
-
+import lightAuto from '../../assets/Planet/Terra/House/LuzAuto.gif'
+import lightHover from '../../assets/Planet/Terra/House/LuzHover.gif'
+import lightEffect from '../../assets/Planet/Terra/House/LuzEffectHover.gif'
 const House = () => {
 
 
@@ -18,7 +20,9 @@ const House = () => {
         >
             <div className='view_grid'>
                 <div className='view_item view_me'>
-
+                    <img src={lightAuto} alt="" />
+                    <img src={lightHover} alt="" />
+                    <img src={lightEffect} alt="" />
                 </div>
             </div>
         </Wallpaper>

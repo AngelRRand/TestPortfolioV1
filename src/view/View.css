@@ -12,12 +12,17 @@
 }
 
 .view_item{
-
+    z-index: 90;
 }
 
+.view_item img{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+}
 
 .view_me{
     width: 2vw;
-    grid-area: 18 / 22 / 19 / 23;
+    grid-area: 21 / 15 / 22 / 16;
     background-color: rgb(102, 255, 0);
 }
