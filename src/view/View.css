@@ -21,8 +21,35 @@
     height: 5em;
 }
 
+.view_item img:nth-child(1){
+    display: inline;
+}
+
 .view_me{
-    width: 2vw;
     grid-area: 21 / 15 / 22 / 16;
-    background-color: rgb(102, 255, 0);
+    background: #000;
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.view_me img:nth-child(2){
+    width: 7em;
+    height: 7em;
+    display: inline;
+}
+
+.view_me img:nth-child(3){
+    display: none;
+}
+
+.view_me:hover img:nth-child(1){
+    display: none;
+}
+
+.view_me:hover img:nth-child(2){
+    display: inline;
+}
+
+.view_me:hover img:nth-child(3){
+    display: inline;
 }
