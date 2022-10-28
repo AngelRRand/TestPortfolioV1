@@ -16,7 +16,7 @@ const House = () => {
             nubetop={NubesTop}
             nube_bg={'nube_terra_bg'}
         >
-            <div className='wallpaper_grid'>
+            <div className='view_grid'>
 
             </div>
         </Wallpaper>
