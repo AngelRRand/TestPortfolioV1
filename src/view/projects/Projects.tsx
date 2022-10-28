@@ -51,7 +51,7 @@ const Projects = () => {
     <Container styles='container_planet'>
       <Stars />
       <motion.main
-        className='view_planet'
+        className='planet'
         initial={{ scale: 0, x: -3000 }}
         animate={{
           scale: 1,
@@ -69,24 +69,24 @@ const Projects = () => {
 
           {
             !show ? (
-              <div className='view_grid'>
+              <div className='planet_grid'>
 
                 <div
-                  className='view_link pointer project_youtube'
+                  className='planet_link pointer project_youtube'
                   onClick={() => animationOn(transitions.house, 'house')}>
                   <span>Youtube</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer project_henry'
+                  className='planet_link pointer project_henry'
                   onClick={() => animationOn(transitions.dream, 'dream')}>
                   <span>Henry</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer project_udemy'
+                  className='planet_link pointer project_udemy'
                   onClick={() => animationOn(transitions.art, 'art')}>
                   <span>Udemy</span>
                   <img src={Señal} alt="señal" />

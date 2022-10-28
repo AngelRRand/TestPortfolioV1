@@ -51,7 +51,7 @@ const Education = () => {
     <Container styles='container_planet'>
       <Stars />
       <motion.main
-        className='view_planet'
+        className='planet'
         initial={{ scale: 0, x: -3000 }}
         animate={{
           scale: 1,
@@ -68,24 +68,24 @@ const Education = () => {
         >
           {
             !show ? (
-              <div className='view_grid'>
+              <div className='planet_grid'>
 
                 <div
-                  className='view_link pointer project_react'
+                  className='planet_link pointer project_react'
                   onClick={() => animationOn(transitions.house, 'house')}>
                   <span>React</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer project_reactNative'
+                  className='planet_link pointer project_reactNative'
                   onClick={() => animationOn(transitions.dream, 'dream')}>
                   <span>React Native</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer project_kotlin'
+                  className='planet_link pointer project_kotlin'
                   onClick={() => animationOn(transitions.art, 'art')}>
                   <span>Kotlin</span>
                   <img src={Señal} alt="señal" />

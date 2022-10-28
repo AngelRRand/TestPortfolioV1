@@ -1,4 +1,4 @@
-.view_planet {
+.planet {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     z-index: 10;
 }
 
-.view_grid {
+.planet_grid {
     display: grid;
     grid-template-columns: repeat(20, 1.75vw);
     grid-template-rows: repeat(30, 2vh);
@@ -22,7 +22,7 @@
     height: 60vh;
 }
 
-.view_link {
+.planet_link {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -34,7 +34,7 @@
 }
 
 
-.view_link span {
+.planet_link span {
     position: absolute;
     font-size: calc(13px + 0.4vw);
     transition: all 0.3s ease;
@@ -43,7 +43,7 @@
 }
 
 @media all and (max-width: 768px) {
-    .view_grid{
+    .planet_grid{
         width: 90vw;
         grid-template-columns: repeat(20, 4.5vw);
     }

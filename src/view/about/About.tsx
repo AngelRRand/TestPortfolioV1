@@ -49,7 +49,7 @@ const About = () => {
     <Container styles='container_planet'>
       <Stars />
       <motion.main
-        className='view_planet'
+        className='planet'
         initial={{ scale: 0, x: -3000 }}
         animate={{
           scale: 1,
@@ -68,24 +68,24 @@ const About = () => {
         >
           {
             !show ? (
-              <div className='view_grid'>
+              <div className='planet_grid'>
 
                 <div
-                  className='view_link pointer about_house'
+                  className='planet_link pointer about_house'
                   onClick={() => animationOn(transitions.house, 'house')}>
                   <span>House</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer about_dream'
+                  className='planet_link pointer about_dream'
                   onClick={() => animationOn(transitions.dream, 'dream')}>
                   <span>Dream</span>
                   <img src={Señal} alt="señal" />
                 </div>
 
                 <div
-                  className='view_link pointer about_art'
+                  className='planet_link pointer about_art'
                   onClick={() => animationOn(transitions.art, 'art')}>
                   <span>Art</span>
                   <img src={Señal} alt="señal" />
