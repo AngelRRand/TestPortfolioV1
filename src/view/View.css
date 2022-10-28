@@ -8,7 +8,6 @@
     grid-template-rows: repeat(40, 2.125vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-color: rgba(38, 0, 255, 0.219);
 }
 
 .view_item{
@@ -23,33 +22,15 @@
 
 .view_item img:nth-child(1){
     display: inline;
+    transition: all 1s ease;
 }
 
 .view_me{
-    grid-area: 21 / 15 / 22 / 16;
-    background: #000;
-    width: 4.5vw;
-    height: 4.5vw;
-}
-
-.view_me img:nth-child(2){
-    width: 7em;
-    height: 7em;
-    display: inline;
-}
-
-.view_me img:nth-child(3){
-    display: none;
+    grid-area: 19 / 14 / 20 / 15;
+    width: 5em;
+    height: 5em;
 }
 
 .view_me:hover img:nth-child(1){
-    display: none;
-}
-
-.view_me:hover img:nth-child(2){
-    display: inline;
-}
-
-.view_me:hover img:nth-child(3){
-    display: inline;
+    opacity: 0;
 }
