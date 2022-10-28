@@ -13,13 +13,15 @@ const Nav = () => {
     const location = useLocation();
     const navigate = useNavigate()
     const currentUrl = location.pathname.toString()
-
+    console.log(currentUrl)
     const ToGalaxy = () => {
         navigate('/home')
     }
 
-    const ToPlanet = (currentUrl: string) => {
-        console.log(currentUrl, 'GOLA')
+    const ToPlanet = () => {
+        if(currentUrl === '/house' || currentUrl === '/art' || currentUrl === '/dream'){
+            navigate('/about')
+        }
     }
 
 
@@ -50,7 +52,7 @@ const Nav = () => {
                                 (
                                     <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
                                 ) : (
-                                    <button className='nav_btn' type="button" >Go To Planet <img src={ligthgreen} alt="ligth" onClick={() => ToPlanet(currentUrl)} /></button>
+                                    <button className='nav_btn' type="button"  onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth"/></button>
                                 )
                         }
                         <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
