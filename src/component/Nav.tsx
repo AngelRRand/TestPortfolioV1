@@ -28,20 +28,20 @@ const Nav = () => {
                     {
                         currentUrl === '/home' ? 
                         (
-                            <button type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
+                            <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
                         ) : (
-                            <button type="button" >Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
+                            <button className='nav_btn' type="button" >Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
                         )
                     }
                     {
                         currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ? 
                         (
-                            <button type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
+                            <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
                         ) : (
-                            <button type="button" >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
+                            <button className='nav_btn' type="button" >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
                         )
                     }
-                    <button>Open Map</button>
+                    <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
 
                 </div>
                 <div className='nav_text'>
