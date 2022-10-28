@@ -20,7 +20,18 @@
     height: 4em;
 }
 
+.view_cat img:nth-child(3) {
+    display: none;
+}
+
 .view_me:hover img:nth-child(1) {
     opacity: 0;
 }
 
+.view_cat:hover img:nth-child(2) {
+    display: none;
+}
+
+.view_cat:hover img:nth-child(3) {
+    display: inline;
+}

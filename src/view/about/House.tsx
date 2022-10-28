@@ -32,9 +32,11 @@ const House = () => {
 
                 <div className='view_item view_cat'>
                     <img src={catBody} alt="" />
+                    <img src={cathead} alt="" />
+                    <img src={catheadHover} alt="" />
                     <div className='view_card'>
-                        <h2>Room</h2>
-                        <p>In front of a window I find myself in constant contact with the sunlight.</p>
+                        <h2>My cat</h2>
+                        <p>His name is twenty-seven, he is always at my house :D</p>
                     </div>
                 </div>
             </div>
