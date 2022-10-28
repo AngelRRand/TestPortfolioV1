@@ -21,6 +21,18 @@ const House = () => {
             <div className='view_grid'>
                 <div className='view_item view_me'>
                     <img src={lightEffect} alt="" />
+                    <div className='view_card'>
+                        <h2>Room</h2>
+                        <p>In front of a window I find myself in constant contact with the sunlight.</p>
+                    </div>
+                </div>
+
+                <div className='view_item view_cat'>
+                    <img src={lightEffect} alt="" />
+                    <div className='view_card'>
+                        <h2>Room</h2>
+                        <p>In front of a window I find myself in constant contact with the sunlight.</p>
+                    </div>
                 </div>
             </div>
         </Wallpaper>
