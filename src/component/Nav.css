@@ -3,7 +3,6 @@
     position: fixed;
     align-items: center;
     justify-content: center;
-    image-rendering: pixelated;
     background-color: var(--gray);
     border-top: 2px solid var(--black);
     color: var(--white);
@@ -15,10 +14,10 @@
 
 .container_perfil {
     position: absolute;
-    image-rendering: pixelated;
     text-align: center;
     bottom: 10vh;
     padding: 5px;
+    
 }
 
 .left_perfil {
@@ -31,9 +30,8 @@
 
 .img_perfil {
     width: 13vw;
-    image-rendering: pixelated;
+    background-color: rgba(240, 248, 255, 0.178);
     border: 3px solid var(--black);
-    background-color: var(--white);
     z-index: 10;
 }
 

@@ -18,7 +18,7 @@ const Nav = () => {
             <nav className="nav">
                 <div className='container_perfil left_perfil'>
                     <img
-                        src={location.pathname.toString() === '/about/' ? logoSinCasco : logo}
+                        src={currentUrl === '/house' ? logoSinCasco : logo}
                         alt=""
                         className='img_perfil ' />
                     <h2>Orasio</h2>
@@ -75,7 +75,7 @@ const Nav = () => {
 
                 <div className='container_perfil rigth_perfil'>
                     <img
-                        src={location.pathname.toString() === '/about/' ? nutriaSinCasco : nutria}
+                        src={currentUrl === '/house' ? nutriaSinCasco : nutria}
                         alt=""
                         className='img_perfil ' />
                     <h2>Orasio</h2>
