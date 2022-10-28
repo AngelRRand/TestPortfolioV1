@@ -17,7 +17,9 @@ const House = () => {
             nube_bg={'nube_terra_bg'}
         >
             <div className='view_grid'>
+                <div className='view_item view_me'>
 
+                </div>
             </div>
         </Wallpaper>
     )

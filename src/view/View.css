@@ -8,5 +8,16 @@
     grid-template-rows: repeat(40, 2.125vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-color: red;
+    background-color: rgba(38, 0, 255, 0.219);
+}
+
+.view_item{
+
+}
+
+
+.view_me{
+    width: 2vw;
+    grid-area: 18 / 22 / 19 / 23;
+    background-color: rgb(102, 255, 0);
 }
