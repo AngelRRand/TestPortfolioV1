@@ -13,6 +13,16 @@ const Nav = () => {
     const location = useLocation();
     const navigate = useNavigate()
     const currentUrl = location.pathname.toString()
+
+    const ToGalaxy = () => {
+        navigate('/home')
+    }
+
+    const ToPlanet = () => {
+
+    }
+
+
     if (currentUrl !== '/') {
         return (
             <nav className="nav">
@@ -26,20 +36,20 @@ const Nav = () => {
                 <div className='nav_btn_medium'>
 
                     {
-                        currentUrl === '/home' ? 
-                        (
-                            <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
-                        ) : (
-                            <button className='nav_btn' type="button" >Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
-                        )
+                        currentUrl === '/home' ?
+                            (
+                                <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
+                            ) : (
+                                <button className='nav_btn' type="button" onClick={() => ToGalaxy()}>Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
+                            )
                     }
                     {
-                        currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ? 
-                        (
-                            <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
-                        ) : (
-                            <button className='nav_btn' type="button" >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
-                        )
+                        currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ?
+                            (
+                                <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
+                            ) : (
+                                <button className='nav_btn' type="button" >Go To Planet <img src={ligthgreen} alt="ligth" onClick={() => ToGalaxy()}/></button>
+                            )
                     }
                     <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
 
