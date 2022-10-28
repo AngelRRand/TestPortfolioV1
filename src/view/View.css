@@ -16,8 +16,6 @@
 
 .view_item img {
     position: absolute;
-    width: 5em;
-    height: 5em;
 }
 
 .view_item img:nth-child(1) {
@@ -41,9 +39,15 @@
     opacity: 0;
 }
 
-.view_card  h2{
+.view_card h2 {
     font-size: 1.5rem;
 }
-.view_card  p{
+
+.view_card p {
     font-size: 1.1rem;
+}
+
+
+.view_item:hover .view_card {
+    opacity: 1;
 }
