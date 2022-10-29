@@ -1,0 +1,22 @@
+.view_planet {
+    grid-area: 23 / 19 / 24 / 20;
+}
+
+.view_happyDog {
+    grid-area: 14 / 19 / 15 / 20;
+}
+
+.view_planet img:nth-child(1) {
+    width: 8em;
+    height: 7em;
+}
+
+.view_planet .view_card_img{
+    position: static;
+    height: 5vh;
+}
+
+.view_happyDog img:nth-child(1) {
+    width: 8em;
+    height: 7em;
+}
