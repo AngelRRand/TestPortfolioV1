@@ -11,9 +11,10 @@
     height: 7em;
 }
 
-.view_planet .view_card_img{
+.view_card_img{
     position: static;
-    height: 5vh;
+    margin-top: 10px;
+    height: 25vh;
 }
 
 .view_happyDog img:nth-child(1) {

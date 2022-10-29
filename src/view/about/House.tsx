@@ -23,7 +23,7 @@ const House = () => {
         >
             <div className='view_grid'>
                 <div className='view_item view_me'>
-                    <img src={lightEffect} alt="ligth" />
+                    <img className='view_object' src={lightEffect} alt="ligth" />
                     <div className='view_card'>
                         <h2>Room</h2>
                         <p>In front of a window I find myself in constant contact with the sunlight.</p>
@@ -31,9 +31,9 @@ const House = () => {
                 </div>
 
                 <div className='view_item view_cat'>
-                    <img src={catBody} alt="cat body" />
-                    <img src={cathead} alt="cat head" />
-                    <img src={catheadHover} alt="cat head" />
+                    <img className='view_object' src={catBody} alt="cat body" />
+                    <img className='view_object' src={cathead} alt="cat head" />
+                    <img className='view_object' src={catheadHover} alt="cat head" />
                     <div className='view_card'>
                         <h2>My cat</h2>
                         <p>His name is twenty-seven, he is always at my house :D</p>
