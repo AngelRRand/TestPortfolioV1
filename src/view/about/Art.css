@@ -6,6 +6,10 @@
     grid-area: 14 / 19 / 15 / 20;
 }
 
+.view_catSleep{
+    grid-area: 24 / 6 / 25 / 7;
+}
+
 .view_planet img:nth-child(1) {
     width: 8em;
     height: 7em;
@@ -18,6 +22,11 @@
 }
 
 .view_happyDog img:nth-child(1) {
+    width: 8em;
+    height: 7em;
+}
+
+.view_catSleep img:nth-child(1){
     width: 8em;
     height: 7em;
 }

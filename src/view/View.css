@@ -11,6 +11,8 @@
 }
 
 .view_item {
+    width: 10vw;
+    height: 10vw;
     z-index: 90;
 }
 
@@ -33,7 +35,7 @@
     background-color: rgba(0, 0, 0, 0.479);
     transition: all 0.5s ease;
     border-radius: 10px;
-    width: 50vw;
+    width: 30vw;
     height: auto;
     padding: 10px;
     opacity: 0;

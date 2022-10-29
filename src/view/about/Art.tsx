@@ -30,7 +30,6 @@ const Art = () => {
           <div className='view_card'>
             <h2>The happy dog</h2>
             <p>His name is twenty-seven, he is always at my house :D</p>
-            <img className='view_card_img' src={Happydog} alt="" />
           </div>
         </div>
 
