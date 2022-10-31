@@ -67,7 +67,10 @@ const About = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
         >
-          <img className='about_moon' src={Moon} alt="moon" />
+          <div className='about_moon'>
+            <img src={Moon} alt="moon" />
+
+          </div>
           {
             !show ? (
               <div className='planet_grid'>

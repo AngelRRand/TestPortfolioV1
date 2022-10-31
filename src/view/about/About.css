@@ -9,3 +9,20 @@
 .about_art {
     grid-area: 19 / 6 / 20 / 7;
 }
+
+.about_moon {
+    position: absolute;
+    right: 10vw;
+    top: 3vh;
+}
+.about_moon img{
+    width: 15vw;
+}
+@media all and (max-width: 768px) {
+    .about_moon {
+        right: 5vw;
+    }
+    .about_moon img{
+        width: 25vw;
+    }
+}
