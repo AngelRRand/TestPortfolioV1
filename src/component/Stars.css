@@ -3,7 +3,6 @@
     position: absolute;
     overflow-y: hidden;
     object-fit: cover;
-    image-rendering: pixelated;
     height: auto;
     width: 94vw;
     left: 3vw;
