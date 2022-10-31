@@ -66,6 +66,7 @@ const About = () => {
           name={'About'}
           planet={Planet}
           transitionStyle={'home_transition'}
+          moon={true}
         >
           
           {
