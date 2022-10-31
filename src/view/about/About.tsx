@@ -67,22 +67,7 @@ const About = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
         >
-          <motion.div
-            initial={{ x: 0}}
-            animate={{
-              x: 10,
-              
-            }}
-            className='about_moon'>
-            <div className='about_moon_container'>
-              <img className='moon' src={Moon} alt="moon" />
-              <div className='moon_señal pointer'>
-                <span>Dream</span>
-                <img src={Señal} alt="señal" />
-              </div>
-
-            </div>
-          </motion.div>
+          
           {
             !show ? (
               <div className='planet_grid'>
@@ -94,11 +79,6 @@ const About = () => {
                   <img src={Señal} alt="señal" />
                 </div>
 
-                <div
-                  className='planet_link pointer about_dream'
-                  onClick={() => animationOn(transitions.dream, 'dream')}>
-
-                </div>
 
                 <div
                   className='planet_link pointer about_art'
