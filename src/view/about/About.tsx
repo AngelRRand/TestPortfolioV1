@@ -1,6 +1,7 @@
 import Container from '../../component/Container'
 import Stars from '../../component/Stars'
 import Planet from '../../assets/Planet/PlanetZOOM.png'
+import Moon from '../../assets/Planet/Moon.png'
 import Señal from '../../assets/NavImg/Señal.gif'
 
 import PlanetTemplet from '../../component/PlanetTemplet';
@@ -66,6 +67,7 @@ const About = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
         >
+          <img src={Moon} alt="" />
           {
             !show ? (
               <div className='planet_grid'>
