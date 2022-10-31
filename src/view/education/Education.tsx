@@ -65,6 +65,7 @@ const Education = () => {
           name={'Project'}
           planet={Planet}
           transitionStyle={'home_transition'}
+          moon={false}
         >
           {
             !show ? (

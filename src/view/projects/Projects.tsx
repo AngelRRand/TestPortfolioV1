@@ -65,6 +65,7 @@ const Projects = () => {
           name={'Education'}
           planet={Planet}
           transitionStyle={'home_transition'}
+          moon={false}
         >
 
           {
