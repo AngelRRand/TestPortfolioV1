@@ -66,6 +66,7 @@ const About = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
           moon={true}
+          animationOn={animationOn}
         >
           
           {

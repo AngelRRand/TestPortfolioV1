@@ -66,6 +66,7 @@ const Education = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
           moon={false}
+          animationOn={animationOn}
         >
           {
             !show ? (

@@ -66,6 +66,7 @@ const Projects = () => {
           planet={Planet}
           transitionStyle={'home_transition'}
           moon={false}
+          animationOn={animationOn}
         >
 
           {
