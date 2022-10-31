@@ -68,8 +68,14 @@ const About = () => {
           transitionStyle={'home_transition'}
         >
           <div className='about_moon'>
-            <img src={Moon} alt="moon" />
+            <div className='about_moon_container'>
+              <img className='moon' src={Moon} alt="moon" />
+              <div className='moon_señal pointer'>
+                <span>Dream</span>
+                <img src={Señal} alt="señal" />
+              </div>
 
+            </div>
           </div>
           {
             !show ? (
@@ -85,8 +91,7 @@ const About = () => {
                 <div
                   className='planet_link pointer about_dream'
                   onClick={() => animationOn(transitions.dream, 'dream')}>
-                  <span>Dream</span>
-                  <img src={Señal} alt="señal" />
+
                 </div>
 
                 <div

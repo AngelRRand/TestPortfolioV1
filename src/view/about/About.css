@@ -11,18 +11,44 @@
 }
 
 .about_moon {
+    display: flex;
     position: absolute;
     right: 10vw;
     top: 3vh;
 }
-.about_moon img{
+.about_moon_container{
+    position: relative;
     width: 15vw;
+    height: 15vw;
 }
+.moon {
+    width: 100%;
+    height: 100%;
+}
+
+.moon_señal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 2vw;
+    z-index: 100;
+}
+
+.moon_señal img {
+    position: absolute;
+    top: 20px;
+    z-index: 20;
+}
+
 @media all and (max-width: 768px) {
     .about_moon {
         right: 5vw;
     }
-    .about_moon img{
+
+    .about_moon_container {
         width: 25vw;
     }
 }
