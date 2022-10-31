@@ -40,4 +40,5 @@
 }
 .nube_terra_bg{
     background-color: white;
+    z-index: 4;
 }

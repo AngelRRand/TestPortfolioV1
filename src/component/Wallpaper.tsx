@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Stars from "./Stars";
 import './Wallpaper.css'
 
 
@@ -32,7 +31,6 @@ const ContainerView: React.FC<Props> = ({ children, image, imageGif, nubebot, nu
         {children}
         <img src={image} alt="" className="wallpaper_img bg" />
       </div>
-      {/* Nubes */}
 
       <motion.div
         className={`nube_base ${nube_bg}`}
