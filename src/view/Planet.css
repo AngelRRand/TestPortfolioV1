@@ -41,9 +41,13 @@
     text-align: center;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 912px) {
+    .planet_link span {
+        font-size: calc(13px + 1.6vw);
+    }
     .planet_grid{
         width: 90vw;
         grid-template-columns: repeat(20, 4.5vw);
     }
 }
+
