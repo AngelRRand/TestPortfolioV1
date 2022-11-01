@@ -31,15 +31,7 @@ const Dream = () => {
         >
           <div className='dream_text'>
 
-            <Typewriter
-              options={{
-                strings: `asdasdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdasdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdasdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdasdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`,
-                autoStart: true,
-                loop: false,
-                delay: 150,
-                wrapperClassName: 'dream',
-              }}
-            />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit, inventore provident repellat eius voluptate autem eos modi tempore veritatis numquam perferendis aspernatur incidunt natus. Laudantium omnis ullam alias qui.</p>
           </div>
         </motion.div>
       </Wallpaper>
