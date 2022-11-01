@@ -34,7 +34,7 @@ const Dream = () => {
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
-                  transition: { duration: 16, type: "ease" },
+                  transition: { duration: 15, type: "ease" },
                 }}
               > I am a person who dreams :D </motion.p>
               <motion.p
@@ -42,7 +42,7 @@ const Dream = () => {
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
-                  transition: { duration: 18, type: "ease" },
+                  transition: { duration: 16, type: "ease" },
                 }}
               > I dream of traveling to Europe and Asia. </motion.p>
               <motion.p
@@ -50,7 +50,7 @@ const Dream = () => {
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
-                  transition: { duration: 20, type: "ease" },
+                  transition: { duration: 17, type: "ease" },
                 }}
               > I dream of being able to get married, have a family and a dog. </motion.p>
               <motion.p
@@ -58,9 +58,25 @@ const Dream = () => {
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
-                  transition: { duration: 22, type: "ease" },
+                  transition: { duration: 18, type: "ease" },
                 }}
               > I dream of having a house on a mountain. </motion.p>
+              <motion.p
+              className='dream_text'
+                initial={{ y: 10000 }}
+                animate={{
+                  y: 0,
+                  transition: { duration: 22, type: "ease" },
+                }}
+              > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
+              <motion.p
+              className='dream_text'
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 22, type: "ease" },
+                }}
+              > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
           </div>
         </motion.div>
       </Wallpaper>
