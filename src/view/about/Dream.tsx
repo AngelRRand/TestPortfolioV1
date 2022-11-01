@@ -9,7 +9,12 @@ import Container from '../../component/Container';
 import { motion } from "framer-motion";
 
 import './Dream.css'
+import { useState } from 'react';
 const Dream = () => {
+
+  const [show, setShow] = useState(false)
+
+
   return (
     <Container styles='container_planet'>
       <Stars></Stars>
@@ -69,16 +74,11 @@ const Dream = () => {
                   transition: { duration: 22, type: "ease" },
                 }}
               > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
-              <motion.p
-              className='dream_text'
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: { duration: 22, type: "ease" },
-                }}
-              > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
           </div>
         </motion.div>
+        <div className='btn_dream'>
+            <h1>BOTM</h1>
+          </div>
       </Wallpaper>
 
     </Container>
