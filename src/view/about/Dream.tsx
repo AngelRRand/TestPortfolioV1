@@ -37,7 +37,7 @@ const Dream = () => {
                 autoStart: true,
                 loop: false,
                 delay: 150,
-                wrapperClassName: 'text_typing',
+                wrapperClassName: 'dream',
               }}
             />
           </div>
