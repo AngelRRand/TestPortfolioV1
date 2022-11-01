@@ -40,9 +40,5 @@
     padding-left: 3vw;
     border-top-left-radius: 50px;
     background-color: var(--gray);
-}
-
-.btn_dream p {
-    text-align: center;
-    font-size: calc(0.8vw + 0.8vh + 2vmin);
+    font-size: calc(0.8vw + 0.8vh + 2vmin); 
 }

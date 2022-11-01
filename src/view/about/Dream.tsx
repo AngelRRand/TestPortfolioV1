@@ -27,9 +27,8 @@ const Dream = () => {
       >
         <motion.div
           className='dream_container'
-          initial={{ y: 10000 }}
           animate={{
-            y: 0,
+            y: show === false ? 10000 : 0,
             transition: { duration: 10, type: "ease" },
           }}
         >
@@ -41,7 +40,7 @@ const Dream = () => {
                 y: 0,
                 transition: { duration: 15, type: "ease" },
               }}
-            > I am a person who dreams :D </motion.p>
+            > I am a person who dreams :) </motion.p>
             <motion.p
               className='dream_text'
               initial={{ y: 10000 }}
@@ -73,7 +72,7 @@ const Dream = () => {
                 y: 0,
                 transition: { duration: 22, type: "ease" },
               }}
-            > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
+            > My ambitions and goals are the motivation that drive me every day beyond my limits!! :DD </motion.p>
           </div>
         </motion.div>
       </Wallpaper>
