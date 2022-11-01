@@ -4,7 +4,6 @@ import ArtGif from '../../assets/Planet/Terra/Art/ArtPajaros.gif'
 import NubeBot from '../../assets/nubes.png'
 import NubesTop from '../../assets/nubesTop.png'
 import Brightness from '../../assets/Planet/Terra/Art/brightness.gif'
-import Happydog from '../../assets/Planet/Terra/Art/guau_guau.png'
 
 import './Art.css'
 const Art = () => {
