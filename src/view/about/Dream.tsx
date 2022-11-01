@@ -34,54 +34,54 @@ const Dream = () => {
           }}
         >
           <div className='dream_container_text'>
-              <motion.p
+            <motion.p
               className='dream_text'
-                initial={{ y: 10000 }}
-                animate={{
-                  y: 0,
-                  transition: { duration: 15, type: "ease" },
-                }}
-              > I am a person who dreams :D </motion.p>
-              <motion.p
+              initial={{ y: 10000 }}
+              animate={{
+                y: 0,
+                transition: { duration: 15, type: "ease" },
+              }}
+            > I am a person who dreams :D </motion.p>
+            <motion.p
               className='dream_text'
-                initial={{ y: 10000 }}
-                animate={{
-                  y: 0,
-                  transition: { duration: 16, type: "ease" },
-                }}
-              > I dream of traveling to Europe and Asia. </motion.p>
-              <motion.p
+              initial={{ y: 10000 }}
+              animate={{
+                y: 0,
+                transition: { duration: 16, type: "ease" },
+              }}
+            > I dream of traveling to Europe and Asia. </motion.p>
+            <motion.p
               className='dream_text'
-                initial={{ y: 10000 }}
-                animate={{
-                  y: 0,
-                  transition: { duration: 17, type: "ease" },
-                }}
-              > I dream of being able to get married, have a family and a dog. </motion.p>
-              <motion.p
+              initial={{ y: 10000 }}
+              animate={{
+                y: 0,
+                transition: { duration: 17, type: "ease" },
+              }}
+            > I dream of being able to get married, have a family and a dog. </motion.p>
+            <motion.p
               className='dream_text'
-                initial={{ y: 10000 }}
-                animate={{
-                  y: 0,
-                  transition: { duration: 18, type: "ease" },
-                }}
-              > I dream of having a house on a mountain. </motion.p>
-              <motion.p
+              initial={{ y: 10000 }}
+              animate={{
+                y: 0,
+                transition: { duration: 18, type: "ease" },
+              }}
+            > I dream of having a house on a mountain. </motion.p>
+            <motion.p
               className='dream_text'
-                initial={{ y: 10000 }}
-                animate={{
-                  y: 0,
-                  transition: { duration: 22, type: "ease" },
-                }}
-              > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
+              initial={{ y: 10000 }}
+              animate={{
+                y: 0,
+                transition: { duration: 22, type: "ease" },
+              }}
+            > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
           </div>
         </motion.div>
-        <div className='btn_container_dream pointer'>
-          <button className='btn_dream pointer'>
-            <p>Up</p>
-          </button>
-          </div>
       </Wallpaper>
+        <div className='btn_container_dream pointer'>
+          <button className='btn_dream'>
+            Down
+          </button>
+        </div>
 
     </Container>
   )
