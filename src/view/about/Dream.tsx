@@ -6,7 +6,6 @@ import NubesTop from '../../assets/nubesTop.png';
 import Stars from '../../component/Stars';
 import Container from '../../component/Container';
 
-import Typewriter from 'typewriter-effect';
 import { motion } from "framer-motion";
 
 import './Dream.css'
@@ -30,7 +29,6 @@ const Dream = () => {
           }}
         >
           <div className='dream_text'>
-
             <p className='dream'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit, inventore provident repellat eius voluptate autem eos modi tempore veritatis numquam perferendis aspernatur incidunt natus. Laudantium omnis ullam alias qui.</p>
           </div>
         </motion.div>
