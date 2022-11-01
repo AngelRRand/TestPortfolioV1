@@ -29,7 +29,7 @@ const Dream = () => {
           }}
         >
           <div className='dream_text'>
-            <p className='dream'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit, inventore provident repellat eius voluptate autem eos modi tempore veritatis numquam perferendis aspernatur incidunt natus. Laudantium omnis ullam alias qui.</p>
+            <p className='dream'>.</p>
           </div>
         </motion.div>
       </Wallpaper>
