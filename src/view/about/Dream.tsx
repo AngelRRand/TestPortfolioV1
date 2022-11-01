@@ -17,7 +17,9 @@ const Dream = () => {
 
   return (
     <Container styles='container_planet'>
+
       <Stars></Stars>
+      
       <Wallpaper
         image={ArtImg}
         imageGif={ArtGif}
