@@ -12,7 +12,7 @@ import './Dream.css'
 import { useState } from 'react';
 const Dream = () => {
 
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
 
 
   return (
@@ -27,6 +27,7 @@ const Dream = () => {
       >
         <motion.div
           className='dream_container'
+          initial={{ y: 10000 }}
           animate={{
             y: !show ? 10000 : 0,
             transition: { duration: 10, type: "ease" },
@@ -78,7 +79,7 @@ const Dream = () => {
       </Wallpaper>
         <div className='btn_container_dream pointer'>
           <button className='btn_dream'>
-            Down
+            {!show ? 'Up' :'Down'}
           </button>
         </div>
 
