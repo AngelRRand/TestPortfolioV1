@@ -1,4 +1,4 @@
-.dream_container_text{
+.dream_container{
     display: flex;
     position: absolute;
     color: var(--white);
@@ -11,7 +11,7 @@
     z-index: 1000;
 }
 
-.dream_text{
+.dream_container_text{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -21,7 +21,7 @@
     height: 100%;
     
 }
-.dream_text p{
-    display: block;
+.dream_text{
+    margin-bottom: 5px;
     font-size: calc(0.5vw + 0.5vh + 1.5vmin);
 }

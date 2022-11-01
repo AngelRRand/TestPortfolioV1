@@ -21,15 +21,16 @@ const Dream = () => {
         nube_bg={'nube_terra_bg'}
       >
         <motion.div
-          className='dream_container_text'
+          className='dream_container'
           initial={{ y: 10000 }}
           animate={{
             y: 0,
             transition: { duration: 10, type: "ease" },
           }}
         >
-          <div className='dream_text'>
+          <div className='dream_container_text'>
               <motion.p
+              className='dream_text'
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
@@ -37,6 +38,7 @@ const Dream = () => {
                 }}
               > I am a person who dreams :D </motion.p>
               <motion.p
+              className='dream_text'
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
@@ -44,6 +46,7 @@ const Dream = () => {
                 }}
               > I dream of traveling to Europe and Asia. </motion.p>
               <motion.p
+              className='dream_text'
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
@@ -51,6 +54,7 @@ const Dream = () => {
                 }}
               > I dream of being able to get married, have a family and a dog. </motion.p>
               <motion.p
+              className='dream_text'
                 initial={{ y: 10000 }}
                 animate={{
                   y: 0,
