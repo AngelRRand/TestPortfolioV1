@@ -1,25 +1,26 @@
 import Typing from './Typing';
-import logo from '../assets/NavBotton/PJprueba.gif'
-import nutria from '../assets/NavBotton/nutria.gif'
-import logoSinCasco from '../assets/NavBotton/PJpruebaSinCasco.gif'
-import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif'
-import ligthgreen from '../assets/NavBotton/ligthgreen.gif'
-import ligthred from '../assets/NavBotton/ligthred.gif'
+import logo from '../assets/NavBotton/PJprueba.gif';
+import nutria from '../assets/NavBotton/nutria.gif';
+import logoSinCasco from '../assets/NavBotton/PJpruebaSinCasco.gif';
+import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
+import ligthgreen from '../assets/NavBotton/ligthgreen.gif';
+import ligthred from '../assets/NavBotton/ligthred.gif';
 
+import { useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import './Nav.css'
 const Nav = () => {
     const location = useLocation();
-    const navigate = useNavigate()
-    const currentUrl = location.pathname.toString()
-    console.log(currentUrl)
+    const navigate = useNavigate();
+    const currentUrl = location.pathname.toString();
     const ToGalaxy = () => {
         navigate('/home')
     }
 
     const ToPlanet = () => {
-        if(currentUrl === '/house' || currentUrl === '/art' || currentUrl === '/dream'){
+        if (currentUrl === '/house' || currentUrl === '/art' || currentUrl === '/dream') {
             navigate('/about')
         }
     }
@@ -52,7 +53,7 @@ const Nav = () => {
                                 (
                                     <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
                                 ) : (
-                                    <button className='nav_btn' type="button"  onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth"/></button>
+                                    <button className='nav_btn' type="button" onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
                                 )
                         }
                         <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
@@ -89,13 +90,20 @@ const Nav = () => {
 
                 </div>
 
-                <div className='container_perfil rigth_perfil'>
+                <motion.div
+                    className='container_perfil rigth_perfil'
+                    initial={{ opacity: 1 }}
+                    animate={{
+                        opacity: currentUrl === '/dream' ? 0 : 1,
+                        transition: { duration: 3.5, type: "spring" },
+                    }}
+                >
                     <img
                         src={currentUrl === '/house' ? nutriaSinCasco : nutria}
                         alt=""
                         className='img_perfil ' />
                     <h2>Orasio</h2>
-                </div>
+                </motion.div>
             </nav>
         )
     } else {
