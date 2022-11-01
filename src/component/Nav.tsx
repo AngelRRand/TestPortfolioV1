@@ -6,7 +6,6 @@ import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
 import ligthgreen from '../assets/NavBotton/ligthgreen.gif';
 import ligthred from '../assets/NavBotton/ligthred.gif';
 
-import { useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 

@@ -1,0 +1,12 @@
+.dream_container_text{
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    color: var(--white);
+    background: var(--gray);
+    border-left: 2px solid var(--black);
+    width: 20vw;
+    height: 100vh;
+    z-index: 1000;
+}
