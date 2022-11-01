@@ -27,10 +27,10 @@ const Dream = () => {
       >
         <motion.div
           className='dream_container'
-          initial={{ y: 10000 }}
+          initial={{ y: 1000 }}
           animate={{
-            y: !show ? 10000 : 0,
-            transition: { duration: 10, type: "ease" },
+            y: !show ? 1000 : 0,
+            transition: !show ? { duration: 5, type: "ease" } : { duration: 5, type: "ease" },
           }}
         >
           <div className='dream_container_text'>
@@ -77,7 +77,7 @@ const Dream = () => {
           </div>
         </motion.div>
       </Wallpaper>
-        <div className='btn_container_dream pointer'>
+        <div className='btn_container_dream pointer' onClick={() => setShow(!show)}>
           <button className='btn_dream'>
             {!show ? 'Up' :'Down'}
           </button>
