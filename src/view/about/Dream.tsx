@@ -76,8 +76,10 @@ const Dream = () => {
               > My ambitions and goals are the motivation that drive me every day beyond my limits. </motion.p>
           </div>
         </motion.div>
-        <div className='btn_dream'>
-            <h1>BOTM</h1>
+        <div className='btn_container_dream'>
+          <button className='btn_dream pointer'>
+            <p>Up</p>
+          </button>
           </div>
       </Wallpaper>
 

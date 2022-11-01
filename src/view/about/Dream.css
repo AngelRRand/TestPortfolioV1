@@ -5,7 +5,7 @@
     background: var(--gray);
     border-left: 2px solid var(--black);
     top: 0;
-    right: 10px;
+    right: 0;
     width: 20vw;
     height: 85vh;
     z-index: 1000;
@@ -26,6 +26,23 @@
     font-size: calc(0.5vw + 0.5vh + 1.5vmin);
 }
 
-.btn_dream{
+.btn_container_dream{
     position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.btn_dream{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+    border-top-left-radius: 50px;
+    background-color: var(--gray);
+}
+
+.btn_dream p {
+    text-align: center;
+    font-size: calc(0.8vw + 0.8vh + 2vmin);
 }
