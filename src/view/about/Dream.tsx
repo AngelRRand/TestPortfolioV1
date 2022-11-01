@@ -28,7 +28,7 @@ const Dream = () => {
         <motion.div
           className='dream_container'
           animate={{
-            y: show === false ? 10000 : 0,
+            y: !show ? 10000 : 0,
             transition: { duration: 10, type: "ease" },
           }}
         >
