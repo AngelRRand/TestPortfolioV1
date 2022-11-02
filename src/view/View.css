@@ -53,3 +53,7 @@
 .view_item:hover .view_card {
     opacity: 1;
 }
+
+@media all and (max-width: 912px) {
+    
+}
