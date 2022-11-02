@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 3vw;
-    border-top-left-radius: 50px;
+    border-top-left-radius: 5px;
     background-color: var(--gray);
     font-size: calc(0.8vw + 0.8vh + 2vmin); 
 }
