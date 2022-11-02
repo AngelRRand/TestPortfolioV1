@@ -16,12 +16,6 @@ var transitions = {
     y: -1150,
     transition: { duration: 4.5, type: "spring", bounce: 0 },
   },
-  dream: {
-    scale: 7,
-    x: -1300,
-    y: 650,
-    transition: { duration: 4.5, type: "spring", bounce: 0 },
-  },
   art: {
     scale: 7,
     x: 750,
