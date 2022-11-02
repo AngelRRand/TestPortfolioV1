@@ -7,29 +7,16 @@ import PlanetTemplet from '../../component/PlanetTemplet';
 import { motion } from "framer-motion";
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+
+import { transition } from '../../helper/transitions'
 import './About.css'
 
-var transitions = {
-  house: {
-    scale: 7,
-    x: 350,
-    y: -1150,
-    transition: { duration: 4.5, type: "spring", bounce: 0 },
-  },
-  art: {
-    scale: 7,
-    x: 750,
-    y: -850,
-    transition: { duration: 4.5, type: "spring", bounce: 0 },
-  }
-}
 
 const About = () => {
 
   const navigate = useNavigate()
   const [show, setShow] = useState(false)
   const [animation, setAnimation] = useState({});
-
   const animationOn = (animations: object, rute: string) => {
     setShow(!show)
     setAnimation(animations)
@@ -62,14 +49,14 @@ const About = () => {
           moon={true}
           animationOn={animationOn}
         >
-          
+           
           {
             !show ? (
               <div className='planet_grid'>
 
                 <div
                   className='planet_link pointer about_house'
-                  onClick={() => animationOn(transitions.house, 'house')}>
+                  onClick={() => animationOn(transition.house, 'house')}>
                   <span>House</span>
                   <img src={Señal} alt="señal" />
                 </div>
@@ -77,7 +64,7 @@ const About = () => {
 
                 <div
                   className='planet_link pointer about_art'
-                  onClick={() => animationOn(transitions.art, 'art')}>
+                  onClick={() => animationOn(transition.art, 'art')}>
                   <span>Art</span>
                   <img src={Señal} alt="señal" />
                 </div>
@@ -86,7 +73,7 @@ const About = () => {
             ) : (
               <></>
             )
-          }
+          } 
         </PlanetTemplet>
 
       </motion.main>
