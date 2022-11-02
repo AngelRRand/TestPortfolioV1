@@ -45,7 +45,9 @@
         width: 3em;
         height: 3em;
     }
-    
+    .view_cat {
+        grid-area: 29 / 21 / 30 / 22;
+    }
     .view_cat img {
         width: 10vw;
         height: 10vw;
