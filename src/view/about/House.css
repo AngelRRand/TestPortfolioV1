@@ -38,3 +38,16 @@
 .view_cat:hover img:nth-child(3) {
     display: inline;
 }
+
+
+@media all and (max-width: 912px) {
+    .view_me img {
+        width: 3em;
+        height: 3em;
+    }
+    
+    .view_cat img {
+        width: 10vw;
+        height: 10vw;
+    }
+}
