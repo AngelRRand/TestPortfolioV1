@@ -16,8 +16,8 @@
 }
 
 .view_cat img {
-    width:6vw;
-    height: 6vw;
+    width:7vw;
+    height: 7vw;
 }
 
 .view_cat img:nth-child(3) {
@@ -39,8 +39,9 @@
     display: inline;
 }
 @media all and (min-width: 1800px) {
-    .nav_btn_medium button {
-        font-size: calc(0.7vw + 0.7vh + 0.5vmin);
+    .view_cat img {
+        width:6vw;
+        height: 6vw;
     }
 }
 
