@@ -24,7 +24,7 @@ const About = () => {
       setAnimation({});
       navigate(`/${rute}`)
       setShow(false)
-    }, 4500);
+    }, 2000);
   }
   return (
     <Container styles='container_planet'>
