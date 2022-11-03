@@ -1,23 +1,23 @@
 .view_me {
     grid-area: 19 / 14 / 20 / 15;
-    width: 5em;
-    height: 5em;
+    width: 5rem;
+    height: 5vw;
 }
 
 .view_cat {
     grid-area: 27 / 21 / 28 / 22;
-    width: 5em;
-    height: 5em;
+    width:6vw;
+    height: 6vw;
 }
 
 .view_me img {
-    width: 5em;
-    height: 5em;
+    width: 5rem;
+    height: 5vw;
 }
 
 .view_cat img {
-    width: 4em;
-    height: 4em;
+    width:6vw;
+    height: 6vw;
 }
 
 .view_cat img:nth-child(3) {
@@ -38,7 +38,11 @@
 .view_cat:hover img:nth-child(3) {
     display: inline;
 }
-
+@media all and (min-width: 1800px) {
+    .nav_btn_medium button {
+        font-size: calc(0.7vw + 0.7vh + 0.5vmin);
+    }
+}
 
 @media all and (max-width: 912px) {
     .view_me img {
