@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     z-index: 1;
 }
 
@@ -15,7 +15,7 @@
 
 .wallpaper_img {
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     /* object-fit: contain; */
 }
 
