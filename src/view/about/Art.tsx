@@ -5,6 +5,8 @@ import NubeBot from '../../assets/nubes.png'
 import NubesTop from '../../assets/nubesTop.png'
 import Brightness from '../../assets/Planet/Terra/Art/brightness.gif'
 
+import { motion } from "framer-motion";
+
 import './Art.css'
 const Art = () => {
   return (
@@ -15,7 +17,14 @@ const Art = () => {
       nubetop={NubesTop}
       nube_bg={'nube_terra_bg'}
     >
-      <div className='view_grid'>
+      <motion.div
+        className='view_grid'
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 3, duration: 3.5, type: "tween" },
+        }}
+      >
         <div className='view_item view_planet'>
           <img className='view_object' src={Brightness} alt="ligth" />
           <div className='view_card'>
@@ -39,7 +48,7 @@ const Art = () => {
             <p>His name is twenty-seven, he is always at my house :D</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Wallpaper>
   )
 }
