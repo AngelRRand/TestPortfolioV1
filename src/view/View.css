@@ -54,6 +54,11 @@
     opacity: 1;
 }
 
-@media all and (max-width: 912px) {
-    
+@media all and (min-width: 1800px){
+    .view_card h2 {
+        font-size: 2.3rem;
+    }
+    .view_card p {
+        font-size: 1.9rem;
+    }
 }

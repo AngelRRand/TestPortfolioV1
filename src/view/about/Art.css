@@ -30,6 +30,23 @@
     width: 8em;
     height: 7em;
 }
+@media all and (min-width: 1800px) {
+    .view_planet img:nth-child(1) {
+        width:8vw;
+        height: 8vw;
+    }
+    .view_happyDog img:nth-child(1) {
+        width:8vw;
+        height: 8vw;
+    }
+    
+    .view_catSleep img:nth-child(1){
+        width:8vw;
+        height: 8vw;
+    }
+}
+
+
 
 @media all and (max-width: 912px) {
     .view_planet img:nth-child(1) {
