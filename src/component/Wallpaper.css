@@ -30,7 +30,7 @@
 .nube_base {
     width: 100vw;
     height: 85vh;
-    z-index: 3;
+    z-index: 2;
     top: 0;
     bottom: 0;
 }
@@ -41,5 +41,4 @@
 .nube_terra_bg{
     position: absolute;
     background-color: white;
-    z-index: 33;
 }

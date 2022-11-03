@@ -16,8 +16,8 @@
 }
 
 .view_cat img {
-    width:7vw;
-    height: 7vw;
+    width:5vw;
+    height: 5vw;
 }
 
 .view_cat img:nth-child(3) {
