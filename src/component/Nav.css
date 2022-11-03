@@ -59,19 +59,22 @@
     width: auto;
     top: -1vh;
     padding: 1vw;
+    height:7vh;
 }
 
 .nav_btn_medium button {
     display: flex;
     position: relative;
     background-color: var(--gray);
-    width: 10vw;
+    width: 15vw;
+    height: auto;
     padding: 5px;
     margin: 0px 2px;
     border-radius: 5px;
 }
 
 .nav_btn_medium button img {
+    
     position: absolute;
     bottom: 0;
     right: 0;
