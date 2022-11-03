@@ -27,7 +27,7 @@ const Nav = () => {
 
     if (currentUrl !== '/') {
         return (
-            <nav className="nav">
+            <>
                 <div className='container_perfil left_perfil'>
                     <img
                         src={currentUrl === '/house' ? logoSinCasco : logo}
@@ -35,60 +35,62 @@ const Nav = () => {
                         className='img_perfil ' />
                     <h2>Orasio</h2>
                 </div>
-                <div className='nav_content'>
+                <nav className="nav">
+                    <div className='nav_content'>
 
-                    <div className='nav_btn_medium'>
+                        <div className='nav_btn_medium'>
 
-                        {
-                            currentUrl === '/home' ?
-                                (
-                                    <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
-                                ) : (
-                                    <button className='nav_btn' type="button" onClick={() => ToGalaxy()}>Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
-                                )
-                        }
-                        {
-                            currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ?
-                                (
-                                    <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
-                                ) : (
-                                    <button className='nav_btn' type="button" onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
-                                )
-                        }
-                        <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
-
-                    </div>
-                    <div className='nav_text'>
-
-                        <Typing
-                            text={
+                            {
                                 currentUrl === '/home' ?
-                                    'WELCOME!!'
-                                    :
-                                    currentUrl === '/about' ?
-                                        'YOU ARE IN THE PLANET TERRA'
-                                        :
-                                        currentUrl === '/projects' ?
-                                            'P0RJECTS'
-                                            :
-                                            currentUrl === '/education' ?
-                                                'EDUCATION'
-                                                :
-                                                currentUrl === '/house' ?
-                                                    'HOUSEEE'
-                                                    :
-                                                    currentUrl === '/art' ?
-                                                        'ARTTTT'
-                                                        :
-                                                        'PRODUCTIONS'
+                                    (
+                                        <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
+                                    ) : (
+                                        <button className='nav_btn' type="button" onClick={() => ToGalaxy()}>Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
+                                    )
                             }
-                        />
+                            {
+                                currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ?
+                                    (
+                                        <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
+                                    ) : (
+                                        <button className='nav_btn' type="button" onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
+                                    )
+                            }
+                            <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
 
+                        </div>
+                        <div className='nav_text'>
+
+                            <Typing
+                                text={
+                                    currentUrl === '/home' ?
+                                        'WELCOME!!'
+                                        :
+                                        currentUrl === '/about' ?
+                                            'YOU ARE IN THE PLANET TERRA'
+                                            :
+                                            currentUrl === '/projects' ?
+                                                'P0RJECTS'
+                                                :
+                                                currentUrl === '/education' ?
+                                                    'EDUCATION'
+                                                    :
+                                                    currentUrl === '/house' ?
+                                                        'HOUSEEE'
+                                                        :
+                                                        currentUrl === '/art' ?
+                                                            'ARTTTT'
+                                                            :
+                                                            'PRODUCTIONS'
+                                }
+                            />
+
+
+                        </div>
 
                     </div>
 
-                </div>
-
+                </nav>
                 <motion.div
                     className='container_perfil rigth_perfil'
                     initial={{ opacity: 1 }}
@@ -103,7 +105,8 @@ const Nav = () => {
                         className='img_perfil ' />
                     <h2>Orasio</h2>
                 </motion.div>
-            </nav>
+
+            </>
         )
     } else {
         return <></>
