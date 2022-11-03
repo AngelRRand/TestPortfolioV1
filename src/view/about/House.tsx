@@ -8,6 +8,8 @@ import catBody from '../../assets/Planet/Terra/House/27.gif'
 import cathead from '../../assets/Planet/Terra/House/27NotModif.gif'
 import catheadHover from '../../assets/Planet/Terra/House/27Modif.gif'
 
+import { motion } from "framer-motion";
+
 import './House.css'
 const House = () => {
 
@@ -21,7 +23,14 @@ const House = () => {
             nubetop={NubesTop}
             nube_bg={'nube_terra_bg'}
         >
-            <div className='view_grid'>
+            <motion.div
+                className='view_grid'
+                initial={{ opacity: 0 }}
+                animate={{
+                    opacity: 1,
+                    transition: { delay: 3,duration: 3.5, type: "tween" },
+                }}
+                >
                 <div className='view_item view_me'>
                     <img className='view_object' src={lightEffect} alt="ligth" />
                     <div className='view_card'>
@@ -39,7 +48,7 @@ const House = () => {
                         <p>His name is twenty-seven, he is always at my house :D</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </Wallpaper>
     )
 }
