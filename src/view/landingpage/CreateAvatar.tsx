@@ -1,4 +1,3 @@
-
 /* Nacionality */
 import CuerpoBlv from '../../assets/CreatePJ/HumanoTrajeBlv.png';
 import CuerpoArg from '../../assets/CreatePJ/HumanoTrajeArg.png';
@@ -23,10 +22,10 @@ import { useEffect, useState } from 'react';
 
 const CreateAvatar = () => {
 
-  const [head, setHead] = useState('')
-  const [nacionality, setNacionality] = useState('')
-  const [hair, setHair] = useState('')
-  const [eyes, setEyes] = useState('')
+  const [head, setHead] = useState(RostroB)
+  const [nacionality, setNacionality] = useState(CuerpoArg)
+  const [hair, setHair] = useState(PeloNegro)
+  const [eyes, setEyes] = useState(OjosMarron)
 
   const [avatar, setAvatar] = useState({
 
@@ -38,22 +37,11 @@ const CreateAvatar = () => {
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
       <div className="avatar_container">
-        {
-          nacionality && head && hair && eyes === '' ? (
-            <img className='cuerpo_pj' src={nacionality} alt="" />
-          ) : (
-            <>
-            
-            <img className='cuerpo_pj' src={nacionality} alt="" />
-            <img className='rostro_pj' src={head} alt="" />
-            <img className='pelo_pj' src={hair} alt="" />
-            <img className='ojos_pj' src={eyes} alt="" />
-
-            </>
-
-          )
-        }
-        </div>
+        <img className='cuerpo_pj' src={nacionality} alt="" />
+        <img className='rostro_pj' src={head} alt="" />
+        <img className='pelo_pj' src={hair} alt="" />
+        <img className='ojos_pj' src={eyes} alt="" />
+      </div>
 
 
 
