@@ -15,11 +15,12 @@
 }
 
 .container_perfil {
-    position: absolute;
+    position: fixed;
     text-align: center;
-    bottom: 10vh;
+    bottom: 0vh;
     padding: 5px;
-
+    z-index: 100;
+    color: white;
 }
 
 .left_perfil {

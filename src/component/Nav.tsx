@@ -28,13 +28,6 @@ const Nav = () => {
     if (currentUrl !== '/') {
         return (
             <>
-                <div className='container_perfil left_perfil'>
-                    <img
-                        src={currentUrl === '/house' ? logoSinCasco : logo}
-                        alt=""
-                        className='img_perfil ' />
-                    <h2>Orasio</h2>
-                </div>
                 <nav className="nav">
                     <div className='nav_content'>
 
@@ -91,6 +84,13 @@ const Nav = () => {
                     </div>
 
                 </nav>
+                <div className='container_perfil left_perfil'>
+                    <img
+                        src={currentUrl === '/house' ? logoSinCasco : logo}
+                        alt=""
+                        className='img_perfil ' />
+                    <h2>Orasio</h2>
+                </div>
                 <motion.div
                     className='container_perfil rigth_perfil'
                     initial={{ opacity: 1 }}
