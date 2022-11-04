@@ -18,7 +18,26 @@
 }
 
 .landingPage_cont_pj{
+    position: relative;
     width: 13vw;
     height: 13vw;
-    border: 1px solid white;
+    border: 3px solid white;
+}
+
+.landingPage_cont_pj img{
+    position: absolute;
+    width: 13vw;
+    top: 0;
+}
+
+.rostro_pj{
+    z-index: 10;
+}
+
+.cuerpo_pj{
+    z-index: 30;
+}
+
+.pelo_pj{
+    
 }
