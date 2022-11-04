@@ -35,38 +35,40 @@ const Nav = () => {
                 <nav className='nav_operator'
                 >
                     <div className='nav_btn_medium'>
-                        <h2 className='pointer' onClick={() => setShow(!show)}>Explore!</h2>
-                        <div className='nav_text'>
-                            <Typing
-                                text={
-                                    currentUrl === '/home' ?
-                                        'WELCOME!!'
-                                        :
-                                        currentUrl === '/about' ?
-                                            'Safe :3'
+                        <div className='nav_text_title'>
+                            <h2 className='pointer' onClick={() => setShow(!show)}>Explore!</h2>
+                            <div className='nav_text'>
+                                <Typing
+                                    text={
+                                        currentUrl === '/home' ?
+                                            'WELCOME!!'
                                             :
-                                            currentUrl === '/projects' ?
-                                                'P0RJECTS'
+                                            currentUrl === '/about' ?
+                                                'Safe :3'
                                                 :
-                                                currentUrl === '/education' ?
-                                                    'EDUCATION'
+                                                currentUrl === '/projects' ?
+                                                    'P0RJECTS'
                                                     :
-                                                    currentUrl === '/house' ?
-                                                        'HOUSEEE'
+                                                    currentUrl === '/education' ?
+                                                        'EDUCATION'
                                                         :
-                                                        currentUrl === '/art' ?
-                                                            'ARTTTT'
-                                                            : 
-                                                            currentUrl === '/dream' ?
-                                                            'Dreams :D'
+                                                        currentUrl === '/house' ?
+                                                            'HOUSEEE'
                                                             :
-                                                            'PRODUCTIONS'
-                                }
-                            />
-
+                                                            currentUrl === '/art' ?
+                                                                'ARTTTT'
+                                                                :
+                                                                currentUrl === '/dream' ?
+                                                                    'Dreams :D'
+                                                                    :
+                                                                    'PRODUCTIONS'
+                                    }
+                                />
+                            </div>
 
                         </div>
                         <motion.div
+                        className='nav_container_btn'
                             initial={{ x: -1000 }}
                             animate={{
                                 x: !show ? -1000 : 0,
