@@ -43,7 +43,7 @@ const CreateAvatar = () => {
       </div>
 
       <button onClick={()=> createAvatar()}>
-        AFASFASF
+        Guardar
       </button>
       <SwitcherAvatar
         setHead={setHead}
