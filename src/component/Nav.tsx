@@ -97,7 +97,7 @@ const Nav = () => {
 
                 <div className='container_perfil left_perfil'>
                     <img
-                        src={currentUrl === '/house' || '/art' ? logoSinCasco : logo}
+                        src={currentUrl === '/house' ? logoSinCasco : currentUrl === '/art' ? logoSinCasco : logo}
                         alt=""
                         className='img_perfil ' />
                     <h2>Orasio</h2>
@@ -111,7 +111,7 @@ const Nav = () => {
                     }}
                 >
                     <img
-                        src={currentUrl === '/house' || '/art' ? nutriaSinCasco : nutria}
+                        src={currentUrl === '/house' ? nutriaSinCasco : currentUrl === '/art' ? nutriaSinCasco : nutria}
                         alt=""
                         className='img_perfil ' />
                     <h2>Nutria</h2>
