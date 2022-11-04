@@ -32,9 +32,8 @@ const Nav = () => {
         return (
             <>
 
-                <div
+                <nav
                     className='nav_operator'
-                    onClick={() => setShow(!show)}
                 >
                     <div className='nav_btn_medium'>
                         <h2 className='pointer' onClick={() => setShow(!show)}>Explore!</h2>
@@ -91,7 +90,7 @@ const Nav = () => {
                             <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
                         </motion.div>
                     </div>
-                </div>
+                </nav>
 
 
                 <div className='container_perfil left_perfil'>
