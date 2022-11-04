@@ -29,10 +29,10 @@ const Dream = () => {
       >
         <motion.div
           className='dream_container'
-          initial={{ y: 1000 }}
+          initial={{ x: 1000 }}
           animate={{
-            y: !show ? 1000 : 0,
-            transition: !show ? { duration: 5, type: "ease" } : { duration: 4, type: "ease" },
+            x: !show ? 1000 : 0,
+            transition: !show ? { duration: 3, type: "ease" } : { duration: 2, type: "ease" },
           }}
         >
           <div className='dream_container_text'>

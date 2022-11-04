@@ -4,10 +4,10 @@
     color: var(--white);
     background: var(--gray);
     border-left: 2px solid var(--black);
-    top: 0;
+    bottom: 0;
     right: 0;
     width: 20vw;
-    height: 85vh;
+    height: 100vh;
     z-index: 1000;
 }
 
