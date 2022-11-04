@@ -56,6 +56,9 @@ const Nav = () => {
                                                         :
                                                         currentUrl === '/art' ?
                                                             'ARTTTT'
+                                                            : 
+                                                            currentUrl === '/dream' ?
+                                                            'Dreams :D'
                                                             :
                                                             'PRODUCTIONS'
                                 }
