@@ -33,33 +33,40 @@ const Nav = () => {
             <>
 
                 <div
-                    className='nav_operator pointer'
+                    className='nav_operator'
                     onClick={() => setShow(!show)}
                 >
                     <div className='nav_btn_medium'>
-                        <h2>Explore!</h2>
-                        {
-                            currentUrl === '/home' ?
-                                (
-                                    <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
-                                ) : (
-                                    <button className='nav_btn' type="button" onClick={() => ToGalaxy()}>Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
-                                )
-                        }
-                        {
-                            currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ?
-                                (
-                                    <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
-                                ) : (
-                                    <button className='nav_btn' type="button" onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
-                                )
-                        }
-                        <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
-
+                        <h2 className='pointer' onClick={() => setShow(!show)}>Explore!</h2>
+                        <motion.div 
+                        initial={{ y: -1000 }}
+                        animate={{
+                            y: !show ? -1000 : 0,
+                            transition: !show ? { duration: 2, type: "ease" } : { duration: 1, type: "ease" },
+                        }}
+                        >
+                            {
+                                currentUrl === '/home' ?
+                                    (
+                                        <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
+                                    ) : (
+                                        <button className='nav_btn' type="button" onClick={() => ToGalaxy()}>Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
+                                    )
+                            }
+                            {
+                                currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ?
+                                    (
+                                        <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
+                                    ) : (
+                                        <button className='nav_btn' type="button" onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
+                                    )
+                            }
+                            <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
+                        </motion.div>
                     </div>
                 </div>
 
-                {
+                {/* {
                     currentUrl === '/home' ?
                         <></> : (
                             <motion.nav
@@ -104,7 +111,7 @@ const Nav = () => {
 
                             </motion.nav>
                         )
-                }
+                } */}
 
 
 
