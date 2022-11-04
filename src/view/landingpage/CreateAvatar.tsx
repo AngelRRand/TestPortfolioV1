@@ -1,7 +1,7 @@
 import Cuerpo from '../../assets/CreatePJ/HumanoTrajeChi.gif'
 import Rostro from '../../assets/CreatePJ/HumanoCara.gif'
 import Pelo from '../../assets/CreatePJ/HumanoCabelloNegro.gif'
-import Ojos from '../../assets/CreatePJ/HumanoOjoMarrones.gif'
+import Ojos from '../../assets/CreatePJ/HumanoOjosVerdes.gif'
 
 import './CreateAvatar.css'
 
