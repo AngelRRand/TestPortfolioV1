@@ -8,8 +8,8 @@
     font-weight: 200;
     width: 100vw;
     height: 15vh;
-    z-index: 100;
     bottom: 0;
+    z-index: 100;
 }
 
 .container_perfil {
