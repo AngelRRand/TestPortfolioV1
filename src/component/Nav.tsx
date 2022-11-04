@@ -38,12 +38,39 @@ const Nav = () => {
                 >
                     <div className='nav_btn_medium'>
                         <h2 className='pointer' onClick={() => setShow(!show)}>Explore!</h2>
-                        <motion.div 
-                        initial={{ y: -1000 }}
-                        animate={{
-                            y: !show ? -1000 : 0,
-                            transition: !show ? { duration: 2, type: "ease" } : { duration: 1, type: "ease" },
-                        }}
+                        <div className='nav_text'>
+                            <Typing
+                                text={
+                                    currentUrl === '/home' ?
+                                        'WELCOME!!'
+                                        :
+                                        currentUrl === '/about' ?
+                                            'YOU ARE IN THE PLANET TERRA'
+                                            :
+                                            currentUrl === '/projects' ?
+                                                'P0RJECTS'
+                                                :
+                                                currentUrl === '/education' ?
+                                                    'EDUCATION'
+                                                    :
+                                                    currentUrl === '/house' ?
+                                                        'HOUSEEE'
+                                                        :
+                                                        currentUrl === '/art' ?
+                                                            'ARTTTT'
+                                                            :
+                                                            'PRODUCTIONS'
+                                }
+                            />
+
+
+                        </div>
+                        <motion.div
+                            initial={{ y: -1000 }}
+                            animate={{
+                                y: !show ? -1000 : 0,
+                                transition: !show ? { duration: 2, type: "ease" } : { duration: 1, type: "ease" },
+                            }}
                         >
                             {
                                 currentUrl === '/home' ?
@@ -65,56 +92,6 @@ const Nav = () => {
                         </motion.div>
                     </div>
                 </div>
-
-                {/* {
-                    currentUrl === '/home' ?
-                        <></> : (
-                            <motion.nav
-                                className="nav"
-                                initial={{ y: 1000 }}
-                                animate={{
-                                    y: !show ? 1000 : 0,
-                                    transition: !show ? { duration: 2, type: "ease" } : { duration: 1, type: "ease" },
-                                }}
-                            >
-                                <div className='nav_content'>
-                                    <div className='nav_text'>
-
-                                        <Typing
-                                            text={
-                                                currentUrl === '/home' ?
-                                                    'WELCOME!!'
-                                                    :
-                                                    currentUrl === '/about' ?
-                                                        'YOU ARE IN THE PLANET TERRA'
-                                                        :
-                                                        currentUrl === '/projects' ?
-                                                            'P0RJECTS'
-                                                            :
-                                                            currentUrl === '/education' ?
-                                                                'EDUCATION'
-                                                                :
-                                                                currentUrl === '/house' ?
-                                                                    'HOUSEEE'
-                                                                    :
-                                                                    currentUrl === '/art' ?
-                                                                        'ARTTTT'
-                                                                        :
-                                                                        'PRODUCTIONS'
-                                            }
-                                        />
-
-
-                                    </div>
-
-                                </div>
-
-                            </motion.nav>
-                        )
-                } */}
-
-
-
 
 
                 <div className='container_perfil left_perfil'>
