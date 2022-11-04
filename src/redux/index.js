@@ -1,7 +1,9 @@
+import avatar from './avatarStore'
+
 import { configureStore } from '@reduxjs/toolkit'
 
-configureStore({
+export default configureStore({
     reducer: {
-        
+        avatar
     }
 })

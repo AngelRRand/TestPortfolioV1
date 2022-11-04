@@ -11,30 +11,36 @@ import Dream from "./view/about/Dream";
 
 import Nav from "./component/Nav";
 
+import store from './redux'
 import { useLocation, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
+import { Provider } from 'react-redux'
 
 import './App.css'
 
 function App() {
   const location = useLocation();
   return (
-    <div className={location.pathname.toString() === '/home' ? '' : 'app_overflow'}>
-      <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Projects />} />
-          <Route path="/projects" element={<Education />} />
-          <Route path="/networks" element={<Networks />} />
-          <Route path="/house" element={<House />} />
-          <Route path="/art" element={<Art />} />
-          <Route path="/dream" element={<Dream />} />
-        </Routes>
-      </AnimatePresence>
-      <Nav/>
-    </div>
+    <Provider store={store}>
+
+      <div className={location.pathname.toString() === '/home' ? '' : 'app_overflow'}>
+        <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/education" element={<Projects />} />
+            <Route path="/projects" element={<Education />} />
+            <Route path="/networks" element={<Networks />} />
+            <Route path="/house" element={<House />} />
+            <Route path="/art" element={<Art />} />
+            <Route path="/dream" element={<Dream />} />
+          </Routes>
+        </AnimatePresence>
+        <Nav />
+      </div>
+
+    </Provider>
   );
 }
 
