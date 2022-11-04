@@ -47,7 +47,7 @@ console.log(show)
                                 initial={{ y: 1000 }}
                                 animate={{
                                     y: !show ? 1000 : 0,
-                                    transition: !show ? { duration: 5, type: "ease" } : { duration: 4, type: "ease" },
+                                    transition: !show ? { duration: 2, type: "ease" } : { duration: 1, type: "ease" },
                                 }}
                             >
                                 <div className='nav_content'>
