@@ -41,7 +41,7 @@ const Dream = () => {
               initial={{ y: 10000 }}
               animate={{
                 y: 0,
-                transition: { duration: 10, type: "ease" },
+                transition: { duration: 5, type: "ease" },
               }}
             > I am a person who dreams :) </motion.p>
             <motion.p
@@ -49,7 +49,7 @@ const Dream = () => {
               initial={{ y: 10000 }}
               animate={{
                 y: 0,
-                transition: { duration: 11, type: "ease" },
+                transition: { duration: 7, type: "ease" },
               }}
             > I dream of traveling to Europe and Asia. </motion.p>
             <motion.p
@@ -57,7 +57,7 @@ const Dream = () => {
               initial={{ y: 10000 }}
               animate={{
                 y: 0,
-                transition: { duration: 12, type: "ease" },
+                transition: { duration: 8, type: "ease" },
               }}
             > I dream of being able to get married, have a family and a dog. </motion.p>
             <motion.p
@@ -65,7 +65,7 @@ const Dream = () => {
               initial={{ y: 10000 }}
               animate={{
                 y: 0,
-                transition: { duration: 13, type: "ease" },
+                transition: { duration: 9, type: "ease" },
               }}
             > I dream of having a house on a mountain. </motion.p>
             <motion.p
@@ -73,7 +73,7 @@ const Dream = () => {
               initial={{ y: 10000 }}
               animate={{
                 y: 0,
-                transition: { duration: 15, type: "ease" },
+                transition: { duration: 10, type: "ease" },
               }}
             > My ambitions and goals are the motivation that drive me every day beyond my limits!! :DD </motion.p>
           </div>

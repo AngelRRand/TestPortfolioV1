@@ -2,7 +2,7 @@
     display: flex;
     position: absolute;
     color: var(--white);
-    background: rgba(0, 0, 0, 0.26);
+    background: rgba(0, 0, 0, 0.747);
     border-left: 2px solid var(--black);
     bottom: 0;
     right: 0;
