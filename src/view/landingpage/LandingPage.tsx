@@ -4,7 +4,7 @@ import Stars from "../../component/Stars";
 import './LandingPage.css'
 const LandingPage = () => {
   return (
-    <Container styles='container_landingPage'>
+    <Container styles='container_planet'>
       <Stars/>
       <section className="landingPage">
         <Link to={'/home'}>Home</Link>
