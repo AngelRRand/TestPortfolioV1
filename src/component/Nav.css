@@ -4,14 +4,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--black);
-    color: var(--white);
-    text-shadow: none;
     font-weight: 200;
     width: 100vw;
     height: 15vh;
     z-index: 100;
     bottom: 0;
-    overflow: hidden;
 }
 
 .container_perfil {

@@ -6,14 +6,16 @@ import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
 import ligthgreen from '../assets/NavBotton/ligthgreen.gif';
 import ligthred from '../assets/NavBotton/ligthred.gif';
 
+import { useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
-
 import { motion } from "framer-motion";
 
-import './Nav.css'
+import './Nav.css';
 const Nav = () => {
+    
     const location = useLocation();
     const navigate = useNavigate();
+    const [show, setShow] = useState(false)
     const currentUrl = location.pathname.toString();
     const ToGalaxy = () => {
         navigate('/home')
@@ -30,14 +32,24 @@ const Nav = () => {
         return (
             <>
 
-                <div className='nav_operator'>
+                <div 
+                    className='nav_operator'
+                    onClick={()=> setShow(!show)}
+                >
                     <h1>OPERATOR</h1>
                 </div>
 
                 {
                     currentUrl === '/home' ?
                         <></> : (
-                            <nav className="nav">
+                            <motion.nav
+                                className="nav"
+                                initial={{ y: 1000 }}
+                                animate={{
+                                    y: !show ? 1000 : 0,
+                                    transition: !show ? { duration: 5, type: "ease" } : { duration: 4, type: "ease" },
+                                }}
+                            >
                                 <div className='nav_content'>
 
                                     <div className='nav_btn_medium'>
@@ -92,7 +104,7 @@ const Nav = () => {
 
                                 </div>
 
-                            </nav>
+                            </motion.nav>
                         )
                 }
 
