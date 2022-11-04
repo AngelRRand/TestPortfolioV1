@@ -49,11 +49,11 @@ const CreateAvatar = () => {
       <div className='createAvatar_divide'>
         <div className='createAvatar_options createAvatar_container'>
           <p>Trajes</p>
-          <button onClick={() => setNacionality(CuerpoArg)}>switchArg</button>
-          <button onClick={() => setNacionality(CuerpoBlv)}>switchBlv</button>
-          <button onClick={() => setNacionality(CuerpoChi)}>switchBlv</button>
-          <button onClick={() => setNacionality(CuerpoEcu)}>switchBlv</button>
-          <button onClick={() => setNacionality(CuerpoPeru)}>switchBlv</button>
+          <button onClick={() => setNacionality(CuerpoArg)}>Argentina</button>
+          <button onClick={() => setNacionality(CuerpoBlv)}>Bolivia</button>
+          <button onClick={() => setNacionality(CuerpoChi)}>Chile</button>
+          <button onClick={() => setNacionality(CuerpoEcu)}>Ecuador</button>
+          <button onClick={() => setNacionality(CuerpoPeru)}>Peru</button>
         </div>
 
         <div className='createAvatar_options createAvatar_container'>
