@@ -1,11 +1,11 @@
 .view_me {
-    grid-area: 19 / 14 / 20 / 15;
+    grid-area: 21 / 15 / 22 / 16;
     width: 5rem;
     height: 5vw;
 }
 
 .view_cat {
-    grid-area: 27 / 21 / 28 / 22;
+    grid-area: 32 / 21 / 33 / 22;
     width:6vw;
     height: 6vw;
 }
@@ -39,6 +39,7 @@
     display: inline;
 }
 @media all and (min-width: 1800px) {
+    
     .view_cat img {
         width:6vw;
         height: 6vw;
@@ -51,7 +52,7 @@
         height: 3em;
     }
     .view_cat {
-        grid-area: 29 / 21 / 30 / 22;
+        grid-area: 34 / 21 / 35 / 22;
     }
     .view_cat img {
         width: 10vw;
