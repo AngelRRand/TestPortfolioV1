@@ -2,21 +2,10 @@ import Cuerpo from '../../assets/CreatePJ/HumanoTrajeChi.gif'
 import Rostro from '../../assets/CreatePJ/HumanoCara.gif'
 import Pelo from '../../assets/CreatePJ/HumanoCabelloNegro.gif'
 import Ojos from '../../assets/CreatePJ/HumanoOjoMarrones.gif'
-import Container from '../../component/Container';
-import Stars from "../../component/Stars";
 
-
-import { Link } from "react-router-dom";
-
-
-import './LandingPage.css'
-const LandingPage = () => {
+const CreateAvatar = () => {
   return (
-    <Container styles='container_planet'>
-      <Stars/>
-      <section className="landingPage">
-        <Link to={'/home'}>Home</Link>
-        <div className='createAvatar_container'>
+    <div className='createAvatar_container'>
           <h2>PJ</h2>
           <div className="landingPage_cont_pj">
             <img className='cuerpo_pj' src={Cuerpo} alt="" />
@@ -25,9 +14,7 @@ const LandingPage = () => {
             <img className='ojos_pj' src={Ojos} alt="" />
           </div>
         </div>
-      </section>
-    </Container>
   )
 }
 
-export default LandingPage
+export default CreateAvatar
