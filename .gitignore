@@ -28,3 +28,4 @@ src/component/PlanetTemplet.tsx
 src/component/PlanerTemplet.css
 src/component/Typing.tsx
 src/component/Typing.css
+src/view/landingpage/SwitcherAvatar.tsx
