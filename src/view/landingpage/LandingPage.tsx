@@ -8,6 +8,12 @@ const LandingPage = () => {
       <Stars/>
       <section className="landingPage">
         <Link to={'/home'}>Home</Link>
+        <div>
+          <h2>PJ</h2>
+          <div className="landingPage_cont_pj">
+
+          </div>
+        </div>
       </section>
     </Container>
   )

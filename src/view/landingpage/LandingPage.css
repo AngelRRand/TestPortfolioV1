@@ -7,9 +7,18 @@
     height: 85vh;
     width: 85vw;
     z-index: 10;
+    background: rgba(0, 0, 0, 0.575);
+    border: 1px solid white;
+    color: var(--white);
+    flex-direction: column;
 }
 
 .landingPage a {
-    color: var(--white);
     font-size: 2rem;
+}
+
+.landingPage_cont_pj{
+    width: 13vw;
+    height: 13vw;
+    border: 1px solid white;
 }
