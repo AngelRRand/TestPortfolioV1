@@ -58,23 +58,23 @@ const CreateAvatar = () => {
 
         <div className='createAvatar_options createAvatar_container'>
           <p>Piel</p>
-          <button onClick={() => setHead(RostroB)}>switchArg</button>
-          <button onClick={() => setHead(RostroM)}>switchBlv</button>
+          <button onClick={() => setHead(RostroB)}>Blanca</button>
+          <button onClick={() => setHead(RostroM)}>Morena</button>
         </div>
 
         <div className='createAvatar_options createAvatar_container' >
           <p>Pelos</p>
-          <button onClick={() => setHair(PeloNegro)}>switchArg</button>
-          <button onClick={() => setHair(PeloRojo)}>switchBlv</button>
-          <button onClick={() => setHair(PeloRubio)}>switchBlv</button>
+          <button onClick={() => setHair(PeloNegro)}>Negro</button>
+          <button onClick={() => setHair(PeloRojo)}>Rojo</button>
+          <button onClick={() => setHair(PeloRubio)}>Rubio</button>
         </div>
 
 
         <div className='createAvatar_options createAvatar_container'>
           <p>Ojos</p>
-          <button onClick={() => setEyes(OjosAzules)}>switchArg</button>
-          <button onClick={() => setEyes(OjosVerdes)}>switchArg</button>
-          <button onClick={() => setEyes(OjosMarron)}>switchBlv</button>
+          <button onClick={() => setEyes(OjosAzules)}>Azules</button>
+          <button onClick={() => setEyes(OjosVerdes)}>Verdes</button>
+          <button onClick={() => setEyes(OjosMarron)}>Marrones</button>
         </div>
       </div>
     </div>
