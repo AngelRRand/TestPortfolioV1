@@ -16,9 +16,20 @@ const CreateAvatar = () => {
   const [eyes, setEyes] = useState(OjosMarron)
 
   const [avatar, setAvatar] = useState({
-
+    head: head,
+    nacionality: nacionality,
+    hair: hair,
+    eyes: eyes
   })
-
+  const createAvatar = () => {
+    setAvatar({
+      head: head,
+      nacionality: nacionality,
+      hair: hair,
+      eyes: eyes
+    })
+    console.log(avatar)
+  }
 
 
   return (
@@ -31,7 +42,9 @@ const CreateAvatar = () => {
         <img className='ojos_pj' src={eyes} alt="" />
       </div>
 
-
+      <button onClick={()=> createAvatar()}>
+        AFASFASF
+      </button>
       <SwitcherAvatar
         setHead={setHead}
         setNacionality={setNacionality}
