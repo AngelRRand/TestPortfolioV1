@@ -64,9 +64,9 @@ const Nav = () => {
 
                         </div>
                         <motion.div
-                            initial={{ y: -1000 }}
+                            initial={{ x: -1000 }}
                             animate={{
-                                y: !show ? -1000 : 0,
+                                x: !show ? -1000 : 0,
                                 transition: !show ? { duration: 2, type: "ease" } : { duration: 1, type: "ease" },
                             }}
                         >
