@@ -4,21 +4,20 @@
     align-items: center;
     justify-content: center;
     background-color: var(--black);
-    border-top: 2px solid var(--black);
     color: var(--white);
     text-shadow: none;
     font-weight: 200;
     width: 100vw;
     height: 15vh;
     z-index: 100;
-    bottom: 0
+    bottom: 0;
+    overflow: hidden;
 }
 
 .container_perfil {
     position: fixed;
     text-align: center;
     bottom: 0vh;
-    padding: 5px;
     z-index: 100;
     color: white;
 }
@@ -34,7 +33,7 @@
 .img_perfil {
     width: 13vw;
     background-color: rgba(240, 248, 255, 0.178);
-    border: 3px solid var(--black);
+    border: 2px solid var(--black);
     z-index: 10;
 }
 

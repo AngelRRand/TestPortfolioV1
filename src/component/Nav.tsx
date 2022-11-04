@@ -28,6 +28,9 @@ const Nav = () => {
     if (currentUrl !== '/') {
         return (
             <>
+
+                
+
                 <nav className="nav">
                     <div className='nav_content'>
 
@@ -84,6 +87,10 @@ const Nav = () => {
                     </div>
 
                 </nav>
+
+                
+                
+
                 <div className='container_perfil left_perfil'>
                     <img
                         src={currentUrl === '/house' ? logoSinCasco : logo}
