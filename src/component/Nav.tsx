@@ -32,8 +32,7 @@ const Nav = () => {
         return (
             <>
 
-                <nav
-                    className='nav_operator'
+                <nav className='nav_operator'
                 >
                     <div className='nav_btn_medium'>
                         <h2 className='pointer' onClick={() => setShow(!show)}>Explore!</h2>
@@ -44,7 +43,7 @@ const Nav = () => {
                                         'WELCOME!!'
                                         :
                                         currentUrl === '/about' ?
-                                            'YOU ARE IN THE PLANET TERRA'
+                                            'Safe :3'
                                             :
                                             currentUrl === '/projects' ?
                                                 'P0RJECTS'
@@ -95,7 +94,7 @@ const Nav = () => {
 
                 <div className='container_perfil left_perfil'>
                     <img
-                        src={currentUrl === '/house' ? logoSinCasco : logo}
+                        src={currentUrl === '/house' || '/art' ? logoSinCasco : logo}
                         alt=""
                         className='img_perfil ' />
                     <h2>Orasio</h2>
@@ -109,7 +108,7 @@ const Nav = () => {
                     }}
                 >
                     <img
-                        src={currentUrl === '/house' ? nutriaSinCasco : nutria}
+                        src={currentUrl === '/house' || '/art' ? nutriaSinCasco : nutria}
                         alt=""
                         className='img_perfil ' />
                     <h2>Nutria</h2>
