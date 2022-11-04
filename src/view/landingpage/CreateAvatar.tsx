@@ -1,5 +1,5 @@
 import Cuerpo from '../../assets/CreatePJ/HumanoTrajeChi.gif'
-import Rostro from '../../assets/CreatePJ/HumanoCara.gif'
+import Rostro from '../../assets/CreatePJ/HumanoCaraBlanca.gif'
 import Pelo from '../../assets/CreatePJ/HumanoCabelloNegro.gif'
 import Ojos from '../../assets/CreatePJ/HumanoOjosVerdes.gif'
 

@@ -15,7 +15,7 @@ const LandingPage = () => {
       <section className="landingPage">
         <Link to={'/home'}>Home</Link>
         
-        <CreateAvatar></CreateAvatar>
+        <CreateAvatar/>
 
       </section>
     </Container>
