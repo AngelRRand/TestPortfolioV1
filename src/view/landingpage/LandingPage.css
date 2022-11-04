@@ -21,13 +21,13 @@
     position: relative;
     width: 13vw;
     height: 13vw;
-    border: 3px solid white;
 }
 
 .landingPage_cont_pj img{
     position: absolute;
     width: 13vw;
     top: 0;
+    border: 3px solid white;
 }
 
 .rostro_pj{
