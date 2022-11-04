@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 import './Nav.css';
 const Nav = () => {
-    
+
     const location = useLocation();
     const navigate = useNavigate();
     const [show, setShow] = useState(false)
@@ -27,16 +27,36 @@ const Nav = () => {
         }
     }
 
-console.log(show)
+    console.log(show)
     if (currentUrl !== '/') {
         return (
             <>
 
-                <div 
+                <div
                     className='nav_operator pointer'
-                    onClick={()=> setShow(!show)}
+                    onClick={() => setShow(!show)}
                 >
-                    <h1>OPERATOR</h1>
+                    <div className='nav_btn_medium'>
+                        <h2>Explore!</h2>
+                        {
+                            currentUrl === '/home' ?
+                                (
+                                    <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
+                                ) : (
+                                    <button className='nav_btn' type="button" onClick={() => ToGalaxy()}>Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
+                                )
+                        }
+                        {
+                            currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ?
+                                (
+                                    <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
+                                ) : (
+                                    <button className='nav_btn' type="button" onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
+                                )
+                        }
+                        <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
+
+                    </div>
                 </div>
 
                 {
@@ -51,28 +71,6 @@ console.log(show)
                                 }}
                             >
                                 <div className='nav_content'>
-
-                                    <div className='nav_btn_medium'>
-
-                                        {
-                                            currentUrl === '/home' ?
-                                                (
-                                                    <button className='nav_btn' type="button" disabled>Go To Galaxy <img src={ligthred} alt="ligth" /></button>
-                                                ) : (
-                                                    <button className='nav_btn' type="button" onClick={() => ToGalaxy()}>Go To Galaxy <img src={ligthgreen} alt="ligth" /></button>
-                                                )
-                                        }
-                                        {
-                                            currentUrl === '/home' || currentUrl === '/about' || currentUrl === '/education' || currentUrl === '/projects' || currentUrl === '/networks' ?
-                                                (
-                                                    <button className='nav_btn' type="button" disabled>Go To Planet <img src={ligthred} alt="ligth" /></button>
-                                                ) : (
-                                                    <button className='nav_btn' type="button" onClick={() => ToPlanet()} >Go To Planet <img src={ligthgreen} alt="ligth" /></button>
-                                                )
-                                        }
-                                        <button className='nav_btn' type="button">Open Map <img src={ligthgreen} alt="ligth" /></button>
-
-                                    </div>
                                     <div className='nav_text'>
 
                                         <Typing
