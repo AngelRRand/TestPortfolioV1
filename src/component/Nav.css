@@ -1,7 +1,8 @@
 .nav {
     display: flex;
-    position: absolute;
+    position: relative;
     align-items: center;
+    overflow: hidden;
     justify-content: center;
     background-color: var(--black);
     font-weight: 200;

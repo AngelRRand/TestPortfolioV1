@@ -27,13 +27,13 @@ const Nav = () => {
         }
     }
 
-
+console.log(show)
     if (currentUrl !== '/') {
         return (
             <>
 
                 <div 
-                    className='nav_operator'
+                    className='nav_operator pointer'
                     onClick={()=> setShow(!show)}
                 >
                     <h1>OPERATOR</h1>
