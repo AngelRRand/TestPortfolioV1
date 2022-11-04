@@ -1,19 +1,17 @@
+/* Nacionality */
 import CuerpoBlv from '../../assets/CreatePJ/HumanoTrajeBlv.png';
 import CuerpoArg from '../../assets/CreatePJ/HumanoTrajeArg.png';
 import CuerpoChi from '../../assets/CreatePJ/HumanoTrajeChi.png';
 import CuerpoEcu from '../../assets/CreatePJ/HumanoTrajeEcu.png';
 import CuerpoPeru from '../../assets/CreatePJ/HumanoTrajePeru.png';
-
-
+/* Body */
 import RostroB from '../../assets/CreatePJ/HumanoCaraBlanca.png';
 import RostroM from '../../assets/CreatePJ/HumanoCaraMorena.png';
-
-
+/* Hair */
 import PeloNegro from '../../assets/CreatePJ/HumanoCabelloNegro.png';
 import PeloRojo from '../../assets/CreatePJ/HumanoCabelloRojo.png';
 import PeloRubio from '../../assets/CreatePJ/HumanoCabelloRubio.png';
-
-
+/* Eyes */
 import OjosAzules from '../../assets/CreatePJ/HumanoOjosAzules.png';
 import OjosVerdes from '../../assets/CreatePJ/HumanoOjosVerdes.png';
 import OjosMarron from '../../assets/CreatePJ/HumanoOjosMarrones.png';
