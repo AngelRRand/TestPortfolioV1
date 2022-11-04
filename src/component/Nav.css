@@ -90,6 +90,16 @@
     color: rgb(107, 107, 107);
 }
 
+
+.nav_operator{
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    color: wheat;
+}
+
+
+
 @media all and (min-width: 1800px) {
     .nav_btn_medium button {
         font-size: calc(0.7vw + 0.7vh + 0.5vmin);

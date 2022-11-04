@@ -7,6 +7,7 @@ import ligthgreen from '../assets/NavBotton/ligthgreen.gif';
 import ligthred from '../assets/NavBotton/ligthred.gif';
 
 import { useLocation, useNavigate } from "react-router-dom";
+
 import { motion } from "framer-motion";
 
 import './Nav.css'
@@ -28,6 +29,10 @@ const Nav = () => {
     if (currentUrl !== '/') {
         return (
             <>
+
+                <div className='nav_operator'>
+                    <h1>OPERATOR</h1>
+                </div>
 
                 {
                     currentUrl === '/home' ?
