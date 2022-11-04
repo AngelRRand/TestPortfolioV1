@@ -7,7 +7,7 @@ const CreateAvatar = () => {
   return (
     <div className='createAvatar_container'>
           <h2>PJ</h2>
-          <div className="landingPage_cont_pj">
+          <div className="avatar_container">
             <img className='cuerpo_pj' src={Cuerpo} alt="" />
             <img className='rostro_pj' src={Rostro} alt="" />
             <img className='pelo_pj' src={Pelo} alt="" />
