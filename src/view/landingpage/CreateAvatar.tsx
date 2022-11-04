@@ -14,7 +14,9 @@ import PeloRojo from '../../assets/CreatePJ/HumanoCabelloRojo.png';
 import PeloRubio from '../../assets/CreatePJ/HumanoCabelloRubio.png';
 
 
-import Ojos from '../../assets/CreatePJ/HumanoOjosVerdes.png';
+import OjosAzules from '../../assets/CreatePJ/HumanoOjosAzules.png';
+import OjosVerdes from '../../assets/CreatePJ/HumanoOjosVerdes.png';
+import OjosMarron from '../../assets/CreatePJ/HumanoOjosMarrones.png';
 
 import './CreateAvatar.css';
 
@@ -37,8 +39,8 @@ const CreateAvatar = () => {
       <div className="avatar_container">
           <img className='cuerpo_pj' src={nacionality} alt="" />
           <img className='rostro_pj' src={head} alt="" />
-          <img className='pelo_pj' src={Pelo} alt="" />
-          <img className='ojos_pj' src={Ojos} alt="" />
+          <img className='pelo_pj' src={hair} alt="" />
+          <img className='ojos_pj' src={eyes} alt="" />
         </div>
 
 
@@ -62,15 +64,17 @@ const CreateAvatar = () => {
 
         <div className='createAvatar_options createAvatar_container' >
           <p>Pelos</p>
-          <button onClick={() => setHair(CuerpoArg)}>switchArg</button>
-          <button onClick={() => setHair(CuerpoBlv)}>switchBlv</button>
+          <button onClick={() => setHair(PeloNegro)}>switchArg</button>
+          <button onClick={() => setHair(PeloRojo)}>switchBlv</button>
+          <button onClick={() => setHair(PeloRubio)}>switchBlv</button>
         </div>
 
 
         <div className='createAvatar_options createAvatar_container'>
           <p>Ojos</p>
-          <button onClick={() => setEyes(CuerpoArg)}>switchArg</button>
-          <button onClick={() => setEyes(CuerpoBlv)}>switchBlv</button>
+          <button onClick={() => setEyes(OjosAzules)}>switchArg</button>
+          <button onClick={() => setEyes(OjosVerdes)}>switchArg</button>
+          <button onClick={() => setEyes(OjosMarron)}>switchBlv</button>
         </div>
       </div>
     </div>
