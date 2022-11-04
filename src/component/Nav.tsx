@@ -103,7 +103,7 @@ const Nav = () => {
                         src={currentUrl === '/house' ? nutriaSinCasco : nutria}
                         alt=""
                         className='img_perfil ' />
-                    <h2>Orasio</h2>
+                    <h2>Nutria</h2>
                 </motion.div>
 
             </>
