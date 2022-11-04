@@ -1,5 +1,5 @@
 .view_planet {
-    grid-area: 23 / 19 / 24 / 20;
+    grid-area: 27 / 19 / 28 / 20;
 }
 
 .view_happyDog {
@@ -7,7 +7,7 @@
 }
 
 .view_catSleep{
-    grid-area: 24 / 6 / 25 / 7;
+    grid-area: 27 / 6 / 28 / 7;
 }
 
 .view_planet img:nth-child(1) {
