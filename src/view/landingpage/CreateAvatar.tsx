@@ -1,3 +1,4 @@
+
 /* Nacionality */
 import CuerpoBlv from '../../assets/CreatePJ/HumanoTrajeBlv.png';
 import CuerpoArg from '../../assets/CreatePJ/HumanoTrajeArg.png';
@@ -27,7 +28,9 @@ const CreateAvatar = () => {
   const [hair, setHair] = useState('')
   const [eyes, setEyes] = useState('')
 
+  const [avatar, setAvatar] = useState({
 
+  })
 
 
 
@@ -35,10 +38,21 @@ const CreateAvatar = () => {
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
       <div className="avatar_container">
-          <img className='cuerpo_pj' src={nacionality} alt="" />
-          <img className='rostro_pj' src={head} alt="" />
-          <img className='pelo_pj' src={hair} alt="" />
-          <img className='ojos_pj' src={eyes} alt="" />
+        {
+          nacionality && head && hair && eyes === '' ? (
+            <img className='cuerpo_pj' src={nacionality} alt="" />
+          ) : (
+            <>
+            
+            <img className='cuerpo_pj' src={nacionality} alt="" />
+            <img className='rostro_pj' src={head} alt="" />
+            <img className='pelo_pj' src={hair} alt="" />
+            <img className='ojos_pj' src={eyes} alt="" />
+
+            </>
+
+          )
+        }
         </div>
 
 
