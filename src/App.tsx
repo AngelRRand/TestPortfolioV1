@@ -11,17 +11,14 @@ import Dream from "./view/about/Dream";
 
 import Nav from "./component/Nav";
 
-import store from './redux'
 import { useLocation, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
-import { Provider } from 'react-redux'
 
 import './App.css'
 
 function App() {
   const location = useLocation();
   return (
-    <Provider store={store}>
 
       <div className={location.pathname.toString() === '/home' ? '' : 'app_overflow'}>
         <AnimatePresence>
@@ -39,8 +36,6 @@ function App() {
         </AnimatePresence>
         <Nav />
       </div>
-
-    </Provider>
   );
 }
 

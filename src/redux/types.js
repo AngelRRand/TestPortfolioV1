@@ -1,0 +1,1 @@
+export const SAVE_AVATAR = 'SAVE_AVATAR'

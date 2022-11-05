@@ -1,3 +1,4 @@
+import SwitcherAvatar from './SwitcherAvatar';
 import CuerpoArg from '../../assets/CreatePJ/HumanoTrajeArg.png';
 import RostroB from '../../assets/CreatePJ/HumanoCaraBlanca.png';
 import PeloNegro from '../../assets/CreatePJ/HumanoCabelloNegro.png';
@@ -5,9 +6,7 @@ import OjosMarron from '../../assets/CreatePJ/HumanoOjosMarrones.png';
 
 import './CreateAvatar.css';
 
-import { useEffect, useState } from 'react';
-import SwitcherAvatar from './SwitcherAvatar';
-
+import { useState } from 'react';
 const CreateAvatar = () => {
 
   const [head, setHead] = useState(RostroB)
@@ -28,7 +27,7 @@ const CreateAvatar = () => {
       hair: hair,
       eyes: eyes
     })
-    console.log(avatar)
+    /* useDispatch(getAvatar()) */
   }
 
 
