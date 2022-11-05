@@ -30,3 +30,5 @@ src/component/Typing.tsx
 src/component/Typing.css
 src/view/landingpage/SwitcherAvatar.tsx
 src/interfaces/Interface.ts
+src/helper/images.ts
+src/helper/transitions.ts
