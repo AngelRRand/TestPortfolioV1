@@ -1,3 +1,8 @@
 import { createContext } from "react";
+import { Avatar } from "../interfaces/Interface";
 
-export const AvatarContext = createContext({})
+export type AvatarContextProps = {
+    avatar: Avatar
+}
+
+export const AvatarContext = createContext<AvatarContextProps>({} as AvatarContextProps)
