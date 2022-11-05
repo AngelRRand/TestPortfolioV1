@@ -6,7 +6,14 @@ type AvatarActions =
 
 
 export const avatarReducer = (state:Avatar, action:AvatarActions) => {
-    switch(key){
-        case
+    switch(action.type){
+        case 'addAvatar':
+            return{
+                ...state,
+                avatar: action.payload
+            }
+        
+            default:
+                return state
     }
 }

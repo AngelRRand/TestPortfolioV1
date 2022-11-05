@@ -1,8 +1,13 @@
 import { Avatar } from "../interfaces/Interface"
 import { AvatarContext } from "./AvatarContext"
-
+import { cosmeticDefault } from "../helper/images"
 const initial_state: Avatar = {
-    avatar: {}
+    avatar: {
+        Nacionality: 'ARG',
+        Body: cosmeticDefault.Arg,
+        Hair: cosmeticDefault.BlackHair,
+        
+    }
 }
 
 
