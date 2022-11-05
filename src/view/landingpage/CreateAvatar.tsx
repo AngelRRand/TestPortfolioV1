@@ -44,6 +44,8 @@ const CreateAvatar = () => {
       <button onClick={()=> createAvatar()}>
         Guardar
       </button>
+
+      
       <SwitcherAvatar
         setHead={setHead}
         setNacionality={setNacionality}

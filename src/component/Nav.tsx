@@ -6,17 +6,21 @@ import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
 import ligthgreen from '../assets/NavBotton/ligthgreen.gif';
 import ligthred from '../assets/NavBotton/ligthred.gif';
 
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import './Nav.css';
+import { AvatarContext } from '../context/AvatarContext';
 const Nav = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
     const [show, setShow] = useState(false)
     const currentUrl = location.pathname.toString();
+    const { avatarState } = useContext(AvatarContext)
+
+
     const ToGalaxy = () => {
         navigate('/home')
     }
@@ -27,13 +31,11 @@ const Nav = () => {
         }
     }
 
-    console.log(show)
     if (currentUrl !== '/') {
         return (
             <>
 
-                <nav className='nav_operator'
-                >
+                <nav className='nav_operator'>
                     <div className='nav_btn_medium'>
                         <div className='nav_text_title'>
                             <h2 className='pointer' onClick={() => setShow(!show)}>Explore!</h2>
@@ -68,7 +70,7 @@ const Nav = () => {
 
                         </div>
                         <motion.div
-                        className='nav_container_btn'
+                            className='nav_container_btn'
                             initial={{ x: -1000 }}
                             animate={{
                                 x: !show ? -1000 : 0,
@@ -98,12 +100,16 @@ const Nav = () => {
 
 
                 <div className='container_perfil left_perfil'>
-                    <img
-                        src={currentUrl === '/house' ? logoSinCasco : currentUrl === '/art' ? logoSinCasco : logo}
-                        alt=""
-                        className='img_perfil ' />
-                    <h2>Orasio</h2>
+                    <div className="avatar_container">
+                        <img className='cuerpo_pj' src={avatarState.flag} alt="" />
+                        <img className='rostro_pj' src={avatarState.skin} alt="" />
+                        <img className='pelo_pj' src={avatarState.hair} alt="" />
+                        <img className='ojos_pj' src={avatarState.eyes} alt="" />
+                    </div>
+                    <h2>Nutria</h2>
                 </div>
+
+
                 <motion.div
                     className='container_perfil rigth_perfil'
                     initial={{ opacity: 1 }}
