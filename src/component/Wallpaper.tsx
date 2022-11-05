@@ -1,17 +1,10 @@
 import { motion } from "framer-motion";
+import { TempletViews } from "../interfaces/Interface";
 import './Wallpaper.css'
 
 
-type Props = {
-  children?: React.ReactNode
-  image: string
-  imageGif: string
-  nubebot: string
-  nubetop: string
-  nube_bg: string
-}
 
-const ContainerView: React.FC<Props> = ({ children, image, imageGif, nubebot, nubetop, nube_bg }) => {
+const ContainerView: React.FC<TempletViews> = ({ children, image, imageGif, nubebot, nubetop, nube_bg }) => {
 
 
   return (
