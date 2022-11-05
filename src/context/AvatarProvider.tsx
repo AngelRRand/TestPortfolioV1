@@ -1,4 +1,10 @@
+import { Avatar } from "../interfaces/Interface"
 import { AvatarContext } from "./AvatarContext"
+
+const initial_state: Avatar = {
+    avatar: {}
+}
+
 
 interface props {
     children:JSX.Element | JSX.Element[]
