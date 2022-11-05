@@ -13,13 +13,14 @@ import Nav from "./component/Nav";
 
 import { useLocation, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
+import { AvatarProvider } from "./context/AvatarProvider";
 
 import './App.css'
 
 function App() {
   const location = useLocation();
   return (
-
+    <AvatarProvider>
       <div className={location.pathname.toString() === '/home' ? '' : 'app_overflow'}>
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
@@ -36,6 +37,7 @@ function App() {
         </AnimatePresence>
         <Nav />
       </div>
+    </AvatarProvider>
   );
 }
 
