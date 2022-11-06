@@ -1,31 +1,60 @@
 import SwitcherAvatar from './SwitcherAvatar';
-import CuerpoArg from '../../assets/CreatePJ/png/HumanoTrajeArg.png';
-import RostroB from '../../assets/CreatePJ/png/HumanoCaraBlanca.png';
-import PeloNegro from '../../assets/CreatePJ/png/HumanoCabelloNegro.png';
-import OjosMarron from '../../assets/CreatePJ/png/HumanoOjosMarrones.png';
+
+import { cosmeticDefault } from "../../helper/images";
+import { AvatarContext } from '../../context/AvatarContext'
+import { useState, useEffect, useContext } from 'react';
 
 import './CreateAvatar.css';
 
-import { useState } from 'react';
 const CreateAvatar = () => {
 
-  const [head, setHead] = useState(RostroB)
-  const [nacionality, setNacionality] = useState(CuerpoArg)
-  const [hair, setHair] = useState(PeloNegro)
-  const [eyes, setEyes] = useState(OjosMarron)
 
+  const { avatarState } = useContext(AvatarContext)
   const [avatar, setAvatar] = useState({
-    head: head,
-    nacionality: nacionality,
-    hair: hair,
-    eyes: eyes
+    nacionality: '',
+    flag: '',
+    skin: '',
+    hair: '',
+    eyes: ''
   })
-  const createAvatar = () => {
+
+
+  const [nacionality, setnacionality] = useState({
+    nacionality: ''
+  })
+  const [flag, setflag] = useState({
+
+  })
+  const [skin, setskin] = useState({
+
+  })
+  const [hair, sethair] = useState({
+
+  })
+  const [eyes, seteyes] = useState({
+
+  })
+  useEffect(() => {
+    setAvatar(avatarState)
+    if (avatarState.nacionality === 'default') {
+      setnacionality({
+        nacionality: cosmeticDefault.Arg.index
+      })
+      setflag({
+        image: cosmeticDefault.Arg.index
+      })
+    }
+  }, [])
+
+
+
+  const create = () => {
     setAvatar({
-      head: head,
-      nacionality: nacionality,
-      hair: hair,
-      eyes: eyes
+      nacionality: avatar.nacionality,
+      flag: avatar.flag,
+      skin: avatar.skin,
+      hair: avatar.hair,
+      eyes: avatar.eyes
     })
     /* useDispatch(getAvatar()) */
   }
@@ -35,22 +64,19 @@ const CreateAvatar = () => {
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
       <div className="avatar_container">
-        <img className='cuerpo_pj' src={nacionality} alt="" />
-        <img className='rostro_pj' src={head} alt="" />
-        <img className='pelo_pj' src={hair} alt="" />
-        <img className='ojos_pj' src={eyes} alt="" />
+        <img className='cuerpo_pj' src={avatar.flag} alt="" />
+        <img className='rostro_pj' src={avatar.skin} alt="" />
+        <img className='pelo_pj' src={avatar.hair} alt="" />
+        <img className='ojos_pj' src={avatar.eyes} alt="" />
       </div>
 
-      <button onClick={()=> createAvatar()}>
+      <button onClick={() => create()}>
         Guardar
       </button>
 
-      
+
       <SwitcherAvatar
-        setHead={setHead}
-        setNacionality={setNacionality}
-        setHair={setHair}
-        setEyes={setEyes}
+        setAvatar={setAvatar}
       />
     </div>
   )
