@@ -59,7 +59,7 @@ const CreateAvatar = () => {
 
   const create = () => {
     setAvatar({
-      nacionality: avatar.nacionality,
+      nacionality: nacionality.nacionality,
       flag: avatar.flag,
       skin: avatar.skin,
       hair: avatar.hair,
