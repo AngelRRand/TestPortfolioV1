@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useContext } from 'react';
 import { AvatarContext } from '../context/AvatarContext';
-import { cosmeticDefaultGif } from '../helper/imagesGif';
+import { cosmeticDefaultGif, cosmeticMaleGif } from '../helper/imagesGif';
 const Perfil = () => {
 
     const { avatarState } = useContext(AvatarContext)
@@ -19,6 +19,15 @@ const Perfil = () => {
             setAvatar({
                 nacionality: 'default',
                 flag: cosmeticDefaultGif.Arg,
+                skin: cosmeticDefaultGif.SkinB,
+                hair: cosmeticDefaultGif.BlackHair,
+                eyes: cosmeticDefaultGif.BrownEyes
+            })
+        }
+        if (avatarState.nacionality === 'ecuador') {
+            setAvatar({
+                nacionality: 'ecuador',
+                flag: cosmeticMaleGif.Ecu,
                 skin: cosmeticDefaultGif.SkinB,
                 hair: cosmeticDefaultGif.BlackHair,
                 eyes: cosmeticDefaultGif.BrownEyes

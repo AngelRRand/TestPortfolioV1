@@ -9,7 +9,8 @@ import './CreateAvatar.css';
 const CreateAvatar = () => {
 
 
-  const { avatarState } = useContext(AvatarContext)
+  const { avatarState, newAvatar } = useContext(AvatarContext)
+  /* console.log(avatarState) */
   const [avatar, setAvatar] = useState({
     nacionality: '',
     flag: '',
@@ -64,9 +65,10 @@ const CreateAvatar = () => {
       hair: hair.hair,
       eyes: eyes.eyes
     })
+    return newAvatar(avatar)
   }
 
-  console.log(avatar, 'AVATAR')
+  //console.log(avatar, 'AVATAR')
 
   return (
     <div className='createAvatar_container'>
