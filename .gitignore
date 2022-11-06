@@ -32,3 +32,4 @@ src/view/landingpage/SwitcherAvatar.tsx
 src/interfaces/Interface.ts
 src/helper/images.ts
 src/helper/transitions.ts
+src/helper/imagesGif.ts

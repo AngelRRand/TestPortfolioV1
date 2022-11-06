@@ -1,7 +1,5 @@
 import Typing from './Typing';
-import logo from '../assets/NavBotton/PJprueba.gif';
 import nutria from '../assets/NavBotton/nutria.gif';
-import logoSinCasco from '../assets/NavBotton/PJpruebaSinCasco.gif';
 import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
 import ligthgreen from '../assets/NavBotton/ligthgreen.gif';
 import ligthred from '../assets/NavBotton/ligthred.gif';
