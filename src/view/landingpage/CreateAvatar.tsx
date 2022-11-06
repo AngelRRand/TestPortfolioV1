@@ -1,8 +1,8 @@
 import SwitcherAvatar from './SwitcherAvatar';
-import CuerpoArg from '../../assets/CreatePJ/HumanoTrajeArg.png';
-import RostroB from '../../assets/CreatePJ/HumanoCaraBlanca.png';
-import PeloNegro from '../../assets/CreatePJ/HumanoCabelloNegro.png';
-import OjosMarron from '../../assets/CreatePJ/HumanoOjosMarrones.png';
+import CuerpoArg from '../../assets/CreatePJ/png/HumanoTrajeArg.png';
+import RostroB from '../../assets/CreatePJ/png/HumanoCaraBlanca.png';
+import PeloNegro from '../../assets/CreatePJ/png/HumanoCabelloNegro.png';
+import OjosMarron from '../../assets/CreatePJ/png/HumanoOjosMarrones.png';
 
 import './CreateAvatar.css';
 

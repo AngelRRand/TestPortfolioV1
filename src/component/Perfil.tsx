@@ -5,12 +5,14 @@ const Perfil = () => {
 
     const { avatarState } = useContext(AvatarContext)
     const [avatar, setAvatar] = useState({})
+
     useEffect(() => {
-      if(avatarState.nacionality === 'default'){
-        console.log(avatarState)
-      }
+        setAvatar(avatarState)
+        if (avatarState.nacionality === 'default') {
+            console.log(avatar)
+        }
     }, [avatar])
-    
+
 
 
     return (
