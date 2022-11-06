@@ -20,11 +20,15 @@ interface props {
 
 export const AvatarProvider = ({ children }: props) => {
 
-    const [ avatarState ] = useReducer(avatarReducer, initial_state)
+    const [ avatarState, dispatch ] = useReducer(avatarReducer, initial_state)
 
+    const newAvatar = (avatar: Avatar) => {
+        dispatch({type: 'addAvatar', payload: avatar})
+    }
     return (
         <AvatarContext.Provider value={{
-            avatarState
+            avatarState,
+            newAvatar
         }}>
             {children}
         </AvatarContext.Provider>
