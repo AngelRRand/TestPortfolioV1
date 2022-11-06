@@ -12,7 +12,7 @@ const Perfil = () => {
         hair: '',
         eyes: ''
     })
-
+    console.log(avatarState)
     useEffect(() => {
         setAvatar(avatarState)
         if (avatarState.nacionality === 'default') {
@@ -24,7 +24,7 @@ const Perfil = () => {
                 eyes: cosmeticDefaultGif.BrownEyes
             })
         }
-    }, [avatar])
+    }, [])
 
 
 
