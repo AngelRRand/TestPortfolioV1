@@ -23,7 +23,8 @@ const CreateAvatar = () => {
     nacionality: ''
   })
   const [flag, setflag] = useState({
-    flag: ''
+    flag: '',
+    index: ''
   })
   const [skin, setskin] = useState({
     skin: ''
@@ -41,7 +42,8 @@ const CreateAvatar = () => {
         nacionality: cosmeticDefault.Arg.index
       })
       setflag({
-        flag: cosmeticDefault.Arg.image
+        flag: cosmeticDefault.Arg.image,
+        index: cosmeticDefault.Arg.index
       })
       setskin({
         skin: cosmeticDefault.SkinB.image
@@ -85,7 +87,10 @@ const CreateAvatar = () => {
 
 
       <SwitcherAvatar
-        setAvatar={setAvatar}
+        setflag={setflag}
+        setskin={setskin}
+        sethair={sethair}
+        seteyes={seteyes}
       />
     </div>
   )
