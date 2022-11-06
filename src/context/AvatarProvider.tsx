@@ -6,7 +6,7 @@ import { cosmeticDefault } from "../helper/images"
 
 
 const initial_state: Avatar = {
-    nacionality: 'ARG',
+    nacionality: 'default',
     flag: cosmeticDefault.Arg,
     skin: cosmeticDefault.SkinB,
     hair: cosmeticDefault.BlackHair,

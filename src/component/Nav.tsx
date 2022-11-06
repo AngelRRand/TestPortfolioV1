@@ -8,10 +8,11 @@ import ligthred from '../assets/NavBotton/ligthred.gif';
 
 import { useContext, useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
+import { AvatarContext } from '../context/AvatarContext';
 import { motion } from "framer-motion";
 
 import './Nav.css';
-import { AvatarContext } from '../context/AvatarContext';
+import Perfil from './Perfil';
 const Nav = () => {
 
     const location = useLocation();
@@ -99,15 +100,7 @@ const Nav = () => {
                 </nav>
 
 
-                <div className='container_perfil left_perfil'>
-                    <div className="avatar_container">
-                        <img className='cuerpo_pj' src={avatarState.flag} alt="" />
-                        <img className='rostro_pj' src={avatarState.skin} alt="" />
-                        <img className='pelo_pj' src={avatarState.hair} alt="" />
-                        <img className='ojos_pj' src={avatarState.eyes} alt="" />
-                    </div>
-                    <h2>Nutria</h2>
-                </div>
+                <Perfil/>
 
 
                 <motion.div

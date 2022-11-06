@@ -24,6 +24,7 @@
     position: absolute;
     width: 13vw;
     height: 13vw;
+    left: 0;
     top: 0;
     border: 3px solid white;
 }
