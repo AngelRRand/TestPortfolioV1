@@ -24,7 +24,6 @@ const CreateAvatar = () => {
   })
   const [flag, setflag] = useState({
     flag: '',
-    index: ''
   })
   const [skin, setskin] = useState({
     skin: ''
@@ -35,15 +34,14 @@ const CreateAvatar = () => {
   const [eyes, seteyes] = useState({
     eyes:''
   })
+
   useEffect(() => {
-    setAvatar(avatarState)
     if (avatarState.nacionality === 'default') {
       setnacionality({
         nacionality: cosmeticDefault.Arg.index
       })
       setflag({
         flag: cosmeticDefault.Arg.image,
-        index: cosmeticDefault.Arg.index
       })
       setskin({
         skin: cosmeticDefault.SkinB.image
@@ -58,18 +56,17 @@ const CreateAvatar = () => {
   }, [])
 
 
-
   const create = () => {
     setAvatar({
       nacionality: nacionality.nacionality,
-      flag: avatar.flag,
-      skin: avatar.skin,
-      hair: avatar.hair,
-      eyes: avatar.eyes
+      flag: flag.flag,
+      skin: skin.skin,
+      hair: hair.hair,
+      eyes: eyes.eyes
     })
-    /* useDispatch(getAvatar()) */
   }
 
+  console.log(avatar, 'AVATAR')
 
   return (
     <div className='createAvatar_container'>
@@ -87,6 +84,7 @@ const CreateAvatar = () => {
 
 
       <SwitcherAvatar
+        setnacionality={setnacionality}
         setflag={setflag}
         setskin={setskin}
         sethair={sethair}
