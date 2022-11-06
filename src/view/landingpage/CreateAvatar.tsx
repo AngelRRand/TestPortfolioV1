@@ -23,16 +23,16 @@ const CreateAvatar = () => {
     nacionality: ''
   })
   const [flag, setflag] = useState({
-
+    flag: ''
   })
   const [skin, setskin] = useState({
-
+    skin: ''
   })
   const [hair, sethair] = useState({
-
+    hair: ''
   })
   const [eyes, seteyes] = useState({
-
+    eyes:''
   })
   useEffect(() => {
     setAvatar(avatarState)
@@ -41,7 +41,16 @@ const CreateAvatar = () => {
         nacionality: cosmeticDefault.Arg.index
       })
       setflag({
-        image: cosmeticDefault.Arg.index
+        flag: cosmeticDefault.Arg.image
+      })
+      setskin({
+        skin: cosmeticDefault.SkinB.image
+      })
+      sethair({
+        hair: cosmeticDefault.BlackHair.image
+      })
+      seteyes({
+        eyes: cosmeticDefault.BrownEyes.image
       })
     }
   }, [])
@@ -64,10 +73,10 @@ const CreateAvatar = () => {
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
       <div className="avatar_container">
-        <img className='cuerpo_pj' src={avatar.flag} alt="" />
-        <img className='rostro_pj' src={avatar.skin} alt="" />
-        <img className='pelo_pj' src={avatar.hair} alt="" />
-        <img className='ojos_pj' src={avatar.eyes} alt="" />
+        <img className='cuerpo_pj' src={flag.flag} alt="" />
+        <img className='rostro_pj' src={skin.skin} alt="" />
+        <img className='pelo_pj' src={hair.hair} alt="" />
+        <img className='ojos_pj' src={eyes.eyes} alt="" />
       </div>
 
       <button onClick={() => create()}>
