@@ -1,7 +1,6 @@
 import SwitcherAvatar from './SwitcherAvatar';
 
 import { cosmeticDefault } from "../../helper/images";
-import { AvatarContext } from '../../context/AvatarContext'
 import { useState, useEffect, useContext } from 'react';
 
 import './CreateAvatar.css';
@@ -9,7 +8,6 @@ import './CreateAvatar.css';
 const CreateAvatar = () => {
 
 
-  const { avatarState, newAvatar } = useContext(AvatarContext)
   /* console.log(avatarState) */
   const [avatar, setAvatar] = useState({
     nacionality: '',
@@ -32,33 +30,7 @@ const CreateAvatar = () => {
     eyes:''
   })
 
-  useEffect(() => {
-    if (avatarState.nacionality === 'default') {
-      setnacionality({
-        nacionality: cosmeticDefault.Arg.index
-      })
-      setflag({
-        flag: cosmeticDefault.Arg.image,
-      })
-      setskin({
-        skin: cosmeticDefault.SkinB.image
-      })
-      sethair({
-        hair: cosmeticDefault.BlackHair.image
-      })
-      seteyes({
-        eyes: cosmeticDefault.BrownEyes.image
-      })
-    }
-  }, [])
-
-
-  const create = () => {
-    setAvatar({
-      nacionality: nacionality.nacionality,
-    })
-    return newAvatar(avatar)
-  }
+  
 
   //console.log(avatar, 'AVATAR')
 
@@ -72,7 +44,7 @@ const CreateAvatar = () => {
         <img className='ojos_pj' src={eyes.eyes} alt="" />
       </div>
 
-      <button onClick={() => create()}>
+      <button>
         Guardar
       </button>
 
