@@ -4,12 +4,13 @@ import { cosmeticDefault } from "../../helper/images";
 import { useState, useEffect, useContext } from 'react';
 
 import './CreateAvatar.css';
+import AvatarContext from '../../redux/avatar/AvatarContext';
 
 const CreateAvatar = () => {
 
-
-  /* console.log(avatarState) */
-  const [avatar, setAvatar] = useState({
+  const { avatar } = useContext(AvatarContext)
+  console.log(avatar)
+  const [avatarr, setAvatar] = useState({
     nacionality: '',
   })
 

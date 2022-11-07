@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useContext } from 'react';
 import { cosmeticDefaultGif, cosmeticMaleGif } from '../../helper/imagesGif';
+import AvatarContext from '../../redux/avatar/AvatarContext';
 const Perfil = () => {
 
-    const [avatar, setAvatar] = useState({
+    const [avatarr, setAvatar] = useState({
         nacionality: '',
         flag: '',
         skin: '',
@@ -11,8 +12,9 @@ const Perfil = () => {
         eyes: ''
     })
     
- /*    useEffect(() => {
-        if (avatarState.nacionality === 'default') {
+    const { avatar } = useContext(AvatarContext)
+   useEffect(() => {
+        if (avatar.flag.nacionality === 'default') {
             setAvatar({
                 nacionality: 'default',
                 flag: cosmeticDefaultGif.Arg,
@@ -21,26 +23,18 @@ const Perfil = () => {
                 eyes: cosmeticDefaultGif.BrownEyes
             })
         }
-        if (avatarState.nacionality === 'ecuador') {
-            setAvatar({
-                nacionality: 'ecuador',
-                flag: cosmeticMaleGif.Ecu,
-                skin: cosmeticDefaultGif.SkinB,
-                hair: cosmeticDefaultGif.BlackHair,
-                eyes: cosmeticDefaultGif.BrownEyes
-            })
-        }
+        
     }, [])
 
- */
+
 
     return (
         <div className='container_perfil left_perfil'>
             <div className="avatar_container">
-                <img className='cuerpo_pj' src={avatar.flag} alt="" />
-                <img className='rostro_pj' src={avatar.skin} alt="" />
-                <img className='pelo_pj' src={avatar.hair} alt="" />
-                <img className='ojos_pj' src={avatar.eyes} alt="" />
+                <img className='cuerpo_pj' src={avatarr.flag} alt="" />
+                <img className='rostro_pj' src={avatarr.skin} alt="" />
+                <img className='pelo_pj' src={avatarr.hair} alt="" />
+                <img className='ojos_pj' src={avatarr.eyes} alt="" />
             </div>
             <h2>Horacio</h2>
         </div>
