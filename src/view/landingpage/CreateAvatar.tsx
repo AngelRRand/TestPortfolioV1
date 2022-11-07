@@ -30,6 +30,7 @@ const CreateAvatar = () => {
    }) */
    //console.log(avatar)
   useEffect(() => {
+    console.log('HPASD')
     if (avatar.flag.nacionality === 'default') {
       setflag({
         nacionality: avatar.flag.nacionality,
@@ -42,7 +43,7 @@ const CreateAvatar = () => {
     }
   }, [])
   //console.log(skin.image)
-
+  
   const createAvatar = () => {
     setNewAvatar({
       flag,
