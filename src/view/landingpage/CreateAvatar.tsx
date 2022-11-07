@@ -8,7 +8,7 @@ import AvatarContext from '../../redux/avatar/AvatarContext';
 
 const CreateAvatar = () => {
 
-  const { avatar } = useContext(AvatarContext)
+  const { avatar, putAvatar } = useContext(AvatarContext)
 
   const [newAvatar, setNewAvatar] = useState({})
 
@@ -48,8 +48,9 @@ const CreateAvatar = () => {
       flag,
       skin
     })
+    putAvatar(newAvatar)
   }
-  console.log(newAvatar)
+  console.log(avatar)
   return (
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
