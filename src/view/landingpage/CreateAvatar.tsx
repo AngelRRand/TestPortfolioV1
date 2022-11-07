@@ -50,7 +50,7 @@ const CreateAvatar = () => {
     })
     putAvatar(newAvatar)
   }
-  console.log(avatar)
+  console.log(avatar, 'ESTADOOO')
   return (
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
