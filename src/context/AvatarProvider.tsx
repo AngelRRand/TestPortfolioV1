@@ -5,12 +5,14 @@ import { Avatar } from "../interfaces/Interface"
 import { cosmeticDefault } from "../helper/images"
 
 
-const initial_state: Avatar = {
-    nacionality: 'default',
-    flag: cosmeticDefault.Arg.image,
-    skin: cosmeticDefault.SkinB.image,
-    hair: cosmeticDefault.BlackHair.image,
-    eyes: cosmeticDefault.BrownEyes.image
+const initial_state: any = {
+    avatar:{
+        nacionality: 'default',
+        flag: cosmeticDefault.Arg.image,
+        skin: cosmeticDefault.SkinB.image,
+        hair: cosmeticDefault.BlackHair.image,
+        eyes: cosmeticDefault.BrownEyes.image
+    }
 }
 
 

@@ -1,12 +1,11 @@
-import Typing from './Typing';
-import nutria from '../assets/NavBotton/nutria.gif';
-import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
-import ligthgreen from '../assets/NavBotton/ligthgreen.gif';
-import ligthred from '../assets/NavBotton/ligthred.gif';
+import Typing from '../../component/Typing';
+import nutria from '../../assets/NavBotton/nutria.gif';
+import nutriaSinCasco from '../../assets/NavBotton/nutriaSinCasco.gif';
+import ligthgreen from '../../assets/NavBotton/ligthgreen.gif';
+import ligthred from '../../assets/NavBotton/ligthred.gif';
 
 import { useContext, useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
-import { AvatarContext } from '../context/AvatarContext';
 import { motion } from "framer-motion";
 
 import './Nav.css';
@@ -17,7 +16,6 @@ const Nav = () => {
     const navigate = useNavigate();
     const [show, setShow] = useState(false)
     const currentUrl = location.pathname.toString();
-    const { avatarState } = useContext(AvatarContext)
 
 
     const ToGalaxy = () => {

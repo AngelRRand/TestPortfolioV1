@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useContext } from 'react';
-import { AvatarContext } from '../context/AvatarContext';
-import { cosmeticDefaultGif, cosmeticMaleGif } from '../helper/imagesGif';
+import { cosmeticDefaultGif, cosmeticMaleGif } from '../../helper/imagesGif';
 const Perfil = () => {
 
-    const { avatarState } = useContext(AvatarContext)
     const [avatar, setAvatar] = useState({
         nacionality: '',
         flag: '',
@@ -12,9 +10,8 @@ const Perfil = () => {
         hair: '',
         eyes: ''
     })
-    console.log(avatarState)
-    useEffect(() => {
-        setAvatar(avatarState)
+    
+ /*    useEffect(() => {
         if (avatarState.nacionality === 'default') {
             setAvatar({
                 nacionality: 'default',
@@ -35,7 +32,7 @@ const Perfil = () => {
         }
     }, [])
 
-
+ */
 
     return (
         <div className='container_perfil left_perfil'>

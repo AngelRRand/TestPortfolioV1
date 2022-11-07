@@ -4,12 +4,12 @@ import Projects from "./view/projects/Projects";
 import Education from "./view/education/Education";
 import Networks from "./view/networks/Networks";
 import LandingPage from "./view/landingpage/LandingPage";
+import Nav from "./view/nav/Nav";
 /* About */
 import House from "./view/about/House";
 import Art from "./view/about/Art";
 import Dream from "./view/about/Dream";
 
-import Nav from "./component/Nav";
 
 import { useLocation, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';

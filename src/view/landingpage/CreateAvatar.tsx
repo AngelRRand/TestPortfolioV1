@@ -13,10 +13,6 @@ const CreateAvatar = () => {
   /* console.log(avatarState) */
   const [avatar, setAvatar] = useState({
     nacionality: '',
-    flag: '',
-    skin: '',
-    hair: '',
-    eyes: ''
   })
 
 
@@ -60,10 +56,6 @@ const CreateAvatar = () => {
   const create = () => {
     setAvatar({
       nacionality: nacionality.nacionality,
-      flag: flag.flag,
-      skin: skin.skin,
-      hair: hair.hair,
-      eyes: eyes.eyes
     })
     return newAvatar(avatar)
   }
