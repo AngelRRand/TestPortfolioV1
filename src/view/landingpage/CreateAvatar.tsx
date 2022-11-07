@@ -9,53 +9,69 @@ import AvatarContext from '../../redux/avatar/AvatarContext';
 const CreateAvatar = () => {
 
   const { avatar } = useContext(AvatarContext)
-  console.log(avatar)
-  const [avatarr, setAvatar] = useState({
-    nacionality: '',
-  })
 
+  const [newAvatar, setNewAvatar] = useState({})
 
-  const [nacionality, setnacionality] = useState({
+  const [flag, setflag] = useState({
+    image: '',
     nacionality: ''
   })
-  const [flag, setflag] = useState({
-    flag: '',
-  })
-  const [skin, setskin] = useState({
-    skin: ''
-  })
-  const [hair, sethair] = useState({
-    hair: ''
-  })
-  const [eyes, seteyes] = useState({
-    eyes:''
-  })
+   const [skin, setskin] = useState({
+    image: '',
+    index: ''
+   })
 
-  
+   /*
+   const [hair, sethair] = useState({
+     hair: ''
+   })
+   const [eyes, seteyes] = useState({
+     eyes: ''
+   }) */
+   //console.log(avatar)
+  useEffect(() => {
+    if (avatar.flag.nacionality === 'default') {
+      setflag({
+        nacionality: avatar.flag.nacionality,
+        image: avatar.flag.image
+      })
+      setskin({
+        index: avatar.skin.index,
+        image: avatar.skin.image
+      })
+    }
+  }, [])
+  //console.log(skin.image)
 
-  //console.log(avatar, 'AVATAR')
-
+  const createAvatar = () => {
+    setNewAvatar({
+      flag,
+      skin
+    })
+  }
+  console.log(newAvatar)
   return (
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
       <div className="avatar_container">
-        <img className='cuerpo_pj' src={flag.flag} alt="" />
-        <img className='rostro_pj' src={skin.skin} alt="" />
-        <img className='pelo_pj' src={hair.hair} alt="" />
-        <img className='ojos_pj' src={eyes.eyes} alt="" />
+        <img className='cuerpo_pj' src={flag.image} alt="" />
+        <img className='rostro_pj' src={skin.image} alt="" />
+
+
+        {/* <img className='pelo_pj' src={hair.hair} alt="" />
+        <img className='ojos_pj' src={eyes.eyes} alt="" /> */} 
       </div>
 
-      <button>
+      <button onClick={()=> createAvatar()}>
         Guardar
       </button>
 
 
       <SwitcherAvatar
-        setnacionality={setnacionality}
         setflag={setflag}
         setskin={setskin}
-        sethair={sethair}
-        seteyes={seteyes}
+        /* sethair={sethair}
+        seteyes={seteyes} */
       />
     </div>
   )
