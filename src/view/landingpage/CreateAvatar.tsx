@@ -66,7 +66,9 @@ const CreateAvatar = () => {
   const createAvatar = () => {
     setNewAvatar({
       flag,
-      skin
+      skin,
+      hair,
+      eyes
     })
     putAvatar(newAvatar)
   }
