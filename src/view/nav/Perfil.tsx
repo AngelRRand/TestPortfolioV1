@@ -13,7 +13,7 @@ const Perfil = () => {
     })
     
     const { avatar } = useContext(AvatarContext)
-   useEffect(() => {
+   /* useEffect(() => {
         if (avatar.flag.nacionality === 'default') {
             setAvatar({
                 nacionality: 'default',
@@ -63,7 +63,7 @@ const Perfil = () => {
                 })
             }
         }
-    }, [])
+    }, []) */
 
     console.log(avatar)
 
