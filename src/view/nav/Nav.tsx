@@ -3,20 +3,22 @@ import nutria from '../../assets/NavBotton/nutria.gif';
 import nutriaSinCasco from '../../assets/NavBotton/nutriaSinCasco.gif';
 import ligthgreen from '../../assets/NavBotton/ligthgreen.gif';
 import ligthred from '../../assets/NavBotton/ligthred.gif';
+import AvatarContext from '../../redux/avatar/AvatarContext';
 
 import { useContext, useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
 import './Nav.css';
-import Perfil from './Perfil';
+import Avatar from '../../component/Avatar';
 const Nav = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
     const [show, setShow] = useState(false)
     const currentUrl = location.pathname.toString();
-
+    const { avatar } = useContext(AvatarContext)
 
     const ToGalaxy = () => {
         navigate('/home')
@@ -27,7 +29,7 @@ const Nav = () => {
             navigate('/about')
         }
     }
-
+    console.log(avatar)
     if (currentUrl !== '/') {
         return (
             <>
@@ -95,9 +97,16 @@ const Nav = () => {
                     </div>
                 </nav>
 
-
-                <Perfil/>
-
+                <div className='container_perfil left_perfil'>
+                    <Avatar
+                        flag={avatar.flag.image}
+                        skin={avatar.skin.image}
+                        hair={avatar.hair.image}
+                        eyes={avatar.eyes.image}
+                    />
+                    <h2>Horacio</h2>
+                </div>
+s
 
                 <motion.div
                     className='container_perfil rigth_perfil'

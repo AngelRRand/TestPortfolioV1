@@ -1,12 +1,10 @@
 import SwitcherAvatar from './SwitcherAvatar';
+import AvatarContext from '../../redux/avatar/AvatarContext';
+import Avatar from '../../component/Avatar';
 
-import { cosmeticDefault } from "../../helper/images";
 import { useState, useEffect, useContext } from 'react';
 
 import './CreateAvatar.css';
-import AvatarContext from '../../redux/avatar/AvatarContext';
-import Avatar from './Avatar';
-import { ContainersA } from '../../interfaces/Interface';
 
 const CreateAvatar = () => {
 
@@ -35,7 +33,6 @@ const CreateAvatar = () => {
   })
 
   useEffect(() => {
-    console.log('HPASD')
     if (avatar.flag.nacionality === 'default') {
       setflag({
         nacionality: avatar.flag.nacionality,
@@ -87,10 +84,10 @@ const CreateAvatar = () => {
           />
         ) : (
           <Avatar
-            flag={''}
-            skin={''}
-            hair={''}
-            eyes={''}
+            flag=''
+            skin=''
+            hair=''
+            eyes=''
           />
         )
 
