@@ -5,6 +5,8 @@ import { useState, useEffect, useContext } from 'react';
 
 import './CreateAvatar.css';
 import AvatarContext from '../../redux/avatar/AvatarContext';
+import Avatar from './Avatar';
+import { ContainersA } from '../../interfaces/Interface';
 
 const CreateAvatar = () => {
 
@@ -12,24 +14,26 @@ const CreateAvatar = () => {
 
   const [newAvatar, setNewAvatar] = useState({})
 
+  const [refresh, setRefresh] = useState(false)
+
   const [flag, setflag] = useState({
     image: '',
     nacionality: ''
   })
-   const [skin, setskin] = useState({
+  const [skin, setskin] = useState({
     image: '',
     index: ''
-   })
+  })
 
-   const [hair, sethair] = useState({
+  const [hair, sethair] = useState({
     image: '',
     index: ''
-   })
-   const [eyes, seteyes] = useState({
+  })
+  const [eyes, seteyes] = useState({
     image: '',
     index: ''
-   })
-   //console.log(avatar)
+  })
+
   useEffect(() => {
     console.log('HPASD')
     if (avatar.flag.nacionality === 'default') {
@@ -43,7 +47,14 @@ const CreateAvatar = () => {
       })
     }
   }, [])
-  
+
+  useEffect(() => {
+    if(refresh === true){
+      setRefresh(false)
+    }
+  }, [refresh])
+
+    
   const createAvatar = () => {
     setNewAvatar({
       flag,
@@ -51,18 +62,32 @@ const CreateAvatar = () => {
     })
     putAvatar(newAvatar)
   }
-  console.log(avatar, 'ESTADOOO')
+  
   return (
     <div className='createAvatar_container'>
       <h2> Create Avatar</h2>
-      <div className="avatar_container">
-        <img className='cuerpo_pj' src={flag.image} alt="" />
-        <img className='rostro_pj' src={skin.image} alt="" />
-        <img className='pelo_pj' src={hair.image} alt="" />
-        <img className='ojos_pj' src={eyes.image} alt="" /> 
-      </div>
 
-      <button onClick={()=> createAvatar()}>
+      {
+        !refresh ? (
+          <Avatar
+            flag={flag.image}
+            skin={skin.image}
+            hair={hair.image}
+            eyes={eyes.image}
+          />
+        ) : (
+          <Avatar
+            flag={''}
+            skin={''}
+            hair={''}
+            eyes={''}
+          />
+        )
+
+      }
+
+
+      <button onClick={() => createAvatar()}>
         Guardar
       </button>
 
@@ -72,6 +97,7 @@ const CreateAvatar = () => {
         setskin={setskin}
         sethair={sethair}
         seteyes={seteyes}
+        setRefresh={setRefresh}
       />
     </div>
   )
