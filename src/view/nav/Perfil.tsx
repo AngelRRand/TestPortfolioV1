@@ -23,10 +23,49 @@ const Perfil = () => {
                 eyes: cosmeticDefaultGif.BrownEyes
             })
         }
-        
+        if(avatar.flag.index === 'bolivia'){
+            if(avatar.skin.index === 'skinblanca'){
+                setAvatar({
+                    nacionality: 'bolivia',
+                    flag: cosmeticMaleGif.Blv,
+                    skin: cosmeticMaleGif.SkinB,
+                    hair: cosmeticMaleGif.BlackHair,
+                    eyes: cosmeticMaleGif.BrownEyes
+                })
+            }
+            if(avatar.skin.index === 'skinNegra'){
+                setAvatar({
+                    nacionality: 'bolivia',
+                    flag: cosmeticMaleGif.Blv,
+                    skin: cosmeticMaleGif.SkinM,
+                    hair: cosmeticMaleGif.BlackHair,
+                    eyes: cosmeticMaleGif.BrownEyes
+                })
+            }
+        }
+        if(avatar.flag.index === 'chile'){
+            if(avatar.skin.index === 'skinblanca'){
+                setAvatar({
+                    nacionality: 'chile',
+                    flag: cosmeticMaleGif.Chi,
+                    skin: cosmeticMaleGif.SkinB,
+                    hair: cosmeticMaleGif.BlackHair,
+                    eyes: cosmeticMaleGif.BrownEyes
+                })
+            }
+            if(avatar.skin.index === 'skinNegra'){
+                setAvatar({
+                    nacionality: 'chile',
+                    flag: cosmeticMaleGif.Chi,
+                    skin: cosmeticMaleGif.SkinM,
+                    hair: cosmeticMaleGif.BlackHair,
+                    eyes: cosmeticMaleGif.BrownEyes
+                })
+            }
+        }
     }, [])
 
-
+    console.log(avatar)
 
     return (
         <div className='container_perfil left_perfil'>

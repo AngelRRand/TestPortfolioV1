@@ -21,13 +21,14 @@ const CreateAvatar = () => {
     index: ''
    })
 
-   /*
    const [hair, sethair] = useState({
-     hair: ''
+    image: '',
+    index: ''
    })
    const [eyes, seteyes] = useState({
-     eyes: ''
-   }) */
+    image: '',
+    index: ''
+   })
    //console.log(avatar)
   useEffect(() => {
     console.log('HPASD')
@@ -42,7 +43,6 @@ const CreateAvatar = () => {
       })
     }
   }, [])
-  //console.log(skin.image)
   
   const createAvatar = () => {
     setNewAvatar({
@@ -58,10 +58,8 @@ const CreateAvatar = () => {
       <div className="avatar_container">
         <img className='cuerpo_pj' src={flag.image} alt="" />
         <img className='rostro_pj' src={skin.image} alt="" />
-
-
-        {/* <img className='pelo_pj' src={hair.hair} alt="" />
-        <img className='ojos_pj' src={eyes.eyes} alt="" /> */} 
+        <img className='pelo_pj' src={hair.image} alt="" />
+        <img className='ojos_pj' src={eyes.image} alt="" /> 
       </div>
 
       <button onClick={()=> createAvatar()}>
@@ -72,8 +70,8 @@ const CreateAvatar = () => {
       <SwitcherAvatar
         setflag={setflag}
         setskin={setskin}
-        /* sethair={sethair}
-        seteyes={seteyes} */
+        sethair={sethair}
+        seteyes={seteyes}
       />
     </div>
   )
