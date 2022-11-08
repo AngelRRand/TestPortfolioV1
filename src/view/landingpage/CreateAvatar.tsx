@@ -45,6 +45,14 @@ const CreateAvatar = () => {
         index: avatar.skin.index,
         image: avatar.skin.image
       })
+      sethair({
+        index: avatar.hair.index,
+        image: avatar.hair.image
+      })
+      seteyes({
+        index: avatar.eyes.index,
+        image: avatar.eyes.image
+      })
     }
   }, [])
 
