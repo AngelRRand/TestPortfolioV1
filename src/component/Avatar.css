@@ -2,6 +2,7 @@
     position: relative;
     width: 13vw;
     height: 13vw;
+    background-color: rgba(22, 22, 22, 0.219);
 }
 
 .avatar_container img{
