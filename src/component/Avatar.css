@@ -1,3 +1,17 @@
+.avatar_container{
+    position: relative;
+    width: 13vw;
+    height: 13vw;
+}
+
+.avatar_container img{
+    position: absolute;
+    width: 13vw;
+    height: 13vw;
+    left: 0;
+    top: 0;
+    border: 2px solid rgb(0, 0, 0);
+}
 .flag_avatar {
     z-index: 30;
 }
@@ -12,4 +26,13 @@
 
 .eyes_avatar {
     z-index: 15;
+}
+
+.casco_avatar{
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.418);
+}
+
+.casco_opacity{
+    opacity: 0;
 }

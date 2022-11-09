@@ -14,33 +14,3 @@
     background: #000;
     border: 3px solid white;
 }
-.avatar_container{
-    position: relative;
-    width: 13vw;
-    height: 13vw;
-}
-
-.avatar_container img{
-    position: absolute;
-    width: 13vw;
-    height: 13vw;
-    left: 0;
-    top: 0;
-    border: 3px solid white;
-}
-
-.rostro_pj{
-    z-index: 10;
-}
-
-.cuerpo_pj{
-    z-index: 30;
-}
-
-.pelo_pj{
-    z-index: 15;
-}
-
-.ojos_pj{
-    z-index: 15;
-}
