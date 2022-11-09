@@ -1,0 +1,15 @@
+.flag_avatar {
+    z-index: 30;
+}
+
+.skin_avatar {
+    z-index: 10;
+}
+
+.hair_avatar {
+    z-index: 15;
+}
+
+.eyes_avatar {
+    z-index: 15;
+}

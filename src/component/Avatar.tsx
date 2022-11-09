@@ -1,14 +1,28 @@
+import './Avatar.css'
+
 import { TempletAvatar } from '../interfaces/Interface'
 import { useLocation } from "react-router-dom";
-const Avatar: React.FC<TempletAvatar> = ({flag, skin, hair, eyes}) => {
-    
+
+
+const Avatar: React.FC<TempletAvatar> = ({ flag, skin, hair, eyes }) => {
+
     const location = useLocation();
+    const currentUrl = location.pathname.toString()
     return (
-        <div className={location.pathname.toString() === '/' ? "avatar_container" : "avatar_container"}>
-            <img className='cuerpo_pj' src={flag} alt="" />
-            <img className='rostro_pj' src={skin} alt="" />
-            <img className='pelo_pj' src={hair} alt="" />
-            <img className='ojos_pj' src={eyes} alt="" />
+        <div className={currentUrl === '/' ? "avatar_container" : "avatar_container"}>
+            <img className='flag_avatar' src={flag} alt="" />
+            <img className='skin_avatar' src={skin} alt="" />
+            <img className='hair_avatar' src={hair} alt="" />
+            <img className='eyes_avatar' src={eyes} alt="" />
+            {
+                currentUrl !== '/' || '/education' ||  '/projects' || '/networks' ? (
+                    <></>
+                ): (
+                    <>
+                        <img/>
+                    </>
+                )
+            }
         </div>
     )
 }

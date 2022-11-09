@@ -29,18 +29,3 @@
     border: 3px solid white;
 }
 
-.rostro_pj{
-    z-index: 10;
-}
-
-.cuerpo_pj{
-    z-index: 30;
-}
-
-.pelo_pj{
-    z-index: 15;
-}
-
-.ojos_pj{
-    z-index: 15;
-}
