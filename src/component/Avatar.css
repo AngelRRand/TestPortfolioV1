@@ -29,11 +29,11 @@
     z-index: 15;
 }
 
-.casco_avatar{
+.helmet_avatar{
     z-index: 20;
     background: rgba(0, 0, 0, 0.418);
 }
 
-.casco_opacity{
+.helmet_opacity{
     opacity: 0;
 }

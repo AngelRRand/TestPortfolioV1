@@ -1,5 +1,3 @@
-import Casco from '../assets/CreatePJ/gif/Casco.gif'; 
-
 import './Avatar.css'
 
 import { TempletAvatar } from '../interfaces/Interface'
@@ -19,9 +17,9 @@ const Avatar: React.FC<TempletAvatar> = ({ flag, skin, hair, eyes, helmet }) => 
             <img className='eyes_avatar' src={eyes} alt="" />
             {
                 currentUrl === '/' || currentUrl ===  '/house' || currentUrl ===  '/art' ? (
-                    <img className='casco_avatar casco_opacity' src={helmet} alt=""/>
+                    <img className='helmet_avatar helmet_opacity' src={helmet} alt=""/>
                 ): (
-                        <img className='casco_avatar' src={helmet} alt=""/>
+                        <img className='helmet_avatar' src={helmet} alt=""/>
                 )
             }
         </div>
