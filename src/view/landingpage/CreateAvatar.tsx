@@ -32,6 +32,10 @@ const CreateAvatar = () => {
     index: ''
   })
 
+  const [helmet, setHelmet] = useState({
+    image: ''
+  })
+
   useEffect(() => {
     if (avatar.flag.nacionality === 'default') {
       setflag({
@@ -49,6 +53,9 @@ const CreateAvatar = () => {
       seteyes({
         index: avatar.eyes.index,
         image: avatar.eyes.image
+      })
+      setHelmet({
+        image: avatar.helmet.image
       })
     }
   }, [])
@@ -81,6 +88,7 @@ const CreateAvatar = () => {
             skin={skin.image}
             hair={hair.image}
             eyes={eyes.image}
+            helmet={helmet.image}
           />
         ) : (
           <Avatar
@@ -88,6 +96,7 @@ const CreateAvatar = () => {
             skin=''
             hair=''
             eyes=''
+            helmet=''
           />
         )
 

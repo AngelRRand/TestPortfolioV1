@@ -103,6 +103,7 @@ const Nav = () => {
                         skin={avatar.skin.image}
                         hair={avatar.hair.image}
                         eyes={avatar.eyes.image}
+                        helmet={avatar.helmet.image}
                     />
                     <h2>Horacio</h2>
                 </div>

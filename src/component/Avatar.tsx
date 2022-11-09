@@ -6,7 +6,7 @@ import { TempletAvatar } from '../interfaces/Interface'
 import { useLocation } from "react-router-dom";
 
 
-const Avatar: React.FC<TempletAvatar> = ({ flag, skin, hair, eyes }) => {
+const Avatar: React.FC<TempletAvatar> = ({ flag, skin, hair, eyes, helmet }) => {
 
     const location = useLocation();
     const currentUrl = location.pathname.toString()
@@ -19,9 +19,9 @@ const Avatar: React.FC<TempletAvatar> = ({ flag, skin, hair, eyes }) => {
             <img className='eyes_avatar' src={eyes} alt="" />
             {
                 currentUrl === '/' || currentUrl ===  '/house' || currentUrl ===  '/art' ? (
-                    <img className='casco_avatar casco_opacity' src={Casco} alt=""/>
+                    <img className='casco_avatar casco_opacity' src={helmet} alt=""/>
                 ): (
-                        <img className='casco_avatar' src={Casco} alt=""/>
+                        <img className='casco_avatar' src={helmet} alt=""/>
                 )
             }
         </div>
