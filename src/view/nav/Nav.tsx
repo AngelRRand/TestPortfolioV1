@@ -105,7 +105,7 @@ const Nav = () => {
                         eyes={avatar.eyes.image}
                         helmet={avatar.helmet.image}
                     />
-                    <h2>Horacio</h2>
+                    <h2>Horacioooo</h2>
                 </div>
 s
 
