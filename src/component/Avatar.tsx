@@ -5,18 +5,7 @@ import { useLocation } from "react-router-dom";
 
 
 const Avatar: React.FC<TempletAvatar> = ({ flag, skin, hair, eyes, helmet }) => {
-    //ASADASDA
-    ///dasdasddas
-    //asd/as/dasdasdasd
-    //ASADASDA
-    ///dasdasddas
-    //asd/as/dasdasdasd
-    //ASADASDA
-    ///dasdasddas
-    //asd/as/dasdasdasd
-    //ASADASDA
-    ///dasdasddas
-    //asd/as/dasdasdasd
+    
     const location = useLocation();
     const currentUrl = location.pathname.toString()
     console.log(currentUrl)
